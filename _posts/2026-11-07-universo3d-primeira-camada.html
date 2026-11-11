@@ -1,0 +1,75 @@
+<p><strong>A primeira camada é a base de toda a impressão: se ela falha, quase tudo que vem depois também falha. A forma mais confiável de acertá-la é nivelar a mesa e depois ajustar o z-offset, que é a distância entre o bico e a mesa na primeira camada.</strong> Este guia mostra o passo a passo e como interpretar o que você vê.</p>
+
+<div style="text-align:center;margin:18px 0;"><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@main/2026-11-07-universo3d-primeira-camada.jpg" alt="Primeira camada de plástico sendo depositada sobre a mesa de uma impressora 3D" style="max-width:100%;height:auto;border-radius:8px;"></div>
+
+<h2>Como deve ser uma boa primeira camada</h2>
+<p>As linhas de plástico devem estar levemente achatadas contra a mesa e coladas umas nas outras, formando uma superfície lisa, sem buracos entre elas e sem montinhos nas bordas. Se as linhas estão redondas e soltas, o bico está alto demais. Se estão muito achatadas, com bordas levantadas e o plástico "arrastado", o bico está baixo demais.</p>
+
+<h2>Passo a passo</h2>
+<h3>1. Limpe a mesa</h3>
+<p>Gordura dos dedos atrapalha a aderência. Limpe a superfície com álcool isopropílico, seguindo as recomendações do fabricante da mesa.</p>
+<h3>2. Nivele a mesa</h3>
+<p>Em impressoras com nivelamento manual, use o método do papel: com o bico aquecido, mova-o sobre os pontos da mesa e ajuste os parafusos até sentir um leve arrasto da folha. Em impressoras com sensor automático, execute a rotina de nivelamento do fabricante.</p>
+<h3>3. Aqueça tudo antes de ajustar</h3>
+<p>Mesa e bico devem estar na temperatura de impressão do material, porque a dilatação muda a distância. Cuidado para não encostar nas partes quentes.</p>
+<h3>4. Imprima um quadrado de teste</h3>
+<p>Imprima uma peça de teste de uma camada, cobrindo boa parte da mesa. Isso mostra, de uma vez, se há regiões mais altas ou mais baixas.</p>
+<h3>5. Ajuste o z-offset durante a impressão</h3>
+<p>Muitas impressoras permitem alterar o z-offset em tempo real, em passos pequenos. Aproxime o bico aos poucos até as linhas se unirem sem formar relevo.</p>
+
+<h2>Tabela de diagnóstico</h2>
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;color:#ffffff;">
+<thead><tr style="background:#0e7490;color:#ffffff;"><th style="padding:10px;text-align:left;">O que você vê</th><th style="padding:10px;text-align:left;">Provável causa</th><th style="padding:10px;text-align:left;">O que fazer</th></tr></thead>
+<tbody>
+<tr style="background:#13263d;"><td style="padding:10px;">Linhas redondas e separadas</td><td style="padding:10px;">Bico alto demais</td><td style="padding:10px;">Reduzir o z-offset em pequenos passos</td></tr>
+<tr style="background:#13263d;"><td style="padding:10px;">Plástico muito achatado, bordas levantadas</td><td style="padding:10px;">Bico baixo demais</td><td style="padding:10px;">Aumentar o z-offset em pequenos passos</td></tr>
+<tr style="background:#13263d;"><td style="padding:10px;">Um lado bom e outro ruim</td><td style="padding:10px;">Mesa desnivelada</td><td style="padding:10px;">Refazer o nivelamento</td></tr>
+<tr style="background:#13263d;"><td style="padding:10px;">Peça solta no meio da impressão</td><td style="padding:10px;">Mesa suja ou pouca aderência</td><td style="padding:10px;">Limpar a mesa e revisar a temperatura da mesa</td></tr>
+<tr style="background:#13263d;"><td style="padding:10px;">Cantos levantando</td><td style="padding:10px;">Contração do material</td><td style="padding:10px;">Veja o guia sobre warping</td></tr>
+</tbody>
+</table>
+</div>
+<p>Se os cantos descolarem, leia também nosso post sobre <a href="https://universo3dprints.blogspot.com/2026/10/warping-na-impressao-3d-como-evitar.html">warping</a>.</p>
+
+<h2>Configurações do fatiador que ajudam</h2>
+<ul>
+<li><strong>Altura e largura da primeira camada:</strong> uma primeira camada um pouco mais grossa e mais larga costuma facilitar a aderência.</li>
+<li><strong>Velocidade da primeira camada:</strong> mais lenta dá melhor adesão.</li>
+<li><strong>Brim ou borda:</strong> aumenta a área de contato em peças com base pequena.</li>
+</ul>
+
+<h2>Erros comuns</h2>
+<ul>
+<li><strong>Ajustar com a mesa fria.</strong> A medida muda quando tudo esquenta.</li>
+<li><strong>Corrigir só o z-offset sem nivelar.</strong> Se a mesa está torta, o ajuste só serve para um ponto.</li>
+<li><strong>Usar o dedo para limpar a mesa.</strong> A gordura reduz a aderência.</li>
+<li><strong>Mudar tudo ao mesmo tempo.</strong> Mexa em um parâmetro por vez.</li>
+</ul>
+
+<h2>Perguntas frequentes</h2>
+<h3>Preciso nivelar a mesa toda vez?</h3>
+<p>Não necessariamente. Verifique sempre que mover a impressora, trocar a mesa ou notar falhas na primeira camada.</p>
+<h3>O z-offset é igual para todos os materiais?</h3>
+<p>Pode variar um pouco com o filamento e a mesa. Ajuste sempre que mudar de material ou de superfície.</p>
+<h3>A primeira camada falha só às vezes. O que pode ser?</h3>
+<p>Filamento úmido, mesa suja ou variação de temperatura. Veja também o guia sobre <a href="https://universo3dprints.blogspot.com/2026/10/filamento-umido-como-identificar-secar.html">filamento úmido</a>.</p>
+
+<h2>Resumo</h2>
+<ul>
+<li>Limpe, nivele e aqueça a mesa antes de ajustar o z-offset.</li>
+<li>Use uma peça de teste de uma camada e ajuste em passos pequenos.</li>
+<li>Leia o aspecto das linhas para saber se o bico está alto ou baixo demais.</li>
+</ul>
+
+<p><em>Conteúdo informativo. Siga sempre o manual do fabricante e as normas de segurança da sua impressora e dos materiais.</em></p>
+
+<div id="fk3d-assinatura" style="border-top:1px solid #d0d7de; margin-top:32px; padding-top:16px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.6; overflow:hidden;">
+  <a href="https://fk3dprints.com.br/?utm_source=universo3dprints&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUko8oQFxjE_SOXU__7A4Bnw3Tu7d-cmwRVhf-SBCqn6SJXQV_aBLtngX6-OvgFcTPJ172l-vSANT99FK-l8VPQVdVi4nbN33rnbVC802Becx-4EIrLBncpzpPbTLpkHRBISFLYcdhx48axTcjcLWyahXYX9B8qyELlOymKwNmUEp8gio/s200/Captura_de_tela_2026-10-08_223740-removebg-preview.png" alt="Logo FK3D Prints" width="90" height="96" style="float:left; margin:0 16px 8px 0;"></a>
+  <p><strong>FK3D Prints: impressão 3D sob demanda</strong></p>
+  <p>
+    &rarr; <a href="https://fk3dprints.com.br/?utm_source=universo3dprints&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener">Site oficial: fk3dprints.com.br</a><br>
+    &rarr; <a href="https://shopee.com.br/fkimpressoes3d" target="_blank" rel="noopener">Nossa loja na Shopee</a><br>
+    &rarr; <a href="https://www.instagram.com/fknegociosdigitais" target="_blank" rel="noopener">Siga no Instagram</a>
+  </p>
+</div>

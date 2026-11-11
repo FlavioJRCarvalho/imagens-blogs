@@ -1,0 +1,88 @@
+<p><strong>Stringing são aqueles fios finos de plástico, parecidos com teia de aranha, que aparecem entre partes separadas da peça. Na maioria dos casos, eles vêm de uma combinação de temperatura alta demais, retração mal ajustada e filamento úmido.</strong> A boa notícia é que dá para resolver mudando uma coisa de cada vez, na ordem certa, sem trocar de impressora.</p>
+
+<div style="text-align:center;margin:18px 0;"><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@main/2026-11-14-universo3d-stringing-fios.jpg" alt="Bico de impressora 3D com finos fios de plástico entre duas pequenas torres impressas" style="max-width:100%;height:auto;border-radius:8px;"></div>
+
+<h2>O que causa o stringing</h2>
+<p>Quando o bico se desloca de uma parte da peça para outra sem imprimir, o plástico derretido dentro dele ainda pode escorrer. Esse fio fica preso nas duas pontas e forma a "teia". Três fatores explicam quase todos os casos:</p>
+<ul>
+<li><strong>Temperatura alta:</strong> plástico mais fluido escorre com mais facilidade.</li>
+<li><strong>Retração insuficiente:</strong> a impressora precisa puxar um pouco o filamento para trás antes de cada deslocamento. Se isso é curto demais, o bico continua pingando.</li>
+<li><strong>Filamento com umidade:</strong> a água vira vapor no bico, estoura bolhas e deixa o plástico escorrendo. Veja como identificar em nosso post sobre <a href="https://universo3dprints.blogspot.com/2026/10/filamento-umido-como-identificar-secar.html">filamento úmido</a>.</li>
+</ul>
+
+<h2>Passo a passo para eliminar os fios</h2>
+<h3>1. Comece pelo filamento</h3>
+<p>Se o filamento faz estalos, solta fumaça fina ou deixa a superfície áspera, seque-o antes de mexer em qualquer configuração. Ajustar o fatiador com material úmido é perder tempo.</p>
+<h3>2. Faça uma torre de teste de temperatura</h3>
+<p>Baixe uma peça de teste com duas torres afastadas e imprima reduzindo a temperatura em passos pequenos, de 5 em 5 graus, sempre dentro da faixa indicada pelo fabricante do filamento. Escolha a temperatura mais baixa que ainda mantém boa aderência entre as camadas.</p>
+<h3>3. Ajuste a retração</h3>
+<p>No fatiador, ative a retração e aumente a distância ou a velocidade aos poucos. Em impressoras com extrusor direto, as distâncias costumam ser menores do que em impressoras com tubo (extrusor Bowden). Mude um valor por vez e imprima o teste de novo. Retração demais também causa problemas, como bico entupido, então não exagere. Se o bico começar a falhar, veja nosso guia sobre <a href="https://universo3dprints.blogspot.com/2026/11/bico-entupido-na-impressora-3d-como.html">bico entupido</a>.</p>
+<h3>4. Reduza deslocamentos desnecessários</h3>
+<p>Opções do fatiador, como evitar atravessar paredes e minimizar deslocamentos sobre áreas abertas, reduzem a chance de fios. Também ajuda a rotacionar a peça na mesa para que os trechos de deslocamento sejam mais curtos.</p>
+<h3>5. Velocidade de deslocamento</h3>
+<p>Deslocamentos mais rápidos dão menos tempo para o plástico escorrer. Aumente a velocidade de deslocamento com cuidado, observando se a impressora não perde passos.</p>
+
+<div style="margin:18px 0;padding:16px 18px;border-radius:10px;background:#13263d;border-left:4px solid #1fb6ff;color:#ffffff;">
+<strong>Ordem recomendada de ajuste</strong>
+<ul>
+<li>Secar ou trocar o filamento.</li>
+<li>Baixar a temperatura em passos de 5 °C.</li>
+<li>Ajustar distância e velocidade de retração.</li>
+<li>Reduzir deslocamentos e aumentar a velocidade de deslocamento.</li>
+<li>Repetir o teste a cada mudança, alterando só uma coisa por vez.</li>
+</ul>
+</div>
+
+<h2>Tabela rápida: sintoma e provável causa</h2>
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;color:#ffffff;">
+<thead><tr style="background:#0e7490;color:#ffffff;"><th style="padding:10px;text-align:left;">O que você vê</th><th style="padding:10px;text-align:left;">Provável causa</th><th style="padding:10px;text-align:left;">Primeiro ajuste</th></tr></thead>
+<tbody>
+<tr style="background:#13263d;"><td style="padding:10px;">Fios finos e muitos, em toda a peça</td><td style="padding:10px;">Filamento úmido ou temperatura alta</td><td style="padding:10px;">Secar o filamento e baixar a temperatura</td></tr>
+<tr style="background:#13263d;"><td style="padding:10px;">Gotas na ponta de cada deslocamento</td><td style="padding:10px;">Retração curta</td><td style="padding:10px;">Aumentar a distância de retração um pouco</td></tr>
+<tr style="background:#13263d;"><td style="padding:10px;">Fios só em materiais como PETG</td><td style="padding:10px;">Material mais propenso a escorrer</td><td style="padding:10px;">Temperatura menor e retração ajustada para esse material</td></tr>
+<tr style="background:#13263d;"><td style="padding:10px;">Fios que aparecem só depois de trocar o bico</td><td style="padding:10px;">Bico novo mal apertado ou perfil errado</td><td style="padding:10px;">Reapertar a quente e revisar o perfil</td></tr>
+</tbody>
+</table>
+</div>
+<p>Cada material reage de um jeito. Para entender as diferenças, leia nosso guia <a href="https://universo3dprints.blogspot.com/2026/10/pla-ou-petg-qual-usar.html">PLA ou PETG: qual usar em cada peça</a>.</p>
+
+<h2>Erros comuns</h2>
+<ul>
+<li><strong>Mudar vários parâmetros de uma vez.</strong> Você não descobre o que funcionou.</li>
+<li><strong>Baixar demais a temperatura.</strong> Camadas fracas e subextrusão podem aparecer no lugar do stringing.</li>
+<li><strong>Retração exagerada.</strong> Pode puxar plástico frio para dentro do bico.</li>
+<li><strong>Ignorar o armazenamento do filamento.</strong> Sem caixa fechada e sachês secantes, o problema volta.</li>
+</ul>
+
+<h2>Como limpar os fios que já saíram</h2>
+<p>Fios leves podem ser removidos com uma pinça ou um canivete de artesanato, com cuidado para não se cortar. Uma passada rápida de lixa fina também ajuda. Em peças de PLA, evite chamas e calor excessivo para não deformar a peça.</p>
+
+<h2>Perguntas frequentes</h2>
+<h3>Stringing é defeito da impressora?</h3>
+<p>Quase nunca. Costuma ser configuração ou filamento úmido.</p>
+<h3>Todo filamento faz stringing?</h3>
+<p>Alguns materiais, como o PETG, tendem a escorrer mais do que o PLA. Isso exige ajuste de temperatura e retração.</p>
+<h3>Preciso comprar um secador de filamento?</h3>
+<p>Não é obrigatório, mas ajuda quando o ambiente é úmido. Guardar em caixa fechada com sachê secante já melhora bastante.</p>
+<h3>Posso ignorar o stringing em peças que vão ser pintadas?</h3>
+<p>Fios finos saem com lixa, mas gotas e bolhas podem deixar marcas. Vale corrigir na origem.</p>
+
+<h2>Resumo</h2>
+<ul>
+<li>Stringing nasce de temperatura alta, retração insuficiente e filamento úmido.</li>
+<li>Siga a ordem: secar, baixar a temperatura, ajustar a retração, reduzir deslocamentos.</li>
+<li>Mude uma coisa por vez e use uma torre de teste.</li>
+</ul>
+
+<p><em>Conteúdo informativo. Siga sempre o manual do fabricante e as normas de segurança da sua impressora e dos materiais.</em></p>
+
+<div id="fk3d-assinatura" style="border-top:1px solid #d0d7de; margin-top:32px; padding-top:16px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.6; overflow:hidden;">
+  <a href="https://fk3dprints.com.br/?utm_source=universo3dprints&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUko8oQFxjE_SOXU__7A4Bnw3Tu7d-cmwRVhf-SBCqn6SJXQV_aBLtngX6-OvgFcTPJ172l-vSANT99FK-l8VPQVdVi4nbN33rnbVC802Becx-4EIrLBncpzpPbTLpkHRBISFLYcdhx48axTcjcLWyahXYX9B8qyELlOymKwNmUEp8gio/s200/Captura_de_tela_2026-10-08_223740-removebg-preview.png" alt="Logo FK3D Prints" width="90" height="96" style="float:left; margin:0 16px 8px 0;"></a>
+  <p><strong>FK3D Prints: impressão 3D sob demanda</strong></p>
+  <p>
+    &rarr; <a href="https://fk3dprints.com.br/?utm_source=universo3dprints&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener">Site oficial: fk3dprints.com.br</a><br>
+    &rarr; <a href="https://shopee.com.br/fkimpressoes3d" target="_blank" rel="noopener">Nossa loja na Shopee</a><br>
+    &rarr; <a href="https://www.instagram.com/fknegociosdigitais" target="_blank" rel="noopener">Siga no Instagram</a>
+  </p>
+</div>

@@ -54,6 +54,64 @@
 <h3>Vale a pena trocar o bico para ganhar velocidade?</h3>
 <p>Para peças simples e grandes, um bico maior costuma compensar. Para peças com detalhe, não.</p>
 
+
+<h2>Entendendo a vazão máxima do hotend</h2>
+<p>Todo hotend tem um limite de quanto plástico consegue derreter por segundo, chamado de vazão volumétrica máxima. Uma forma de enxergar o problema é multiplicar a largura da linha, a altura da camada e a velocidade: o resultado indica o volume por segundo que o bico precisa entregar. Se esse valor passa do que o hotend suporta, o plástico não derrete a tempo, e aparecem camadas fracas ou falhas.</p>
+<p>Por isso, aumentar a velocidade <em>e</em> a altura de camada ao mesmo tempo pode estourar o limite mais rápido do que parece. O caminho prático é testar em degraus, aumentando a velocidade um pouco por vez e observando a qualidade.</p>
+
+<h2>Como fazer um teste de velocidade</h2>
+<ol>
+<li>Escolha uma peça de teste com paredes, cantos e uma área plana grande.</li>
+<li>Imprima em uma velocidade que você já sabe que funciona.</li>
+<li>Aumente a velocidade em passos pequenos e imprima de novo.</li>
+<li>Compare as peças: procure ondulações, falhas de camada e perda de detalhes.</li>
+<li>Guarde um perfil com a velocidade mais alta que ainda dá resultado bom.</li>
+</ol>
+
+<h2>Perfis diferentes para usos diferentes</h2>
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;color:#ffffff;">
+<thead><tr style="background:#0e7490;color:#ffffff;"><th style="padding:10px;text-align:left;">Uso da peça</th><th style="padding:10px;text-align:left;">Prioridade</th><th style="padding:10px;text-align:left;">Estratégia</th></tr></thead>
+<tbody>
+<tr style="background:#13263d;"><td style="padding:10px;">Protótipo ou teste de encaixe</td><td style="padding:10px;">Rapidez</td><td style="padding:10px;">Camada grossa, pouco preenchimento, velocidade maior</td></tr>
+<tr style="background:#13263d;"><td style="padding:10px;">Peça funcional de uso diário</td><td style="padding:10px;">Resistência</td><td style="padding:10px;">Mais paredes, preenchimento moderado, velocidade média</td></tr>
+<tr style="background:#13263d;"><td style="padding:10px;">Peça de exposição ou presente</td><td style="padding:10px;">Acabamento</td><td style="padding:10px;">Camada fina, velocidade menor nas paredes externas</td></tr>
+<tr style="background:#13263d;"><td style="padding:10px;">Muitas cópias da mesma peça</td><td style="padding:10px;">Constância</td><td style="padding:10px;">Perfil testado e repetido, com atenção à manutenção</td></tr>
+</tbody>
+</table>
+</div>
+<h2>Manutenção que ajuda a imprimir mais rápido</h2>
+<ul>
+<li>Bico limpo e sem desgaste: bicos entupidos ou gastos reduzem a vazão. Veja o guia sobre <a href="https://universo3dprints.blogspot.com/2026/11/bico-entupido-na-impressora-3d-como.html">bico entupido</a>.</li>
+<li>Correias e eixos bem ajustados: folgas viram ondulações em velocidades altas.</li>
+<li>Filamento seco: umidade causa bolhas e perda de qualidade, principalmente quando se aumenta a vazão. Leia sobre <a href="https://universo3dprints.blogspot.com/2026/10/filamento-umido-como-identificar-secar.html">filamento úmido</a>.</li>
+<li>Ventilação de peça adequada: resfriar melhor permite camadas mais rápidas em muitos materiais.</li>
+</ul>
+
+<h2>Cuidados com materiais diferentes</h2>
+<p>O PLA costuma aceitar velocidades mais altas do que materiais como PETG ou TPU. O TPU, por ser flexível, exige velocidades bem menores. Em materiais como o PETG, velocidade alta aumenta o risco de fios e acúmulo de plástico no bico. Veja as diferenças no guia <a href="https://universo3dprints.blogspot.com/2026/10/pla-ou-petg-qual-usar.html">PLA ou PETG</a>.</p>
+
+<h2>Quando vale a pena sacrificar velocidade</h2>
+<p>Se a peça tem encaixes de precisão, detalhes finos ou vai receber pintura, é melhor aceitar um tempo maior de impressão. Ganhar uma hora e perder o encaixe significa refazer a peça, o que anula a economia. O objetivo não é a impressão mais rápida possível, mas a mais rápida que entrega a qualidade necessária.</p>
+
+<h2>Glossário rápido</h2>
+<ul>
+<li><strong>Vazão volumétrica:</strong> volume de plástico que o hotend consegue derreter por segundo.</li>
+<li><strong>Aceleração:</strong> rapidez com que a impressora muda de velocidade nos cantos.</li>
+<li><strong>Subextrusão:</strong> falta de plástico nas camadas, deixando-as fracas ou com buracos.</li>
+<li><strong>Marcas de vibração:</strong> ondulações repetidas na superfície, causadas por movimento rápido demais.</li>
+</ul>
+
+<h2>Mais perguntas frequentes</h2>
+<h3>Qual é a velocidade ideal?</h3>
+<p>Não há número único. Depende da impressora, do bico, do filamento e da peça. O ideal é testar em degraus.</p>
+<h3>Impressoras mais caras sempre imprimem mais rápido?</h3>
+<p>Muitos modelos recentes têm hardware pensado para velocidades maiores, mas o resultado ainda depende de calibração e material.</p>
+<h3>Trocar o bico por um maior vale a pena?</h3>
+<p>Para peças grandes e simples, sim. Para peças detalhadas, o ganho de tempo não compensa a perda de detalhe.</p>
+<h3>Como saber se a velocidade está alta demais?</h3>
+<p>Camadas fracas, estalos no extrusor, falhas ou ondulações repetidas são sinais de que passou do limite.</p>
+
 <h2>Resumo</h2>
 <ul>
 <li>Altura de camada, preenchimento e bico maior costumam render mais do que só aumentar a velocidade.</li>

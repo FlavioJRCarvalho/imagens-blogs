@@ -32,7 +32,7 @@
 <table style="width:100%;border-collapse:collapse;color:#ffffff;">
 <thead><tr style="background:#0e7490;color:#ffffff;"><th style="padding:10px;text-align:left;">Sistema</th><th style="padding:10px;text-align:left;">Como ajustar em tempo real</th><th style="padding:10px;text-align:left;">Como salvar</th></tr></thead>
 <tbody>
-<tr style="background:#13263d;"><td style="padding:10px;">Marlin</td><td style="padding:10px;">Pelo menu da impressora, em “Ajustar” ou “Babystep Z”, e pelo valor do probe com o comando M851 Z.</td><td style="padding:10px;">Salvar na memória (M500) ou pelo menu “Guardar configurações”.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Klipper</td><td style="padding:10px;">Pela interface (Mainsail, Fluidd, Octoprint) ou pelo comando SET_GCODE_OFFSET Z_ADJUST=-0.02 MOVE=1.</td><td style="padding:10px;">Comando SAVE_CONFIG depois de aceitar o novo valor.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Impressoras de fábrica com tela</td><td style="padding:10px;">Menu de calibração e ajuste fino de primeira camada, conforme o modelo.</td><td style="padding:10px;">Segue o fluxo do fabricante: consulte o manual.</td></tr>
+<tr style="background:#13263d;"><td style="padding:10px;">Marlin</td><td style="padding:10px;">Pelo menu da impressora, em “Ajustar” ou “Babystep Z”, e pelo valor do probe com o comando M851 Z.</td><td style="padding:10px;">Salvar na memória (M500) ou pelo menu “Guardar configurações”.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Klipper</td><td style="padding:10px;">Pela interface (Mainsail, Fluidd) ou pelo comando SET_GCODE_OFFSET Z_ADJUST=-0.02 MOVE=1, que soma o valor ao offset atual e move o bico na hora.</td><td style="padding:10px;">O ajuste feito assim é temporário. Para gravar, aplique o valor ao probe ou ao endstop (Z_OFFSET_APPLY_PROBE ou Z_OFFSET_APPLY_ENDSTOP) e depois use SAVE_CONFIG.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Impressoras de fábrica com tela</td><td style="padding:10px;">Menu de calibração e ajuste fino de primeira camada, conforme o modelo.</td><td style="padding:10px;">Segue o fluxo do fabricante: consulte o manual.</td></tr>
 </tbody>
 </table>
 </div>
@@ -120,6 +120,14 @@
 <li>Salve o valor no firmware e registre numa tabela.</li>
 <li>Revise ao trocar bico, mesa ou material.</li>
 </ul>
+
+<h2>Fontes e como preparamos este conteúdo</h2>
+<p>Os comandos de firmware foram conferidos na documentação oficial. Valores de temperatura e de folga são referências comuns e podem variar por material, marca e impressora.</p>
+<ul>
+<li>Klipper, <a href="https://www.klipper3d.org/G-Codes.html">G-Codes (SET_GCODE_OFFSET)</a>, consultado em 11/11/2026.</li>
+<li>Marlin Firmware, <a href="https://marlinfw.org/docs/gcode/M851.html">M851: Set Probe Offset</a>, consultado em 11/11/2026.</li>
+</ul>
+
 
 <p><em>Conteúdo informativo. Siga sempre o manual do fabricante e as normas de segurança da sua impressora e dos materiais.</em></p>
 

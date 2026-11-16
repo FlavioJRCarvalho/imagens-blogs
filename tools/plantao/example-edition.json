@@ -1,0 +1,128 @@
+{
+ "date": "16/11/2026",
+ "date_long": "16 de novembro de 2026",
+ "weekday": "segunda-feira",
+ "edition": "da noite",
+ "time": "19h40",
+ "slug": "noite",
+ "prefix": "2026-11-16-noite-",
+ "label_cover": "EDIÇÃO DA NOITE • 16/11",
+ "commit": "4a5f5a9",
+ "prev": {
+  "url": "https://panoramabrasilhoje.blogspot.com/2026/11/plantao-de-noticias-do-dia-1611-edicao.html",
+  "label": "edição da manhã de hoje"
+ },
+ "items": [
+  {
+   "id": "lula",
+   "tag": "Política",
+   "img": "2026-11-16-manha-lula-hero.jpg",
+   "short": "Lula encerra viagem em Madri",
+   "title": "Lula encerra em Madri a primeira viagem internacional após a reeleição",
+   "summary": "Lula se reúne nesta segunda-feira (16) com o primeiro-ministro da Espanha, Pedro Sánchez, no Palácio da Moncloa, e encerra a primeira viagem internacional desde a reeleição. O giro passou pela Turquia (COP31, em Antalya), pelas Filipinas e pela cúpula da Asean.",
+   "meta": "Correio Braziliense e Brasil 247, 16/11, manhã",
+   "body": [
+    "O Correio Braziliense informa que o encontro começa com uma conversa reservada, seguida de reunião ampliada com ministros dos dois países."
+   ],
+   "pending": "o horário da chegada a Brasília não está fechado: o Correio Braziliense diz que Lula deve voar para Brasília no mesmo dia, enquanto o Brasil 247, citando a CNN Brasil, fala em pouso entre a noite de segunda e a madrugada de terça (17).",
+   "why": "A volta a Brasília abre a fase de definição do ministério do próximo mandato, com as principais nomeações esperadas pelo Planalto até o fim de novembro.",
+   "sources": [
+    {
+     "url": "https://www.correiobraziliense.com.br/politica/2026/11/7539084-lula-chega-a-espanha-para-encerrar-viagem-internacional-apos-reeleicao.html",
+     "label": "Correio Braziliense: Lula chega à Espanha para encerrar viagem internacional após reeleição",
+     "date": "16/11/2026, 8h06"
+    },
+    {
+     "url": "https://www.brasil247.com/brasil/com-prestigio-em-alta-no-mundo-lula-retorna-ao-brasil-e-retoma-articulacoes-para-definir-ministros-do-proximo-mandato/",
+     "label": "Brasil 247: Lula retorna ao Brasil e retoma articulações para definir ministros do próximo mandato",
+     "date": "16/11/2026"
+    }
+   ]
+  },
+  {
+   "id": "dino-sani",
+   "tag": "Esporte",
+   "img": "2026-11-16-manha-dino-sani.jpg",
+   "short": "Morre Dino Sani, campeão de 1958",
+   "title": "Morre Dino Sani, campeão do mundo em 1958, aos 94 anos",
+   "summary": "O ex-meio-campista Dino Sani morreu no domingo (15), aos 94 anos, segundo a revista Placar. Campeão da Copa do Mundo de 1958 com a seleção brasileira, ele perdeu a vaga para Zito após uma lesão, depois de atuar nos dois primeiros jogos.",
+   "meta": "Revista Placar, 16/11, 9h12",
+   "body": [
+    "Revelado pelo Palmeiras, Sani jogou no Corinthians (115 jogos e 32 gols) e no São Paulo (324 jogos e 113 gols), e também atuou por Boca Juniors, Peñarol e Milan. Como técnico, venceu quatro vezes seguidas o Gaúcho com o Internacional (1971 a 1974) e ganhou o Uruguaio com o Peñarol em 1978 e 1979."
+   ],
+   "pending": "a causa e o local da morte não foram informados pela Placar.",
+   "why": "Sani integrou o elenco da primeira Copa do Mundo conquistada pelo Brasil.",
+   "sources": [
+    {
+     "url": "https://placar.com.br/selecao-brasileira/morre-dino-sani-campeao-da-copa-de-1958-aos-94-anos/",
+     "label": "Revista Placar: Morre Dino Sani, campeão da Copa de 1958, aos 94 anos",
+     "date": "16/11/2026, 9h12"
+    }
+   ]
+  },
+  {
+   "id": "correios",
+   "tag": "Economia",
+   "img": "2026-11-16-manha-correios.jpg",
+   "short": "Correios: prejuízo de R$ 1,93 bi",
+   "title": "Correios têm prejuízo de R$ 1,93 bilhão no 3º trimestre",
+   "summary": "A estatal registrou prejuízo de R$ 1,93 bilhão entre julho e setembro de 2026, alta de 18,4% sobre o mesmo período de 2025. No acumulado de nove meses, o prejuízo chega a R$ 7,48 bilhões, 27,2% acima do mesmo intervalo do ano anterior, segundo a CNN Brasil.",
+   "meta": "CNN Brasil, 15/11, 19h08",
+   "body": [
+    "A receita líquida foi de R$ 3,831 bilhões, queda de 8,11%, e o lucro bruto caiu de R$ 428 milhões para R$ 93,4 milhões. As despesas financeiras subiram 75%, para R$ 740 milhões. A empresa cita queda de receitas, alta de custos, passivos judiciais e concorrência no setor logístico, e o patrimônio líquido segue negativo.",
+    "Em outubro, a estatal formalizou R$ 7 bilhões em financiamento com garantia do governo federal, e há previsão de aporte de R$ 6 bilhões da União até o fim de 2027."
+   ],
+   "why": "É a sexta vez seguida em que a estatal caminha para fechar o ano no vermelho, e o plano de reestruturação 2025-2027 depende de dinheiro público.",
+   "sources": [
+    {
+     "url": "https://www.cnnbrasil.com.br/economia/money/mercado/correios-perdem-r-19-bi-no-3o-trimestre-rombo-no-ano-chega-a-r-75-bi/",
+     "label": "CNN Brasil: Correios perdem R$ 1,9 bi no 3º trimestre; rombo no ano chega a R$ 7,5 bi",
+     "date": "15/11/2026, 19h08"
+    }
+   ]
+  },
+  {
+   "id": "ceara",
+   "tag": "Brasil",
+   "img": "2026-11-16-manha-ceara.jpg",
+   "short": "Ceará: emergência em 65 cidades",
+   "title": "Ceará decreta emergência em 65 municípios por risco de seca ligado ao El Niño",
+   "summary": "O governador Elmano de Freitas (PT) decretou situação de emergência em 65 municípios cearenses por 180 dias. O decreto foi publicado no Diário Oficial do Estado na sexta-feira (13), segundo o portal Repórter Ceará.",
+   "meta": "Repórter Ceará, 14/11, 11h54",
+   "body": [
+    "O motivo são as condições climáticas desfavoráveis e as projeções ligadas ao El Niño. Uma análise da Funceme divulgada em 10/11 classifica o evento como \"muito forte\", com temperaturas no Pacífico equatorial mais de 2,4 °C acima da média, e alerta para risco de prejuízo à quadra chuvosa de 2027.",
+    "A emergência permite ao estado acelerar ações, mapear comunidades vulneráveis, reforçar o combate a incêndios e contratar obras e serviços emergenciais."
+   ],
+   "why": "O decreto trata de risco e prevenção: reconhece a ameaça de seca para 2027 e dá agilidade ao poder público.",
+   "sources": [
+    {
+     "url": "https://reporterceara.com.br/2026/11/14/ceara-decreta-emergencia-em-65-municipios-diante-do-risco-de-seca-provocada-pelo-el-nino/",
+     "label": "Repórter Ceará: Ceará decreta emergência em 65 municípios diante do risco de seca provocada pelo El Niño",
+     "date": "14/11/2026, 11h54"
+    }
+   ]
+  },
+  {
+   "id": "ronaldinho",
+   "tag": "Esporte",
+   "img": "2026-11-16-manha-ronaldinho.jpg",
+   "short": "Ronaldinho volta a jogar",
+   "title": "Ronaldinho Gaúcho volta a jogar aos 46 anos na vitória do Ravenna por 2 a 0",
+   "summary": "Ronaldinho Gaúcho atuou no primeiro tempo da vitória do Ravenna por 2 a 0 sobre o Forlì, no domingo (15), pela terceira divisão italiana, segundo a Exame. Foi o primeiro jogo oficial dele desde setembro de 2015, quando atuou pelo Fluminense.",
+   "meta": "Exame, 15/11, 16h29",
+   "body": [
+    "Com a camisa 10, ele deu o passe que iniciou a jogada do primeiro gol, bateu escanteios, teve uma cabeçada defendida pelo goleiro e foi substituído no intervalo. O segundo gol foi de Simone Rabbi, aos 13 minutos do segundo tempo. Cerca de 6,5 mil pessoas estiveram no estádio Bruno Benelli.",
+    "Ronaldinho é um dos donos do clube e o acordo previa ao menos uma partida oficial."
+   ],
+   "pending": "novas atuações dele na temporada não estão confirmadas.",
+   "why": "O ex-craque anunciou a aposentadoria em 2018 e desde então jogava só partidas festivas e de exibição.",
+   "sources": [
+    {
+     "url": "https://exame.com/esporte/como-foi-o-primeiro-jogo-de-ronaldinho-gaucho-em-11-anos-veja-os-destaques/",
+     "label": "Exame: Como foi o primeiro jogo de Ronaldinho Gaúcho em 11 anos",
+     "date": "15/11/2026, 16h29"
+    }
+   ]
+  }
+ ]
+}

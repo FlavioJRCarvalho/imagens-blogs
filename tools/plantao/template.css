@@ -1,0 +1,45 @@
+.pl{font-family:Arial,Helvetica,sans-serif;color:#1c1c1c;line-height:1.55}
+.pl a{color:#b71c1c;text-decoration:none}.pl a:hover{text-decoration:underline}
+.pl .tag{font-size:12px;font-weight:bold;text-transform:uppercase;letter-spacing:.04em;color:#555}
+.pl .grid{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin:16px 0}
+.pl .card{background:#fff;border:1px solid #e3e3e3;border-radius:10px;padding:16px}
+.pl .hero h2{font-size:30px;line-height:1.15;margin:6px 0 8px;color:#b71c1c}
+.pl .side .card{margin-bottom:16px}.pl .side h3{font-size:18px;margin:4px 0}
+.pl .cols{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.pl .item{padding:14px 0;border-bottom:1px solid #e3e3e3}.pl .item h3{font-size:20px;margin:4px 0;color:#b71c1c}
+.pl .item p{margin:4px 0;font-size:15px}.pl .meta{font-size:12px;color:#777}
+.pl .leia{background:#fafafa;border:1px solid #e3e3e3;border-radius:10px;padding:14px}
+.pl .leia li{margin:0 0 10px;font-size:15px}
+.pl .sec{margin-top:28px}
+@media(max-width:700px){.pl .grid,.pl .cols{grid-template-columns:1fr}.pl .hero h2{font-size:24px}}
+.pl .hd{display:flex;align-items:center;justify-content:space-between;background:#b71c1c;color:#fff;padding:12px 16px;border-radius:10px 10px 0 0;margin:0 0 12px}.pl .hd a,.pl .ft a{color:#fff}.pl .hd .logo{font-size:22px;font-weight:bold;letter-spacing:-.02em}.pl .hd .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:14px}.pl .hd .bt{font-size:13px;font-weight:bold;text-transform:uppercase}.pl .ft{background:#b71c1c;color:#fff;padding:18px 16px;border-radius:0 0 10px 10px;margin-top:32px;font-size:13px}.pl .ft .logo{font-size:20px;font-weight:bold;margin-bottom:10px}.pl .ft .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+header.centered-top-container{display:none !important}.hd{padding:16px 18px}.hd .logo{font-size:26px;text-align:center}.ft{padding:20px 22px}.ft .logo{margin:0}.ft .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:13px}.ft .logo em{font-size:13px;font-weight:normal;font-style:normal;margin-left:10px}.ft .r2{margin-top:14px;font-size:12px}.post-title,.post-header,.post-share-buttons{display:none !important}
+.pl .item,.pl .card{display:grid;grid-template-columns:1fr;gap:2px 14px;align-content:start}
+.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:132px 1fr}
+.pl .th{grid-row:1/span 5;width:132px;height:99px;object-fit:cover;border-radius:8px;margin:2px 0 0;display:block;background:#f0f0f0}
+.pl .card .tag,.pl .item .tag{align-self:end}
+.pl .big{display:block;width:100%;max-width:560px;height:auto;border-radius:10px;margin:4px auto 10px}
+.pl .leia ul{list-style:none;margin:8px 0 0;padding:0}
+.pl .leia li{display:grid;grid-template-columns:72px 1fr;gap:10px;align-items:center;margin:0 0 12px;line-height:1.35}
+.pl .leia li img{width:72px;height:54px;object-fit:cover;border-radius:6px;display:block;background:#f0f0f0}
+.pl .side .card h3{font-size:17px;line-height:1.3;margin:2px 0 0}
+.pl .item h3{line-height:1.25}
+@media(max-width:560px){.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:104px 1fr}.pl .th{width:104px;height:78px}}
+
+.pl .side .card:has(.th){grid-template-columns:1fr}
+.pl .side .th{grid-row:auto;width:100%;height:160px;margin:0 0 8px}
+.pl .side .card h3{font-size:18px;line-height:1.3;word-break:normal;hyphens:none}
+.pl .leia li{grid-template-columns:64px 1fr;gap:9px;font-size:14px}
+.pl .leia li img{width:64px;height:48px}
+
+.pl .grid{grid-template-columns:1fr}
+.pl .side{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pl .side .card{margin-bottom:0}
+.pl .side .card:has(.th){grid-template-columns:132px 1fr}
+.pl .side .th{grid-row:1/span 5;width:132px;height:99px;margin:2px 0 0}
+.pl .side .card h3{font-size:18px;line-height:1.3}
+.pl .cols{grid-template-columns:1fr}
+.pl .leia ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 28px;margin:10px 0 0;padding:0;list-style:none}
+.pl .leia li{margin:0;font-size:15px;line-height:1.35;grid-template-columns:72px 1fr}
+.pl .leia li img{width:72px;height:54px}
+@media(max-width:700px){.pl .side{grid-template-columns:1fr}.pl .leia ul{grid-template-columns:1fr}}

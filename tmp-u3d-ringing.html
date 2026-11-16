@@ -1,0 +1,51 @@
+<p><strong>Ringing (ou ghosting) são ondulações na superfície de uma peça impressa em 3D que se repetem depois de cantos e detalhes, como se o desenho do canto deixasse um “eco”. A causa principal é vibração: a cabeça de impressão ou a mesa balança quando muda de direção rápido demais.</strong> Neste guia você vê como reconhecer o defeito, o que conferir na máquina e quais ajustes de velocidade e aceleração costumam resolver.</p>
+
+<div style="text-align:center;margin:18px 0;"><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@bc67196/2026-11-16-universo3d-ringing.jpg" alt="Dois blocos impressos em 3D: um com ondulações na parede perto do canto (ringing) e outro com superfície lisa" style="max-width:100%;height:auto;border-radius:8px;"></div>
+
+<h2>Como reconhecer o ringing</h2>
+<p>As ondas aparecem nas paredes externas, logo depois de um canto vivo, de um furo ou de letras em relevo, e vão diminuindo conforme se afastam dele. Elas seguem o formato do detalhe, o que as diferencia de linhas horizontais regulares, que costumam vir de outros problemas. Se a peça também mudou de posição entre camadas, o caso é outro: veja <a href="https://universo3dprints.blogspot.com/2026/10/layer-shift-impressao-3d.html">layer shift: causas e como evitar</a>.</p>
+
+<h2>Por que acontece</h2>
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;color:#ffffff;">
+<thead><tr style="background:#0e7490;color:#ffffff;"><th style="padding:10px;text-align:left;">Causa</th><th style="padding:10px;text-align:left;">O que ocorre</th></tr></thead>
+<tbody>
+<tr style="background:#13263d;"><td style="padding:10px;">Aceleração e velocidade altas</td><td style="padding:10px;">Ao frear e inverter o sentido nos cantos, a estrutura vibra e a vibração fica marcada na parede.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Correias frouxas ou desiguais</td><td style="padding:10px;">A folga deixa o movimento impreciso e amplifica a oscilação.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Parafusos e estrutura soltos</td><td style="padding:10px;">O quadro da impressora balança junto com o movimento.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Massa em movimento</td><td style="padding:10px;">Cabeça de impressão ou mesa pesadas demais para a rigidez da máquina.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Superfície de apoio instável</td><td style="padding:10px;">Uma mesa que treme ou toca em outros objetos transmite vibração à impressora.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Como corrigir, na ordem certa</h2>
+<h3>1. Reduza velocidade e aceleração das paredes externas</h3>
+<p>No fatiador, diminua a velocidade da parede externa e, se houver a opção, a aceleração e o jerk. Imprimir a parede externa mais devagar é a mudança mais simples e quase sempre melhora o acabamento. Para entender o custo no prazo, veja <a href="https://universo3dprints.blogspot.com/2026/11/velocidade-de-impressao-3d-como.html">como imprimir mais rápido sem perder qualidade</a>.</p>
+<h3>2. Confira as correias</h3>
+<p>Elas devem estar firmes, sem folga e sem frouxidão desigual entre os eixos. Siga a orientação do fabricante para a tensão do seu modelo, porque correia apertada demais também desgasta rolamentos.</p>
+<h3>3. Aperte a estrutura</h3>
+<p>Verifique parafusos do quadro, das rodinhas e da cabeça de impressão, e confira se o carro não tem folga. Sinta se algo balança ao empurrar de leve.</p>
+<h3>4. Estabilize a impressora</h3>
+<p>Use uma bancada firme e plana e evite apoiar objetos em contato com a máquina. Pés antivibração podem ajudar em impressoras mais leves.</p>
+<h3>5. Use compensação de vibração, se a sua impressora tiver</h3>
+<p>Alguns firmwares trazem recursos de compensação de ressonância (input shaping), em que a impressora ajusta o movimento para reduzir a vibração. A disponibilidade e o jeito de configurar dependem do modelo e do firmware, então consulte o manual do fabricante.</p>
+
+<div style="margin:18px 0;padding:16px 18px;border-radius:10px;background:#13263d;border-left:4px solid #1fb6ff;color:#ffffff;"><strong>Resumo da ordem de correção</strong><ul><li>Baixar velocidade e aceleração da parede externa.</li><li>Conferir a tensão das correias.</li><li>Apertar a estrutura e checar folgas.</li><li>Estabilizar a bancada.</li><li>Ativar a compensação de vibração, se disponível.</li></ul></div>
+
+<h2>Perguntas frequentes</h2>
+<h3>Ringing enfraquece a peça?</h3>
+<p>Em geral é um defeito de acabamento, não de resistência. Ele incomoda em peças visíveis; para peças funcionais, costuma ser aceitável.</p>
+<h3>Imprimir devagar sempre resolve?</h3>
+<p>Ajuda bastante, mas se a máquina tem folga ou estrutura solta, a vibração continua. Por isso vale conferir correias e parafusos.</p>
+
+<div style="margin:32px 0;padding:22px 20px;border-radius:14px;background:#0f1b2d;color:#ffffff;font-family:Arial,Helvetica,sans-serif;text-align:center;border:2px solid #1fb6ff;"><div style="font-size:20px;font-weight:bold;margin-bottom:8px;">Não tem impressora 3D ou precisa de uma peça sob medida?</div><div style="font-size:15px;line-height:1.5;color:#cfe3f5;margin-bottom:18px;">A <strong style="color:#ffffff;">FK3D Prints</strong> imprime peças personalizadas para você: reposição de peças quebradas, suportes, organizadores, presentes e projetos sob encomenda.</div><a href="https://fk3dprints.com.br/?utm_source=universo3dprints&utm_medium=blog&utm_campaign=orcamento-ringing" target="_blank" rel="noopener" style="display:inline-block;padding:13px 26px;border-radius:30px;background:#1fb6ff;color:#0f1b2d;font-weight:bold;font-size:16px;text-decoration:none;">Peça seu orçamento →</a></div>
+
+<p><em>Conteúdo informativo. Siga sempre o manual do fabricante e as normas de segurança da sua impressora e dos materiais.</em></p>
+
+<div id="fk3d-assinatura" style="border-top:1px solid #d0d7de; margin-top:32px; padding-top:16px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.6; overflow:hidden;">
+  <a href="https://fk3dprints.com.br/?utm_source=universo3dprints&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUko8oQFxjE_SOXU__7A4Bnw3Tu7d-cmwRVhf-SBCqn6SJXQV_aBLtngX6-OvgFcTPJ172l-vSANT99FK-l8VPQVdVi4nbN33rnbVC802Becx-4EIrLBncpzpPbTLpkHRBISFLYcdhx48axTcjcLWyahXYX9B8qyELlOymKwNmUEp8gio/s200/Captura_de_tela_2026-10-08_223740-removebg-preview.png" alt="Logo FK3D Prints" width="90" height="96" style="float:left; margin:0 16px 8px 0;"></a>
+  <p><strong>FK3D Prints: impressão 3D sob demanda</strong></p>
+  <p>
+    &rarr; <a href="https://fk3dprints.com.br/?utm_source=universo3dprints&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener">Site oficial: fk3dprints.com.br</a><br>
+    &rarr; <a href="https://shopee.com.br/fkimpressoes3d" target="_blank" rel="noopener">Nossa loja na Shopee</a><br>
+    &rarr; <a href="https://www.instagram.com/fknegociosdigitais" target="_blank" rel="noopener">Siga no Instagram</a>
+  </p>
+</div>
+<div class="blogger-post-footer">“Obrigado por acompanhar o Universo 3D Prints!”.</div>

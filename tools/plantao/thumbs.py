@@ -48,5 +48,5 @@ def make_thumb(motif,label,out,hero=False):
     else:
         E([x0-90*u,y0-90*u,x0+90*u,y0+90*u],fill=(230,235,245))
     f=ImageFont.truetype(FB,int(34*u*S) if not hero else int(48*S))
-    d.text((W/2*S,(H-48*u if not hero else H-50)*S),label.upper()[:26],font=f,fill=WH,anchor='mm')
+    if hero: d.text((W/2*S,(H-48*u if not hero else H-50)*S),label.upper()[:26],font=f,fill=WH,anchor='mm')
     im.resize((W,H),Image.LANCZOS).save(out,quality=90)

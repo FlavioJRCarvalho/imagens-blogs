@@ -5,6 +5,16 @@
 <h2>O que é o pé de elefante</h2>
 <p>É uma saliência ou “barriga” na base da peça, onde as primeiras camadas ficam espremidas para fora e formam uma borda abaulada. Ele atrapalha principalmente peças que precisam encaixar em outras, como tampas, caixas e suportes, porque a base deixa de ter a medida do projeto.</p>
 
+<h2>Como reconhecer o pé de elefante</h2>
+<p>Alguns sinais ajudam a confirmar o diagnóstico:</p>
+<ul>
+<li>A base é visivelmente mais larga que a parte de cima, como se a peça estivesse “sentada”.</li>
+<li>O alargamento ocupa só as primeiras camadas, em geral os primeiros milímetros de altura, e depois a parede volta ao tamanho do projeto.</li>
+<li>Ao medir com paquímetro, a medida da base é maior que a medida da parte superior da mesma peça.</li>
+<li>Na face de baixo, a primeira camada pode ficar brilhante e achatada, com aspecto de plástico espremido.</li>
+</ul>
+<p>Uma peça de teste simples ajuda: imprima um cubo de 20 mm de lado e meça a base e o topo. Se a diferença for de décimos de milímetro, o efeito é pequeno; se for maior, vale corrigir antes de imprimir peças de encaixe.</p>
+
 <h2>Por que acontece</h2>
 <div style="overflow-x:auto;">
 <table style="width:100%;border-collapse:collapse;color:#ffffff;">
@@ -15,6 +25,17 @@
 </table>
 </div>
 <p>Se a primeira camada ainda está inconsistente, comece por <a href="https://universo3dprints.blogspot.com/2026/10/blog-post.html">nivelamento, Z offset e correções da primeira camada</a> e por <a href="https://universo3dprints.blogspot.com/2026/11/primeira-camada-na-impressao-3d-como.html">como calibrar a altura do bico</a>.</p>
+
+<h2>Por que o pé de elefante atrapalha tanto</h2>
+<p>Ele pode parecer detalhe estético, mas afeta peças que precisam ter medida certa. Uma tampa que entra em uma caixa, um suporte que encaixa em um nicho ou uma peça que deve passar por um furo podem emperrar porque a base ficou maior que o projeto. Em peças decorativas, o efeito só é visível como uma barriga na base. Para peças sob medida, a tolerância de encaixe costuma ser de décimos de milímetro, e o pé de elefante consome essa folga.</p>
+
+<h2>Roteiro de diagnóstico antes de mexer em tudo</h2>
+<ol>
+<li><strong>Observe a primeira camada.</strong> Se ela está achatada demais e brilhante, o bico está muito perto. Se está solta e com linhas separadas, está longe demais. Veja <a href="https://universo3dprints.blogspot.com/2026/10/blog-post.html">nivelamento, Z offset e correções da primeira camada</a>.</li>
+<li><strong>Verifique se o alargamento é uniforme.</strong> Se a base alarga mais de um lado que do outro, o problema é de nivelamento. Se alarga igual em todo o contorno, o suspeito é Z offset ou temperatura.</li>
+<li><strong>Anote a temperatura da mesa</strong> e a do bico usadas e compare com a faixa indicada pelo fabricante do filamento.</li>
+<li><strong>Corrija uma variável por vez</strong> e imprima o mesmo cubo de teste, anotando o que mudou.</li>
+</ol>
 
 <h2>Como corrigir, na ordem certa</h2>
 <h3>1. Nivele a mesa e ajuste o Z offset</h3>
@@ -27,13 +48,28 @@
 <li><strong>PrusaSlicer:</strong> “Elephant foot compensation”, em Configurações de impressão &gt; Avançado.</li>
 <li><strong>Cura:</strong> “Initial Layer Horizontal Expansion”, na seção de paredes. Valores negativos reduzem o alargamento.</li>
 </ul>
-<p>Aumente a compensação aos poucos, imprimindo um teste pequeno a cada mudança. Compensar demais deixa a base mais fina que o resto da peça.</p>
+<p>Aumente a compensação aos poucos, imprimindo um teste pequeno a cada mudança. Compensar demais deixa a base mais fina que o resto da peça. Como ponto de partida, valores pequenos, de alguns décimos de milímetro, costumam ser suficientes; o valor certo depende da impressora, do material e da calibração, então confirme medindo o cubo de teste. Outros fatiadores têm ajustes equivalentes, com nomes parecidos, como compensação de primeira camada ou expansão horizontal inicial.</p>
+<p>Atenção: se você já corrigiu o Z offset e a temperatura, a compensação pode ser desnecessária. Aplicar compensação sobre uma primeira camada mal calibrada só esconde o problema e pode prejudicar a aderência.</p>
 <h3>4. Chanfre a base no projeto</h3>
 <p>Se você modela a peça, arredonde ou chanfre a borda inferior no CAD. O alargamento passa a ser absorvido pelo chanfre, e a peça encaixa melhor.</p>
-<h3>5. Acabamento</h3>
+<h3>5. Ajuste a aderência sem espremer demais</h3>
+<p>Se você aumentou a distância do bico para evitar o alargamento e a peça passou a soltar da mesa, não volte a espremer o plástico: use outras formas de segurar a peça, como limpar a mesa com álcool isopropílico, usar uma superfície adequada ao material ou imprimir com uma borda (brim). Mais aderência por limpeza e superfície costuma ser melhor do que aderência por esmagamento.</p>
+<h3>6. Acabamento</h3>
 <p>Se sobrar um pequeno alargamento, lixe ou use uma lima fina nas camadas de baixo.</p>
 
 <div style="margin:18px 0;padding:16px 18px;border-radius:10px;background:#13263d;border-left:4px solid #1fb6ff;color:#ffffff;"><strong>Resumo da ordem de correção</strong><ul><li>Nivelar a mesa e conferir o Z offset.</li><li>Baixar a temperatura da mesa em passos de 5 °C.</li><li>Ajustar a compensação do fatiador, em pequenos passos.</li><li>Chanfrar a base no modelo, se você mesmo projeta a peça.</li><li>Lixar o que sobrar.</li></ul></div>
+
+<h2>Erros comuns ao tentar corrigir</h2>
+<ul>
+<li><strong>Subir o bico demais.</strong> A peça passa a soltar da mesa e a primeira camada fica com falhas.</li>
+<li><strong>Baixar demais a temperatura da mesa.</strong> A peça deixa de aderir e pode descolar no meio da impressão.</li>
+<li><strong>Usar compensação para esconder um Z offset errado.</strong> Primeiro calibre, depois compense.</li>
+<li><strong>Mudar vários ajustes ao mesmo tempo.</strong> Você não descobre qual deles resolveu.</li>
+<li><strong>Ignorar a mesa desnivelada.</strong> Se o alargamento aparece só de um lado, nenhum ajuste no fatiador resolve.</li>
+</ul>
+
+<h2>Quando vale ignorar o pé de elefante</h2>
+<p>Em peças decorativas, em protótipos rápidos e em peças que não encaixam em nada, um alargamento pequeno na base não costuma causar problema. Já em peças de encaixe, tampas, caixas e tudo o que depende de medida, vale corrigir. Se a peça precisa de tolerância apertada e você não quer gastar tempo em tentativa e erro, uma impressão sob medida, com os parâmetros ajustados ao seu projeto, pode ser o caminho mais curto.</p>
 
 <h2>Pé de elefante ou warping?</h2>
 <p>Não confunda: no pé de elefante a base <em>alarga</em>; no warping os cantos <em>sobem</em> e a peça descola. As causas até se opõem em parte, já que mesa mais fria ajuda um e pode piorar o outro. Veja <a href="https://universo3dprints.blogspot.com/2026/10/warping-na-impressao-3d-como-evitar.html">warping: o que é e como evitar</a> para comparar.</p>
@@ -43,6 +79,14 @@
 <p>Em geral o problema é dimensional e estético: a base fica maior que o projetado. O que costuma atrapalhar é o encaixe.</p>
 <h3>Dá para imprimir sem ajustar nada e consertar depois?</h3>
 <p>Dá, com lixa ou lima, mas é mais rápido corrigir a causa. Ajustes de Z offset e temperatura costumam resolver sem retrabalho.</p>
+<h3>Todo filamento tem pé de elefante?</h3>
+<p>Não. O efeito depende mais da calibração e da temperatura da mesa do que do material em si. Cada material pede uma faixa de temperatura diferente, então use a indicação do fabricante como ponto de partida. Para conhecer as particularidades de cada um, veja <a href="https://universo3dprints.blogspot.com/2026/10/pla-petg-ou-abs-qual-filamento-usar-na.html">PLA, PETG, ABS, ASA ou TPU</a>.</p>
+<h3>Pé de elefante pode ser sinal de mesa desnivelada?</h3>
+<p>Pode. Se o alargamento é desigual, mais forte em um lado da base, o nivelamento é o primeiro ponto a checar.</p>
+<h3>Preciso corrigir em toda impressão?</h3>
+<p>Não. Depois de calibrar o Z offset, a temperatura e a compensação do fatiador para o seu conjunto de impressora e filamento, os ajustes costumam valer para as próximas peças. Reveja quando trocar de material, de superfície de mesa ou de bico.</p>
+<h3>A compensação do fatiador substitui a calibração?</h3>
+<p>Não. Ela corrige um alargamento que sobrou, mas não resolve primeira camada mal calibrada. Calibre primeiro e compense depois.</p>
 
 <div style="margin:32px 0;padding:22px 20px;border-radius:14px;background:#0f1b2d;color:#ffffff;font-family:Arial,Helvetica,sans-serif;text-align:center;border:2px solid #1fb6ff;"><div style="font-size:20px;font-weight:bold;margin-bottom:8px;">Não tem impressora 3D ou precisa de uma peça sob medida?</div><div style="font-size:15px;line-height:1.5;color:#cfe3f5;margin-bottom:18px;">A <strong style="color:#ffffff;">FK3D Prints</strong> imprime peças personalizadas para você: reposição de peças quebradas, suportes, organizadores, presentes e projetos sob encomenda.</div><a href="https://fk3dprints.com.br/?utm_source=universo3dprints&utm_medium=blog&utm_campaign=orcamento-pe-de-elefante" target="_blank" rel="noopener" style="display:inline-block;padding:13px 26px;border-radius:30px;background:#1fb6ff;color:#0f1b2d;font-weight:bold;font-size:16px;text-decoration:none;">Peça seu orçamento →</a></div>
 

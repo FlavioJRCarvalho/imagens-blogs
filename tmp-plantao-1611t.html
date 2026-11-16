@@ -1,0 +1,120 @@
+<style>
+.pl{font-family:Arial,Helvetica,sans-serif;color:#1c1c1c;line-height:1.55}
+.pl a{color:#b71c1c;text-decoration:none}.pl a:hover{text-decoration:underline}
+.pl .tag{font-size:12px;font-weight:bold;text-transform:uppercase;letter-spacing:.04em;color:#555}
+.pl .grid{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin:16px 0}
+.pl .card{background:#fff;border:1px solid #e3e3e3;border-radius:10px;padding:16px}
+.pl .hero h2{font-size:30px;line-height:1.15;margin:6px 0 8px;color:#b71c1c}
+.pl .side .card{margin-bottom:16px}.pl .side h3{font-size:18px;margin:4px 0}
+.pl .cols{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.pl .item{padding:14px 0;border-bottom:1px solid #e3e3e3}.pl .item h3{font-size:20px;margin:4px 0;color:#b71c1c}
+.pl .item p{margin:4px 0;font-size:15px}.pl .meta{font-size:12px;color:#777}
+.pl .leia{background:#fafafa;border:1px solid #e3e3e3;border-radius:10px;padding:14px}
+.pl .leia li{margin:0 0 10px;font-size:15px}
+.pl .sec{margin-top:28px}
+@media(max-width:700px){.pl .grid,.pl .cols{grid-template-columns:1fr}.pl .hero h2{font-size:24px}}
+.pl .hd{display:flex;align-items:center;justify-content:space-between;background:#b71c1c;color:#fff;padding:12px 16px;border-radius:10px 10px 0 0;margin:0 0 12px}.pl .hd a,.pl .ft a{color:#fff}.pl .hd .logo{font-size:22px;font-weight:bold;letter-spacing:-.02em}.pl .hd .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:14px}.pl .hd .bt{font-size:13px;font-weight:bold;text-transform:uppercase}.pl .ft{background:#b71c1c;color:#fff;padding:18px 16px;border-radius:0 0 10px 10px;margin-top:32px;font-size:13px}.pl .ft .logo{font-size:20px;font-weight:bold;margin-bottom:10px}.pl .ft .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+header.centered-top-container{display:none !important}.hd{padding:16px 18px}.hd .logo{font-size:26px;text-align:center}.ft{padding:20px 22px}.ft .logo{margin:0}.ft .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:13px}.ft .logo em{font-size:13px;font-weight:normal;font-style:normal;margin-left:10px}.ft .r2{margin-top:14px;font-size:12px}.post-title,.post-header,.post-share-buttons{display:none !important}
+.pl .item,.pl .card{display:grid;grid-template-columns:1fr;gap:2px 14px;align-content:start}
+.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:132px 1fr}
+.pl .th{grid-row:1/span 5;width:132px;height:99px;object-fit:cover;border-radius:8px;margin:2px 0 0;display:block;background:#f0f0f0}
+.pl .card .tag,.pl .item .tag{align-self:end}
+.pl .big{display:block;width:100%;max-width:560px;height:auto;border-radius:10px;margin:4px auto 10px}
+.pl .leia ul{list-style:none;margin:8px 0 0;padding:0}
+.pl .leia li{display:grid;grid-template-columns:72px 1fr;gap:10px;align-items:center;margin:0 0 12px;line-height:1.35}
+.pl .leia li img{width:72px;height:54px;object-fit:cover;border-radius:6px;display:block;background:#f0f0f0}
+.pl .side .card h3{font-size:17px;line-height:1.3;margin:2px 0 0}
+.pl .item h3{line-height:1.25}
+@media(max-width:560px){.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:104px 1fr}.pl .th{width:104px;height:78px}}
+
+.pl .side .card:has(.th){grid-template-columns:1fr}
+.pl .side .th{grid-row:auto;width:100%;height:160px;margin:0 0 8px}
+.pl .side .card h3{font-size:18px;line-height:1.3;word-break:normal;hyphens:none}
+.pl .leia li{grid-template-columns:64px 1fr;gap:9px;font-size:14px}
+.pl .leia li img{width:64px;height:48px}
+
+.pl .grid{grid-template-columns:1fr}
+.pl .side{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pl .side .card{margin-bottom:0}
+.pl .side .card:has(.th){grid-template-columns:132px 1fr}
+.pl .side .th{grid-row:1/span 5;width:132px;height:99px;margin:2px 0 0}
+.pl .side .card h3{font-size:18px;line-height:1.3}
+.pl .cols{grid-template-columns:1fr}
+.pl .leia ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 28px;margin:10px 0 0;padding:0;list-style:none}
+.pl .leia li{margin:0;font-size:15px;line-height:1.35;grid-template-columns:72px 1fr}
+.pl .leia li img{width:72px;height:54px}
+@media(max-width:700px){.pl .side{grid-template-columns:1fr}.pl .leia ul{grid-template-columns:1fr}}
+</style>
+<div class="pl">
+<div class="hd"><a class="bt" href="/">&#9776; Menu</a><a class="logo" href="/">Panorama<span>Brasil Hoje</span></a><a class="bt" href="/search">Buscar</a></div>
+<img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@68e93a8/2026-11-16-plantao-capa-16h.jpg" alt="Panorama Brasil Hoje: Plantão de notícias do dia" style="width:100%;height:auto;border-radius:10px;margin:0 0 14px;display:block">
+<p><strong>Plantão Panorama, segunda-feira, 16 de novembro de 2026, edição das 16h.</strong> As notícias do dia, com resumo, fonte e o que ainda não está confirmado. Atualizado às 16h30.</p>
+<div class="grid">
+<div class="card hero"><img class="big" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@68e93a8/2026-11-16-t16-ajuste-fiscal.jpg" alt="Senado retoma na terça (17) a votação do ajuste fiscal; texto-base passou por 45 a 31" style="max-width:520px;width:100%;margin:0 auto 10px"><span class="tag">Economia</span><h2><a href="#ajuste-fiscal">Senado retoma na terça (17) a votação do ajuste fiscal; texto-base passou por 45 a 31</a></h2><p>O plenário do Senado volta a votar o PLP 299/2026 nesta terça-feira (17). O texto-base foi aprovado em 12/11, por 45 votos a 31, e restam quatro destaques da oposição. Depois da votação, o projeto segue para a Câmara.</p><span class="meta">Senado Notícias, 16/11, 11h36</span></div>
+<div class="side">
+<div class="card"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@68e93a8/2026-11-16-t16-escala-6x1.jpg" alt="Governo deve publicar nesta semana o decreto que regulamenta o fim da escala 6x1"><span class="tag">Brasil</span><h3><a href="#escala-6x1">Governo deve publicar nesta semana o decreto que regulamenta o fim da escala 6x1</a></h3></div>
+<div class="card"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@68e93a8/2026-11-16-t16-nvidia.jpg" alt="Jensen Huang deixa o comando da Nvidia; Colette Kress é CEO interina"><span class="tag">Tecnologia</span><h3><a href="#nvidia">Jensen Huang deixa o comando da Nvidia; Colette Kress é CEO interina</a></h3></div>
+</div>
+</div>
+<div class="cols">
+<div>
+<h2>Últimas notícias</h2>
+<div class="item"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@68e93a8/2026-11-16-t16-porta-avioes.jpg" alt="Terceiro porta-aviões dos EUA chega ao Oriente Médio em meio à tensão com o Irã"><span class="tag">Mundo</span><h3><a href="#porta-avioes">Terceiro porta-aviões dos EUA chega ao Oriente Médio em meio à tensão com o Irã</a></h3><p>O USS Theodore Roosevelt chegou ao Oriente Médio e eleva para três o número de porta-aviões dos EUA na região, segundo a agência Lusa, que cita uma fonte oficial americana. Ele deixou San Diego em setembro.</p></div>
+<div class="item"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@68e93a8/2026-11-16-t16-brasileirao.jpg" alt="Flamengo lidera o Brasileirão com 76 pontos; Palmeiras é o vice, com 73, e os dois se enfrentam no sábado (21)"><span class="tag">Esporte</span><h3><a href="#brasileirao">Flamengo lidera o Brasileirão com 76 pontos; Palmeiras é o vice, com 73, e os dois se enfrentam no sábado (21)</a></h3><p>Após a 34ª rodada, o Flamengo tem 76 pontos e o Palmeiras, 73, segundo o Valor Final. Na quarta (18), às 20h30, o Flamengo recebe o Athletico-PR e o Palmeiras visita o Cruzeiro. No sábado (21), às 16h30, os dois se enfrentam em jogo antecipado da 36ª rodada.</p></div>
+<div class="item"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@68e93a8/2026-11-16-t16-enem.jpg" alt="Enem 2026 tem abstenção de 36% no segundo dia e tentativas de ataque ao site do Inep"><span class="tag">Educação</span><h3><a href="#enem">Enem 2026 tem abstenção de 36% no segundo dia e tentativas de ataque ao site do Inep</a></h3><p>A abstenção no segundo dia do Enem, no domingo (15), foi de 36%, quatro pontos acima da do ano passado, segundo a Folha de Curitiba. O ministro da Educação, Leonardo Barchini, disse que o site do Inep sofreu tentativas de ataque hacker durante a prova, segundo a CNN Brasil.</p></div>
+</div>
+<div class="leia">
+<strong>Leia também</strong>
+<ul>
+<li><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@68e93a8/2026-11-16-t16-porta-avioes.jpg" alt="Terceiro porta-aviões dos EUA chega ao Oriente Médio em meio à tensão com o Irã"><a href="#porta-avioes">Terceiro porta-aviões dos EUA chega ao Oriente Médio em meio à tensão com o Irã</a></li>
+<li><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@68e93a8/2026-11-16-t16-brasileirao.jpg" alt="Flamengo lidera o Brasileirão com 76 pontos; Palmeiras é o vice, com 73, e os dois se enfrentam no sábado (21)"><a href="#brasileirao">Flamengo lidera o Brasileirão com 76 pontos; Palmeiras é o vice, com 73, e os dois se enfrentam no sábado (21)</a></li>
+<li><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@68e93a8/2026-11-16-t16-enem.jpg" alt="Enem 2026 tem abstenção de 36% no segundo dia e tentativas de ataque ao site do Inep"><a href="#enem">Enem 2026 tem abstenção de 36% no segundo dia e tentativas de ataque ao site do Inep</a></li>
+</ul>
+</div>
+</div>
+<div class="sec" id="ajuste-fiscal"><h2>Senado retoma na terça (17) a votação do ajuste fiscal; texto-base passou por 45 a 31</h2>
+<p>Pelo texto, o governo poderá fazer novos bloqueios de gastos para cumprir a meta fiscal. A partir de 2027, o limite de alta das despesas acima da inflação cai de 2,5% para 2% nos anos em que houver medidas de contenção. O projeto também reduz benefícios tributários, permite adiar parte dos repasses da Lei Kandir a estados e municípios e fixa prazo para o Congresso regulamentar os supersalários. O Executivo estima melhora de até R$ 56,1 bilhões nas contas públicas em 2027.</p>
+<p>Na véspera, o presidente em exercício, Geraldo Alckmin, disse que o projeto vai na "direção correta" e que espera a conclusão da votação na terça. O governo de Mato Grosso pediu aos parlamentares do estado que votem contra o destaque sobre a Lei Kandir; segundo o RDNews, o estado poderia perder até R$ 2,5 bilhões até 2030.</p>
+<p><strong>Em apuração:</strong> o resultado dos quatro destaques só sai com a votação de terça, e eles podem alterar o texto que seguirá para a Câmara.</p>
+<p><strong>Por que importa:</strong> O resultado define quanto do ajuste chega à Câmara e como ficam os repasses a estados e municípios.</p>
+<p><strong>Fontes:</strong> <a href="https://www12.senado.leg.br/noticias/materias/2026/11/16/plenario-retoma-votacao-de-medidas-de-ajuste-fiscal-nesta-terca" target="_blank" rel="noopener">Senado Notícias: Plenário retoma votação de medidas de ajuste fiscal nesta terça</a> (16/11/2026, 11h36); <a href="https://timesbrasil.com.br/brasil/alckmin-espera-que-senado-conclua-votacao-do-ajuste-fiscal-na-terca/" target="_blank" rel="noopener">Times Brasil: Alckmin espera que Senado conclua votação do ajuste fiscal na terça</a> (15/11/2026, 17h30); <a href="https://www.rdnews.com.br/executivo/governo-mobiliza-bancada-contra-ajuste-fiscal-de-lula-e-preve-perda-de-ate-r-25-bi-ate-2030-video/252223" target="_blank" rel="noopener">RDNews: Governo mobiliza bancada contra ajuste fiscal</a> (16/11/2026).</p></div>
+<div class="sec" id="escala-6x1"><h2>Governo deve publicar nesta semana o decreto que regulamenta o fim da escala 6x1</h2>
+<p>Pelo rascunho descrito, a jornada diária seria de 8 horas e 24 minutos em cinco dias. Sindicatos e empresas teriam 90 dias, a partir de 16 de dezembro, para renegociar acordos coletivos. O decreto traria tabelas de divisores para o cálculo da hora: de 220 para 210 nas 42 horas, e 200 quando o limite chegar a 40 horas, em dezembro de 2027.</p>
+<p>No STF, o ministro Luiz Fux pediu destaque em 14/11, e o caso saiu do plenário virtual para sessão presencial, a ser marcada pelo presidente Edson Fachin. O pedido não suspende a liminar, segundo o Brasil 247.</p>
+<p><strong>Em apuração:</strong> a data exata de publicação e a assinatura de Lula não foram confirmadas; a informação vem de reportagem de O Globo reproduzida pelo Brasil 247.</p>
+<p><strong>Por que importa:</strong> A norma diz como fica a jornada e o salário de milhões de trabalhadores na transição.</p>
+<p><strong>Fonte:</strong> <a href="https://www.brasil247.com/brasil/governo-deve-publicar-nesta-semana-decreto-sobre-regulamentacao-do-fim-da-escala-6x1/" target="_blank" rel="noopener">Brasil 247: Governo deve publicar nesta semana decreto sobre regulamentação do fim da escala 6x1</a> (16/11/2026, 6h44).</p></div>
+<div class="sec" id="nvidia"><h2>Jensen Huang deixa o comando da Nvidia; Colette Kress é CEO interina</h2>
+<p>As ações caíram 4,27% em 9/11, para US$ 178,67, e mais 5,47% em 10/11, para US$ 168,89. A empresa perdeu cerca de US$ 430 bilhões em valor de mercado no período, segundo a Exame.</p>
+<p>O conselho busca um CEO permanente, entre candidatos internos e externos. Três presidentes de comissões da Câmara dos EUA pediram a Huang uma reunião fechada em 18/11 sobre os contatos dele e as medidas da empresa para proteger informações sensíveis. A China nega as acusações de espionagem.</p>
+<p><strong>Em apuração:</strong> o resultado da investigação independente aberta pelo conselho não foi divulgado.</p>
+<p><strong>Por que importa:</strong> A Nvidia é a principal fornecedora de chips de IA, e a mudança de comando mexe com o mercado e com o debate sobre exportação de chips.</p>
+<p><strong>Fontes:</strong> <a href="https://exame.com/tecnologia/jensen-huang-ceo-nvidia-renuncia/" target="_blank" rel="noopener">Exame: Jensen Huang renuncia ao comando da Nvidia</a> (12/11/2026, 10h56); <a href="https://timesbrasil.com.br/empresas-e-negocios/caso-jensen-huang-coloca-o-futuro-da-nvidia-em-risco-sem-um-sucessor-claro-para-o-renomado-ceo/" target="_blank" rel="noopener">Times Brasil (CNBC): Caso Jensen Huang coloca o futuro da Nvidia em risco</a> (09/11/2026).</p></div>
+<div class="sec" id="porta-avioes"><h2>Terceiro porta-aviões dos EUA chega ao Oriente Médio em meio à tensão com o Irã</h2>
+<p>Segundo a Marinha dos EUA, a força no Mar da Arábia reúne três porta-aviões, 13 destroieres, dois cruzadores e um navio de combate litorâneo, com alguns milhares de militares a mais. A reportagem diz que o conflito com o Irã começou há mais de oito meses e que forças navais americanas participam de um bloqueio à navegação iraniana.</p>
+<p>O texto afirma que o presidente Donald Trump mantém em aberto diferentes opções militares.</p>
+<p><strong>Em apuração:</strong> a reação do Irã não consta na reportagem consultada.</p>
+<p><strong>Por que importa:</strong> É um reforço militar a mais num conflito que já dura mais de oito meses e afeta a rota de petróleo da região.</p>
+<p><strong>Fonte:</strong> <a href="https://observador.pt/2026/11/16/terceiro-porta-avioes-dos-eua-chega-ao-medio-oriente-com-trump-a-manter-opcoes-militares-contra-o-irao/" target="_blank" rel="noopener">Observador (Lusa): Terceiro porta-aviões dos EUA chega ao Médio Oriente</a> (16/11/2026, 18h16).</p></div>
+<div class="sec" id="brasileirao"><h2>Flamengo lidera o Brasileirão com 76 pontos; Palmeiras é o vice, com 73, e os dois se enfrentam no sábado (21)</h2>
+<p>O Cruzeiro é o terceiro, com 60 pontos, seguido por Fluminense (57) e Athletico-PR (54). Na 35ª rodada, também jogam na quarta Coritiba x Santos, Remo x Chapecoense, Corinthians x Botafogo e Grêmio x Bahia; na quinta (19), Vasco x Internacional, Vitória x Bragantino e São Paulo x Fluminense.</p>
+<p><strong>Em apuração:</strong> a tabela muda a cada jogo; um jogo da 35ª rodada ainda não tinha sido disputado nos dados consultados.</p>
+<p><strong>Por que importa:</strong> O confronto direto entre líder e vice, três pontos de diferença, pode pesar na briga pelo título.</p>
+<p><strong>Fontes:</strong> <a href="https://valorfinal.com.br/brasileirao" target="_blank" rel="noopener">Valor Final: Brasileirão</a> (15/11/2026, 23h30); <a href="https://acritica.net/esportes/futebol/palmeiras-flamengo-data-horario-rodadas-35-36-brasileirao-2026/" target="_blank" rel="noopener">A Crítica: datas e horários das rodadas 35 e 36</a> (30/10/2026).</p></div>
+<div class="sec" id="enem"><h2>Enem 2026 tem abstenção de 36% no segundo dia e tentativas de ataque ao site do Inep</h2>
+<p>A reportagem atribui o aumento da abstenção ao maior número de inscrições, principalmente de escolas públicas; esta edição teve a maior proporção de concluintes da rede pública da história do exame. Barchini deu a declaração durante visita de Alckmin ao Inep, em Brasília, e afirmou que o governo acompanha as tentativas e controla a situação.</p>
+<p><strong>Em apuração:</strong> não foram informados o número de tentativas, a origem dos ataques nem se houve acesso indevido aos sistemas do Inep.</p>
+<p><strong>Por que importa:</strong> O gabarito sai em até 10 dias úteis e as notas, em janeiro.</p>
+<p><strong>Fontes:</strong> <a href="https://www.cnnbrasil.com.br/educacao/enem-2026-ministro-relata-tentativas-de-ataques-hacker-a-pagina-do-inep/" target="_blank" rel="noopener">CNN Brasil: Enem 2026, ministro relata tentativas de ataques hacker à página do Inep</a> (15/11/2026); <a href="https://folhadecuritiba.com.br/segundo-dia-do-enem-2026-tem-abstencao-de-36-e-provas-com-temas-ambientais/" target="_blank" rel="noopener">Folha de Curitiba: Segundo dia do Enem 2026 tem abstenção de 36%</a> (15/11/2026).</p></div>
+<p><em>Plantão apurado em 16/11/2026, às 16h30, com base nas fontes citadas. Veja a nossa política editorial e de correções.</em></p>
+<div class="ft"><div class="row"><div class="logo">Panorama<span>Brasil Hoje</span> <em>últimas notícias</em></div><div>Notícias do Brasil e do mundo</div></div><div class="row r2"><span>&copy; 2026 Panorama Brasil Hoje. Conteúdo com fontes citadas.</span><span><a href="/">início</a> | <a href="/search/label/Brasil">Brasil</a> | <a href="/search/label/Mundo">Mundo</a> | <a href="/search/label/Economia">Economia</a> | <a href="/search/label/Esporte">Esporte</a> | <a href="/search/label/Saúde">Saúde</a></span></div></div>
+</div>
+<div id="fk3d-assinatura" style="border-top:1px solid #d0d7de; margin-top:32px; padding-top:16px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.6; overflow:hidden;">
+  <a href="https://fk3dprints.com.br/?utm_source=bolanaredebrfutebol&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUko8oQFxjE_SOXU__7A4Bnw3Tu7d-cmwRVhf-SBCqn6SJXQV_aBLtngX6-OvgFcTPJ172l-vSANT99FK-l8VPQVdVi4nbN33rnbVC802Becx-4EIrLBncpzpPbTLpkHRBISFLYcdhx48axTcjcLWyahXYX9B8qyELlOymKwNmUEp8gio/s200/Captura_de_tela_2026-10-08_223740-removebg-preview.png" alt="Logo FK3D Prints" width="90" height="96" style="float:left; margin:0 16px 8px 0;"></a>
+  <p><strong>FK3D Prints: impressão 3D sob demanda</strong></p>
+  <p>
+    &rarr; <a href="https://fk3dprints.com.br/?utm_source=bolanaredebrfutebol&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener">Site oficial: fk3dprints.com.br</a><br>
+    &rarr; <a href="https://shopee.com.br/fkimpressoes3d" target="_blank" rel="noopener">Nossa loja na Shopee</a><br>
+    &rarr; <a href="https://www.instagram.com/fknegociosdigitais" target="_blank" rel="noopener">Siga no Instagram</a>
+  </p>
+</div>

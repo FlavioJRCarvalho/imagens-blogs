@@ -1,0 +1,110 @@
+<style>
+.pl{font-family:Arial,Helvetica,sans-serif;color:#1c1c1c;line-height:1.55}
+.pl a{color:#b71c1c;text-decoration:none}.pl a:hover{text-decoration:underline}
+.pl .tag{font-size:12px;font-weight:bold;text-transform:uppercase;letter-spacing:.04em;color:#555}
+.pl .grid{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin:16px 0}
+.pl .card{background:#fff;border:1px solid #e3e3e3;border-radius:10px;padding:16px}
+.pl .hero h2{font-size:30px;line-height:1.15;margin:6px 0 8px;color:#b71c1c}
+.pl .side .card{margin-bottom:16px}.pl .side h3{font-size:18px;margin:4px 0}
+.pl .cols{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.pl .item{padding:14px 0;border-bottom:1px solid #e3e3e3}.pl .item h3{font-size:20px;margin:4px 0;color:#b71c1c}
+.pl .item p{margin:4px 0;font-size:15px}.pl .meta{font-size:12px;color:#777}
+.pl .leia{background:#fafafa;border:1px solid #e3e3e3;border-radius:10px;padding:14px}
+.pl .leia li{margin:0 0 10px;font-size:15px}
+.pl .sec{margin-top:28px}
+@media(max-width:700px){.pl .grid,.pl .cols{grid-template-columns:1fr}.pl .hero h2{font-size:24px}}
+.pl .hd{display:flex;align-items:center;justify-content:space-between;background:#b71c1c;color:#fff;padding:12px 16px;border-radius:10px 10px 0 0;margin:0 0 12px}.pl .hd a,.pl .ft a{color:#fff}.pl .hd .logo{font-size:22px;font-weight:bold;letter-spacing:-.02em}.pl .hd .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:14px}.pl .hd .bt{font-size:13px;font-weight:bold;text-transform:uppercase}.pl .ft{background:#b71c1c;color:#fff;padding:18px 16px;border-radius:0 0 10px 10px;margin-top:32px;font-size:13px}.pl .ft .logo{font-size:20px;font-weight:bold;margin-bottom:10px}.pl .ft .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+header.centered-top-container{display:none !important}.hd{padding:16px 18px}.hd .logo{font-size:26px;text-align:center}.ft{padding:20px 22px}.ft .logo{margin:0}.ft .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:13px}.ft .logo em{font-size:13px;font-weight:normal;font-style:normal;margin-left:10px}.ft .r2{margin-top:14px;font-size:12px}.post-title,.post-header,.post-share-buttons{display:none !important}
+.pl .item,.pl .card{display:grid;grid-template-columns:1fr;gap:2px 14px;align-content:start}
+.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:132px 1fr}
+.pl .th{grid-row:1/span 5;width:132px;height:99px;object-fit:cover;border-radius:8px;margin:2px 0 0;display:block;background:#f0f0f0}
+.pl .card .tag,.pl .item .tag{align-self:end}
+.pl .big{display:block;width:100%;max-width:560px;height:auto;border-radius:10px;margin:4px auto 10px}
+.pl .leia ul{list-style:none;margin:8px 0 0;padding:0}
+.pl .leia li{display:grid;grid-template-columns:72px 1fr;gap:10px;align-items:center;margin:0 0 12px;line-height:1.35}
+.pl .leia li img{width:72px;height:54px;object-fit:cover;border-radius:6px;display:block;background:#f0f0f0}
+.pl .side .card h3{font-size:17px;line-height:1.3;margin:2px 0 0}
+.pl .item h3{line-height:1.25}
+@media(max-width:560px){.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:104px 1fr}.pl .th{width:104px;height:78px}}
+
+.pl .side .card:has(.th){grid-template-columns:1fr}
+.pl .side .th{grid-row:auto;width:100%;height:160px;margin:0 0 8px}
+.pl .side .card h3{font-size:18px;line-height:1.3;word-break:normal;hyphens:none}
+.pl .leia li{grid-template-columns:64px 1fr;gap:9px;font-size:14px}
+.pl .leia li img{width:64px;height:48px}
+
+.pl .grid{grid-template-columns:1fr}
+.pl .side{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pl .side .card{margin-bottom:0}
+.pl .side .card:has(.th){grid-template-columns:132px 1fr}
+.pl .side .th{grid-row:1/span 5;width:132px;height:99px;margin:2px 0 0}
+.pl .side .card h3{font-size:18px;line-height:1.3}
+.pl .cols{grid-template-columns:1fr}
+.pl .leia ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 28px;margin:10px 0 0;padding:0;list-style:none}
+.pl .leia li{margin:0;font-size:15px;line-height:1.35;grid-template-columns:72px 1fr}
+.pl .leia li img{width:72px;height:54px}
+@media(max-width:700px){.pl .side{grid-template-columns:1fr}.pl .leia ul{grid-template-columns:1fr}}
+</style>
+<div class="pl">
+<div class="hd"><a class="bt" href="/">&#9776; Menu</a><a class="logo" href="/">Panorama<span>Brasil Hoje</span></a><a class="bt" href="/search">Buscar</a></div>
+<img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@5f3d870/2026-11-16-plantao-capa-noite.jpg" alt="Panorama Brasil Hoje: Plantão de notícias do dia" style="width:100%;height:auto;border-radius:10px;margin:0 0 14px;display:block">
+<p><strong>Plantão Panorama, segunda-feira, 16 de novembro de 2026, edição da noite.</strong> As notícias do dia, com resumo, fonte e o que ainda não está confirmado. Atualizado às 19h40. Veja também a <a href="https://panoramabrasilhoje.blogspot.com/2026/11/plantao-de-noticias-do-dia-1611-edicao.html" target="_blank" rel="noopener">edição da manhã de hoje</a>.</p>
+<div class="grid">
+<div class="card hero"><img class="big" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@5f3d870/2026-11-16-manha-lula-hero.jpg" alt="Lula encerra em Madri a primeira viagem internacional após a reeleição" style="max-width:520px;width:100%;margin:0 auto 10px"><span class="tag">Política</span><h2><a href="#lula">Lula encerra em Madri a primeira viagem internacional após a reeleição</a></h2><p>Lula se reúne nesta segunda-feira (16) com o primeiro-ministro da Espanha, Pedro Sánchez, no Palácio da Moncloa, e encerra a primeira viagem internacional desde a reeleição. O giro passou pela Turquia (COP31, em Antalya), pelas Filipinas e pela cúpula da Asean.</p><span class="meta">Correio Braziliense e Brasil 247, 16/11, manhã</span></div>
+<div class="side">
+<div class="card"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@5f3d870/2026-11-16-manha-dino-sani.jpg" alt="Morre Dino Sani, campeão do mundo em 1958, aos 94 anos"><span class="tag">Esporte</span><h3><a href="#dino-sani">Morre Dino Sani, campeão do mundo em 1958, aos 94 anos</a></h3></div>
+<div class="card"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@5f3d870/2026-11-16-manha-correios.jpg" alt="Correios têm prejuízo de R$ 1,93 bilhão no 3º trimestre"><span class="tag">Economia</span><h3><a href="#correios">Correios têm prejuízo de R$ 1,93 bilhão no 3º trimestre</a></h3></div>
+</div>
+</div>
+<div class="cols">
+<div>
+<h2>Últimas notícias</h2>
+<div class="item"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@5f3d870/2026-11-16-manha-ceara.jpg" alt="Ceará decreta emergência em 65 municípios por risco de seca ligado ao El Niño"><span class="tag">Brasil</span><h3><a href="#ceara">Ceará decreta emergência em 65 municípios por risco de seca ligado ao El Niño</a></h3><p>O governador Elmano de Freitas (PT) decretou situação de emergência em 65 municípios cearenses por 180 dias. O decreto foi publicado no Diário Oficial do Estado na sexta-feira (13), segundo o portal Repórter Ceará.</p></div>
+<div class="item"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@5f3d870/2026-11-16-manha-ronaldinho.jpg" alt="Ronaldinho Gaúcho volta a jogar aos 46 anos na vitória do Ravenna por 2 a 0"><span class="tag">Esporte</span><h3><a href="#ronaldinho">Ronaldinho Gaúcho volta a jogar aos 46 anos na vitória do Ravenna por 2 a 0</a></h3><p>Ronaldinho Gaúcho atuou no primeiro tempo da vitória do Ravenna por 2 a 0 sobre o Forlì, no domingo (15), pela terceira divisão italiana, segundo a Exame. Foi o primeiro jogo oficial dele desde setembro de 2015, quando atuou pelo Fluminense.</p></div>
+</div>
+<div class="leia">
+<strong>Leia também</strong>
+<ul>
+<li><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@5f3d870/2026-11-16-manha-ceara.jpg" alt="Ceará decreta emergência em 65 municípios por risco de seca ligado ao El Niño"><a href="#ceara">Ceará decreta emergência em 65 municípios por risco de seca ligado ao El Niño</a></li>
+<li><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@5f3d870/2026-11-16-manha-ronaldinho.jpg" alt="Ronaldinho Gaúcho volta a jogar aos 46 anos na vitória do Ravenna por 2 a 0"><a href="#ronaldinho">Ronaldinho Gaúcho volta a jogar aos 46 anos na vitória do Ravenna por 2 a 0</a></li>
+</ul>
+</div>
+</div>
+<div class="sec" id="lula"><h2>Lula encerra em Madri a primeira viagem internacional após a reeleição</h2>
+<p>O Correio Braziliense informa que o encontro começa com uma conversa reservada, seguida de reunião ampliada com ministros dos dois países.</p>
+<p><strong>Em apuração:</strong> o horário da chegada a Brasília não está fechado: o Correio Braziliense diz que Lula deve voar para Brasília no mesmo dia, enquanto o Brasil 247, citando a CNN Brasil, fala em pouso entre a noite de segunda e a madrugada de terça (17).</p>
+<p><strong>Por que importa:</strong> A volta a Brasília abre a fase de definição do ministério do próximo mandato, com as principais nomeações esperadas pelo Planalto até o fim de novembro.</p>
+<p><strong>Fontes:</strong> <a href="https://www.correiobraziliense.com.br/politica/2026/11/7539084-lula-chega-a-espanha-para-encerrar-viagem-internacional-apos-reeleicao.html" target="_blank" rel="noopener">Correio Braziliense: Lula chega à Espanha para encerrar viagem internacional após reeleição</a> (16/11/2026, 8h06); <a href="https://www.brasil247.com/brasil/com-prestigio-em-alta-no-mundo-lula-retorna-ao-brasil-e-retoma-articulacoes-para-definir-ministros-do-proximo-mandato/" target="_blank" rel="noopener">Brasil 247: Lula retorna ao Brasil e retoma articulações para definir ministros do próximo mandato</a> (16/11/2026).</p></div>
+<div class="sec" id="dino-sani"><h2>Morre Dino Sani, campeão do mundo em 1958, aos 94 anos</h2>
+<p>Revelado pelo Palmeiras, Sani jogou no Corinthians (115 jogos e 32 gols) e no São Paulo (324 jogos e 113 gols), e também atuou por Boca Juniors, Peñarol e Milan. Como técnico, venceu quatro vezes seguidas o Gaúcho com o Internacional (1971 a 1974) e ganhou o Uruguaio com o Peñarol em 1978 e 1979.</p>
+<p><strong>Em apuração:</strong> a causa e o local da morte não foram informados pela Placar.</p>
+<p><strong>Por que importa:</strong> Sani integrou o elenco da primeira Copa do Mundo conquistada pelo Brasil.</p>
+<p><strong>Fonte:</strong> <a href="https://placar.com.br/selecao-brasileira/morre-dino-sani-campeao-da-copa-de-1958-aos-94-anos/" target="_blank" rel="noopener">Revista Placar: Morre Dino Sani, campeão da Copa de 1958, aos 94 anos</a> (16/11/2026, 9h12).</p></div>
+<div class="sec" id="correios"><h2>Correios têm prejuízo de R$ 1,93 bilhão no 3º trimestre</h2>
+<p>A receita líquida foi de R$ 3,831 bilhões, queda de 8,11%, e o lucro bruto caiu de R$ 428 milhões para R$ 93,4 milhões. As despesas financeiras subiram 75%, para R$ 740 milhões. A empresa cita queda de receitas, alta de custos, passivos judiciais e concorrência no setor logístico, e o patrimônio líquido segue negativo.</p>
+<p>Em outubro, a estatal formalizou R$ 7 bilhões em financiamento com garantia do governo federal, e há previsão de aporte de R$ 6 bilhões da União até o fim de 2027.</p>
+<p><strong>Por que importa:</strong> É a sexta vez seguida em que a estatal caminha para fechar o ano no vermelho, e o plano de reestruturação 2025-2027 depende de dinheiro público.</p>
+<p><strong>Fonte:</strong> <a href="https://www.cnnbrasil.com.br/economia/money/mercado/correios-perdem-r-19-bi-no-3o-trimestre-rombo-no-ano-chega-a-r-75-bi/" target="_blank" rel="noopener">CNN Brasil: Correios perdem R$ 1,9 bi no 3º trimestre; rombo no ano chega a R$ 7,5 bi</a> (15/11/2026, 19h08).</p></div>
+<div class="sec" id="ceara"><h2>Ceará decreta emergência em 65 municípios por risco de seca ligado ao El Niño</h2>
+<p>O motivo são as condições climáticas desfavoráveis e as projeções ligadas ao El Niño. Uma análise da Funceme divulgada em 10/11 classifica o evento como "muito forte", com temperaturas no Pacífico equatorial mais de 2,4 °C acima da média, e alerta para risco de prejuízo à quadra chuvosa de 2027.</p>
+<p>A emergência permite ao estado acelerar ações, mapear comunidades vulneráveis, reforçar o combate a incêndios e contratar obras e serviços emergenciais.</p>
+<p><strong>Por que importa:</strong> O decreto trata de risco e prevenção: reconhece a ameaça de seca para 2027 e dá agilidade ao poder público.</p>
+<p><strong>Fonte:</strong> <a href="https://reporterceara.com.br/2026/11/14/ceara-decreta-emergencia-em-65-municipios-diante-do-risco-de-seca-provocada-pelo-el-nino/" target="_blank" rel="noopener">Repórter Ceará: Ceará decreta emergência em 65 municípios diante do risco de seca provocada pelo El Niño</a> (14/11/2026, 11h54).</p></div>
+<div class="sec" id="ronaldinho"><h2>Ronaldinho Gaúcho volta a jogar aos 46 anos na vitória do Ravenna por 2 a 0</h2>
+<p>Com a camisa 10, ele deu o passe que iniciou a jogada do primeiro gol, bateu escanteios, teve uma cabeçada defendida pelo goleiro e foi substituído no intervalo. O segundo gol foi de Simone Rabbi, aos 13 minutos do segundo tempo. Cerca de 6,5 mil pessoas estiveram no estádio Bruno Benelli.</p>
+<p>Ronaldinho é um dos donos do clube e o acordo previa ao menos uma partida oficial.</p>
+<p><strong>Em apuração:</strong> novas atuações dele na temporada não estão confirmadas.</p>
+<p><strong>Por que importa:</strong> O ex-craque anunciou a aposentadoria em 2018 e desde então jogava só partidas festivas e de exibição.</p>
+<p><strong>Fonte:</strong> <a href="https://exame.com/esporte/como-foi-o-primeiro-jogo-de-ronaldinho-gaucho-em-11-anos-veja-os-destaques/" target="_blank" rel="noopener">Exame: Como foi o primeiro jogo de Ronaldinho Gaúcho em 11 anos</a> (15/11/2026, 16h29).</p></div>
+<p><em>Plantão apurado em 16/11/2026, às 19h40, com base nas fontes citadas. Veja a nossa política editorial e de correções.</em></p>
+<div class="ft"><div class="row"><div class="logo">Panorama<span>Brasil Hoje</span> <em>últimas notícias</em></div><div>Notícias do Brasil e do mundo</div></div><div class="row r2"><span>&copy; 2026 Panorama Brasil Hoje. Conteúdo com fontes citadas.</span><span><a href="/">início</a> | <a href="/search/label/Brasil">Brasil</a> | <a href="/search/label/Mundo">Mundo</a> | <a href="/search/label/Economia">Economia</a> | <a href="/search/label/Esporte">Esporte</a> | <a href="/search/label/Saúde">Saúde</a></span></div></div>
+</div>
+<div id="fk3d-assinatura" style="border-top:1px solid #d0d7de; margin-top:32px; padding-top:16px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.6; overflow:hidden;">
+  <a href="https://fk3dprints.com.br/?utm_source=bolanaredebrfutebol&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUko8oQFxjE_SOXU__7A4Bnw3Tu7d-cmwRVhf-SBCqn6SJXQV_aBLtngX6-OvgFcTPJ172l-vSANT99FK-l8VPQVdVi4nbN33rnbVC802Becx-4EIrLBncpzpPbTLpkHRBISFLYcdhx48axTcjcLWyahXYX9B8qyELlOymKwNmUEp8gio/s200/Captura_de_tela_2026-10-08_223740-removebg-preview.png" alt="Logo FK3D Prints" width="90" height="96" style="float:left; margin:0 16px 8px 0;"></a>
+  <p><strong>FK3D Prints: impressão 3D sob demanda</strong></p>
+  <p>
+    &rarr; <a href="https://fk3dprints.com.br/?utm_source=bolanaredebrfutebol&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener">Site oficial: fk3dprints.com.br</a><br>
+    &rarr; <a href="https://shopee.com.br/fkimpressoes3d" target="_blank" rel="noopener">Nossa loja na Shopee</a><br>
+    &rarr; <a href="https://www.instagram.com/fknegociosdigitais" target="_blank" rel="noopener">Siga no Instagram</a>
+  </p>
+</div>

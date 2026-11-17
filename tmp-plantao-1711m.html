@@ -1,0 +1,113 @@
+<style>
+.pl{font-family:Arial,Helvetica,sans-serif;color:#1c1c1c;line-height:1.55}
+.pl a{color:#b71c1c;text-decoration:none}.pl a:hover{text-decoration:underline}
+.pl .tag{font-size:12px;font-weight:bold;text-transform:uppercase;letter-spacing:.04em;color:#555}
+.pl .grid{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin:16px 0}
+.pl .card{background:#fff;border:1px solid #e3e3e3;border-radius:10px;padding:16px}
+.pl .hero h2{font-size:30px;line-height:1.15;margin:6px 0 8px;color:#b71c1c}
+.pl .side .card{margin-bottom:16px}.pl .side h3{font-size:18px;margin:4px 0}
+.pl .cols{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.pl .item{padding:14px 0;border-bottom:1px solid #e3e3e3}.pl .item h3{font-size:20px;margin:4px 0;color:#b71c1c}
+.pl .item p{margin:4px 0;font-size:15px}.pl .meta{font-size:12px;color:#777}
+.pl .leia{background:#fafafa;border:1px solid #e3e3e3;border-radius:10px;padding:14px}
+.pl .leia li{margin:0 0 10px;font-size:15px}
+.pl .sec{margin-top:28px}
+@media(max-width:700px){.pl .grid,.pl .cols{grid-template-columns:1fr}.pl .hero h2{font-size:24px}}
+.pl .hd{display:flex;align-items:center;justify-content:space-between;background:#b71c1c;color:#fff;padding:12px 16px;border-radius:10px 10px 0 0;margin:0 0 12px}.pl .hd a,.pl .ft a{color:#fff}.pl .hd .logo{font-size:22px;font-weight:bold;letter-spacing:-.02em}.pl .hd .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:14px}.pl .hd .bt{font-size:13px;font-weight:bold;text-transform:uppercase}.pl .ft{background:#b71c1c;color:#fff;padding:18px 16px;border-radius:0 0 10px 10px;margin-top:32px;font-size:13px}.pl .ft .logo{font-size:20px;font-weight:bold;margin-bottom:10px}.pl .ft .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+header.centered-top-container{display:none !important}.hd{padding:16px 18px}.hd .logo{font-size:26px;text-align:center}.ft{padding:20px 22px}.ft .logo{margin:0}.ft .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:13px}.ft .logo em{font-size:13px;font-weight:normal;font-style:normal;margin-left:10px}.ft .r2{margin-top:14px;font-size:12px}.post-title,.post-header,.post-share-buttons{display:none !important}
+.pl .item,.pl .card{display:grid;grid-template-columns:1fr;gap:2px 14px;align-content:start}
+.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:132px 1fr}
+.pl .th{grid-row:1/span 5;width:132px;height:99px;object-fit:cover;border-radius:8px;margin:2px 0 0;display:block;background:#f0f0f0}
+.pl .card .tag,.pl .item .tag{align-self:end}
+.pl .big{display:block;width:100%;max-width:560px;height:auto;border-radius:10px;margin:4px auto 10px}
+.pl .leia ul{list-style:none;margin:8px 0 0;padding:0}
+.pl .leia li{display:grid;grid-template-columns:72px 1fr;gap:10px;align-items:center;margin:0 0 12px;line-height:1.35}
+.pl .leia li img{width:72px;height:54px;object-fit:cover;border-radius:6px;display:block;background:#f0f0f0}
+.pl .side .card h3{font-size:17px;line-height:1.3;margin:2px 0 0}
+.pl .item h3{line-height:1.25}
+@media(max-width:560px){.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:104px 1fr}.pl .th{width:104px;height:78px}}
+
+.pl .side .card:has(.th){grid-template-columns:1fr}
+.pl .side .th{grid-row:auto;width:100%;height:160px;margin:0 0 8px}
+.pl .side .card h3{font-size:18px;line-height:1.3;word-break:normal;hyphens:none}
+.pl .leia li{grid-template-columns:64px 1fr;gap:9px;font-size:14px}
+.pl .leia li img{width:64px;height:48px}
+
+.pl .grid{grid-template-columns:1fr}
+.pl .side{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pl .side .card{margin-bottom:0}
+.pl .side .card:has(.th){grid-template-columns:132px 1fr}
+.pl .side .th{grid-row:1/span 5;width:132px;height:99px;margin:2px 0 0}
+.pl .side .card h3{font-size:18px;line-height:1.3}
+.pl .cols{grid-template-columns:1fr}
+.pl .leia ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 28px;margin:10px 0 0;padding:0;list-style:none}
+.pl .leia li{margin:0;font-size:15px;line-height:1.35;grid-template-columns:72px 1fr}
+.pl .leia li img{width:72px;height:54px}
+@media(max-width:700px){.pl .side{grid-template-columns:1fr}.pl .leia ul{grid-template-columns:1fr}}
+</style>
+<div class="pl">
+<div class="hd"><a class="bt" href="/">&#9776; Menu</a><a class="logo" href="/">Panorama<span>Brasil Hoje</span></a><a class="bt" href="/search">Buscar</a></div>
+<img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@29fc83d/2026-11-17-plantao-capa-manha.jpg" alt="Panorama Brasil Hoje: Plantão de notícias do dia" style="width:100%;height:auto;border-radius:10px;margin:0 0 14px;display:block">
+<p><strong>Plantão Panorama, terça-feira, 17 de novembro de 2026, edição da manhã.</strong> As notícias do dia, com resumo, fonte e o que ainda não está confirmado. Atualizado às 10h50.</p>
+<div class="grid">
+<div class="card hero"><img class="big" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@29fc83d/2026-11-17-m-ajuste-fiscal.jpg" alt="Senado vota hoje quatro destaques do ajuste fiscal; Lei Kandir e teto de gastos estão em jogo" style="max-width:520px;width:100%;margin:0 auto 10px"><span class="tag">Economia</span><h2><a href="#ajuste-fiscal">Senado vota hoje quatro destaques do ajuste fiscal; Lei Kandir e teto de gastos estão em jogo</a></h2><p>O Senado volta a votar nesta terça-feira (17) os quatro destaques do PLP 299/2026, o ajuste fiscal do governo. O texto-base foi aprovado em 12/11, por 45 a 31. Concluída a votação, o projeto segue para a Câmara, cujo presidente, Hugo Motta, sinalizou pressa.</p><span class="meta">TV Sim Brasil, 17/11, 4h08; Senado Notícias, 16/11</span></div>
+<div class="side">
+<div class="card"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@29fc83d/2026-11-17-m-apec.jpg" alt="Xi, Trump e Putin se reúnem em Shenzhen, na Apec, em encontro inédito"><span class="tag">Mundo</span><h3><a href="#apec">Xi, Trump e Putin se reúnem em Shenzhen, na Apec, em encontro inédito</a></h3></div>
+<div class="card"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@29fc83d/2026-11-17-m-nvidia.jpg" alt="Nvidia divulga balanço do 3º trimestre, o primeiro sem Jensen Huang como CEO"><span class="tag">Tecnologia</span><h3><a href="#nvidia">Nvidia divulga balanço do 3º trimestre, o primeiro sem Jensen Huang como CEO</a></h3></div>
+</div>
+</div>
+<div class="cols">
+<div>
+<h2>Últimas notícias</h2>
+<div class="item"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@29fc83d/2026-11-17-m-lula-agenda.jpg" alt="De volta de Madri, Lula encontra ministérios, decreto da 6x1 e Segurança Pública na mesa"><span class="tag">Política</span><h3><a href="#lula-agenda">De volta de Madri, Lula encontra ministérios, decreto da 6x1 e Segurança Pública na mesa</a></h3><p>Lula voltava de Madri na segunda (16), com previsão de pouso entre a noite e a madrugada de terça (17), e retoma as conversas sobre os ministros do próximo mandato. Segundo o ND Mais, a equipe do Ministério do Trabalho avaliava publicar nesta terça o decreto do fim da escala 6x1.</p></div>
+<div class="item"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@29fc83d/2026-11-17-m-palmeiras.jpg" alt="Palmeiras encara o Flamengo no sábado (21) e decide a Libertadores contra o Estudiantes no dia 28"><span class="tag">Esporte</span><h3><a href="#palmeiras">Palmeiras encara o Flamengo no sábado (21) e decide a Libertadores contra o Estudiantes no dia 28</a></h3><p>O Palmeiras, vice-líder do Brasileirão com 73 pontos, visita o Cruzeiro na quarta (18) e enfrenta o líder Flamengo, que tem 76, no sábado (21), às 16h30, em jogo antecipado da 36ª rodada. Em 28 de novembro, às 17h, o time disputa a final da Libertadores contra o Estudiantes, em Montevidéu.</p></div>
+</div>
+<div class="leia">
+<strong>Leia também</strong>
+<ul>
+<li><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@29fc83d/2026-11-17-m-lula-agenda.jpg" alt="De volta de Madri, Lula encontra ministérios, decreto da 6x1 e Segurança Pública na mesa"><a href="#lula-agenda">De volta de Madri, Lula encontra ministérios, decreto da 6x1 e Segurança Pública na mesa</a></li>
+<li><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@29fc83d/2026-11-17-m-palmeiras.jpg" alt="Palmeiras encara o Flamengo no sábado (21) e decide a Libertadores contra o Estudiantes no dia 28"><a href="#palmeiras">Palmeiras encara o Flamengo no sábado (21) e decide a Libertadores contra o Estudiantes no dia 28</a></li>
+</ul>
+</div>
+</div>
+<div class="sec" id="ajuste-fiscal"><h2>Senado vota hoje quatro destaques do ajuste fiscal; Lei Kandir e teto de gastos estão em jogo</h2>
+<p>Os destaques são: reverter o adiamento de repasses da Lei Kandir a estados e municípios em 2027-2030 (R$ 12 bilhões); retirar o limite à compensação entre o INSS e os regimes próprios municipais (R$ 3 bilhões por ano); impedir que a Receita restrinja a compensação cruzada de tributos; e reduzir o limite de alta dos gastos acima da inflação de 2% para 0,6%.</p>
+<p>A Confederação Nacional de Municípios estima que os dois primeiros destaques poderiam tirar ao menos R$ 32 bilhões dos municípios até 2030. O governo calcula melhora de até R$ 56,1 bilhões nas contas de 2027. Segundo o Mercado Hoje, o dólar abriu estável, a R$ 5,77.</p>
+<p><strong>Em apuração:</strong> as fontes consultadas não preveem como os senadores votarão cada destaque; o resultado só sai com a votação.</p>
+<p><strong>Por que importa:</strong> O resultado define o tamanho do ajuste que a Câmara vai analisar e quanto os municípios deixam de receber.</p>
+<p><strong>Fontes:</strong> <a href="https://tvsimbrasil.com.br/brasil/politica/noticia/2026/11/17/senado-vota-destaques-ajuste-fiscal-56-bi" target="_blank" rel="noopener">TV Sim Brasil: Senado vota destaques do ajuste fiscal de R$ 56 bi hoje</a> (17/11/2026, 4h08); <a href="https://www12.senado.leg.br/noticias/materias/2026/11/16/plenario-retoma-votacao-de-medidas-de-ajuste-fiscal-nesta-terca" target="_blank" rel="noopener">Senado Notícias: Plenário retoma votação de medidas de ajuste fiscal nesta terça</a> (16/11/2026); <a href="https://mercadohoje.uai.com.br/2026/11/17/noticias-hoje-17-11-2026" target="_blank" rel="noopener">Mercado Hoje: Notícias Hoje 17-11-2026</a> (17/11/2026).</p></div>
+<div class="sec" id="apec"><h2>Xi, Trump e Putin se reúnem em Shenzhen, na Apec, em encontro inédito</h2>
+<p>O porta-voz do Kremlin, Dmitri Peskov, chamou o encontro de "simbólico" e disse que ele pode enviar um sinal forte sobre a necessidade de diálogo. O assessor Iuri Ushakov disse que as conversas sobre o acordo para a guerra na Ucrânia serão retomadas.</p>
+<p>Segundo a Infobae, a pauta inclui as guerras na Ucrânia e no Irã, tensões comerciais e não proliferação nuclear. Um funcionário americano disse não esperar acordo, e a trégua comercial entre EUA e China termina em janeiro.</p>
+<p><strong>Em apuração:</strong> a agenda exata dos encontros e uma eventual presença de Kim Jong-un, citada apenas como especulação, não estão confirmadas.</p>
+<p><strong>Por que importa:</strong> Os três países concentram boa parte do poder militar e comercial do mundo, e a trégua comercial vence em janeiro.</p>
+<p><strong>Fontes:</strong> <a href="https://www.brasil247.com/mundo/kremlin-ve-encontro-entre-putin-trump-e-xi-como-forte-sinal-para-a-humanidade/" target="_blank" rel="noopener">Brasil 247: Kremlin vê encontro entre Putin, Trump e Xi como forte sinal para a humanidade</a> (17/11/2026); <a href="https://www.infobae.com/america/agencias/2026/11/17/china-se-prepara-para-la-cumbre-de-la-apec-con-la-reunion-xi-trump-putin-como-plato-fuerte/" target="_blank" rel="noopener">Infobae: China se prepara para la cumbre de la APEC</a> (17/11/2026).</p></div>
+<div class="sec" id="nvidia"><h2>Nvidia divulga balanço do 3º trimestre, o primeiro sem Jensen Huang como CEO</h2>
+<p>O lucro ajustado esperado é de US$ 2,47 por ação, contra US$ 1,30 um ano antes. A empresa já avisou que as margens brutas caíram, por causa do custo da memória. A Goldman Sachs projeta receita de US$ 110,1 bilhões, e o Morgan Stanley espera resultado igual ou melhor que o esperado.</p>
+<p>A teleconferência é a primeira chance de o mercado ouvir a CEO interina, Colette Kress, sobre investimentos em IA e possíveis novas restrições à exportação. Segundo a CNN Brasil, as ações caíram cerca de um terço desde o pico de outubro.</p>
+<p><strong>Em apuração:</strong> o dia e o horário exatos: a CNN Brasil e o InfoMoney falam em "terça-feira", mas um deles cita a data 16; o resultado ainda não saiu.</p>
+<p><strong>Por que importa:</strong> O balanço mede a demanda por chips de IA e a confiança do mercado na empresa sem o fundador no comando.</p>
+<p><strong>Fontes:</strong> <a href="https://www.cnnbrasil.com.br/economia/money/negocios/nvidia-se-prepara-para-divulgacao-dos-resultados-apos-saida-de-ceo/" target="_blank" rel="noopener">CNN Brasil: Nvidia se prepara para divulgação dos resultados após saída de CEO</a> (16/11/2026, 13h06); <a href="https://www.infomoney.com.br/mercados/nvidia-divulga-balanco-cercada-por-duvidas-sobre-expansao-da-ia-e-sucessao-de-ceo/" target="_blank" rel="noopener">InfoMoney: Nvidia divulga balanço cercada por dúvidas sobre expansão da IA e sucessão de CEO</a> (17/11/2026, 6h).</p></div>
+<div class="sec" id="lula-agenda"><h2>De volta de Madri, Lula encontra ministérios, decreto da 6x1 e Segurança Pública na mesa</h2>
+<p>Segundo a reportagem, Alexandre Padilha (Saúde), Margareth Menezes (Cultura) e Bruno Moretti (Planejamento) devem permanecer nos cargos. A liminar do ministro Flávio Dino mantém o início da transição da 6x1 em 16 de dezembro, quando a jornada semanal cai de 44 para 42 horas.</p>
+<p>Lula também planeja criar o Ministério da Segurança Pública por medida provisória, a ser editada quando a PEC da Segurança for promulgada, o que, segundo o presidente do Senado, Davi Alcolumbre, deve ocorrer até o fim do mês.</p>
+<p><strong>Em apuração:</strong> a hora do pouso de Lula em Brasília e a publicação do decreto da 6x1 nesta terça não estão confirmadas; a Polícia Federal e a PRF ainda podem ou não migrar para a nova pasta.</p>
+<p><strong>Por que importa:</strong> As decisões definem a equipe do próximo mandato e as regras da nova jornada de trabalho.</p>
+<p><strong>Fonte:</strong> <a href="https://ndmais.com.br/politica/apos-cumprir-agenda-presidencial-saiba-quando-lula-volta-ao-brasil-e-quais-medidas-o-esperam-para-ser-destravadas/" target="_blank" rel="noopener">ND Mais: Quando Lula volta ao Brasil? Lista de decisões o espera em Brasília</a> (16/11/2026, 14h27).</p></div>
+<div class="sec" id="palmeiras"><h2>Palmeiras encara o Flamengo no sábado (21) e decide a Libertadores contra o Estudiantes no dia 28</h2>
+<p>Na quarta, o Flamengo recebe o Athletico-PR, às 20h30, no Maracanã. A final da Libertadores será no Estádio Centenário, segundo a Tribuna do Sertão, que cita a Conmebol.</p>
+<p><strong>Em apuração:</strong> a final foi noticiada em 31/10; data, horário e local devem ser reconferidos em fonte oficial da Conmebol.</p>
+<p><strong>Por que importa:</strong> São três jogos decisivos em dez dias para o Palmeiras, entre título brasileiro e continental.</p>
+<p><strong>Fontes:</strong> <a href="https://valorfinal.com.br/brasileirao" target="_blank" rel="noopener">Valor Final: Brasileirão</a> (15/11/2026, 23h30); <a href="https://tribunadosertao.com.br/esportes/2026/10/31/1010723-conmebol-define-horario-da-final-da-libertadores" target="_blank" rel="noopener">Tribuna do Sertão: Conmebol define horário da final da Libertadores</a> (31/10/2026).</p></div>
+<p><em>Plantão apurado em 17/11/2026, às 10h50, com base nas fontes citadas. Veja a nossa política editorial e de correções.</em></p>
+<div class="ft"><div class="row"><div class="logo">Panorama<span>Brasil Hoje</span> <em>últimas notícias</em></div><div>Notícias do Brasil e do mundo</div></div><div class="row r2"><span>&copy; 2026 Panorama Brasil Hoje. Conteúdo com fontes citadas.</span><span><a href="/">início</a> | <a href="/search/label/Brasil">Brasil</a> | <a href="/search/label/Mundo">Mundo</a> | <a href="/search/label/Economia">Economia</a> | <a href="/search/label/Esporte">Esporte</a> | <a href="/search/label/Saúde">Saúde</a></span></div></div>
+</div>
+<div id="fk3d-assinatura" style="border-top:1px solid #d0d7de; margin-top:32px; padding-top:16px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.6; overflow:hidden;">
+  <a href="https://fk3dprints.com.br/?utm_source=bolanaredebrfutebol&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUko8oQFxjE_SOXU__7A4Bnw3Tu7d-cmwRVhf-SBCqn6SJXQV_aBLtngX6-OvgFcTPJ172l-vSANT99FK-l8VPQVdVi4nbN33rnbVC802Becx-4EIrLBncpzpPbTLpkHRBISFLYcdhx48axTcjcLWyahXYX9B8qyELlOymKwNmUEp8gio/s200/Captura_de_tela_2026-10-08_223740-removebg-preview.png" alt="Logo FK3D Prints" width="90" height="96" style="float:left; margin:0 16px 8px 0;"></a>
+  <p><strong>FK3D Prints: impressão 3D sob demanda</strong></p>
+  <p>
+    &rarr; <a href="https://fk3dprints.com.br/?utm_source=bolanaredebrfutebol&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener">Site oficial: fk3dprints.com.br</a><br>
+    &rarr; <a href="https://shopee.com.br/fkimpressoes3d" target="_blank" rel="noopener">Nossa loja na Shopee</a><br>
+    &rarr; <a href="https://www.instagram.com/fknegociosdigitais" target="_blank" rel="noopener">Siga no Instagram</a>
+  </p>
+</div>

@@ -1,0 +1,121 @@
+<style>
+.pl{font-family:Arial,Helvetica,sans-serif;color:#1c1c1c;line-height:1.55}
+.pl a{color:#b71c1c;text-decoration:none}.pl a:hover{text-decoration:underline}
+.pl .tag{font-size:12px;font-weight:bold;text-transform:uppercase;letter-spacing:.04em;color:#555}
+.pl .grid{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin:16px 0}
+.pl .card{background:#fff;border:1px solid #e3e3e3;border-radius:10px;padding:16px}
+.pl .hero h2{font-size:30px;line-height:1.15;margin:6px 0 8px;color:#b71c1c}
+.pl .side .card{margin-bottom:16px}.pl .side h3{font-size:18px;margin:4px 0}
+.pl .cols{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.pl .item{padding:14px 0;border-bottom:1px solid #e3e3e3}.pl .item h3{font-size:20px;margin:4px 0;color:#b71c1c}
+.pl .item p{margin:4px 0;font-size:15px}.pl .meta{font-size:12px;color:#777}
+.pl .leia{background:#fafafa;border:1px solid #e3e3e3;border-radius:10px;padding:14px}
+.pl .leia li{margin:0 0 10px;font-size:15px}
+.pl .sec{margin-top:28px}
+@media(max-width:700px){.pl .grid,.pl .cols{grid-template-columns:1fr}.pl .hero h2{font-size:24px}}
+.pl .hd{display:flex;align-items:center;justify-content:space-between;background:#b71c1c;color:#fff;padding:12px 16px;border-radius:10px 10px 0 0;margin:0 0 12px}.pl .hd a,.pl .ft a{color:#fff}.pl .hd .logo{font-size:22px;font-weight:bold;letter-spacing:-.02em}.pl .hd .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:14px}.pl .hd .bt{font-size:13px;font-weight:bold;text-transform:uppercase}.pl .ft{background:#b71c1c;color:#fff;padding:18px 16px;border-radius:0 0 10px 10px;margin-top:32px;font-size:13px}.pl .ft .logo{font-size:20px;font-weight:bold;margin-bottom:10px}.pl .ft .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+header.centered-top-container{display:none !important}.hd{padding:16px 18px}.hd .logo{font-size:26px;text-align:center}.ft{padding:20px 22px}.ft .logo{margin:0}.ft .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:13px}.ft .logo em{font-size:13px;font-weight:normal;font-style:normal;margin-left:10px}.ft .r2{margin-top:14px;font-size:12px}.post-title,.post-header,.post-share-buttons{display:none !important}
+.pl .item,.pl .card{display:grid;grid-template-columns:1fr;gap:2px 14px;align-content:start}
+.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:132px 1fr}
+.pl .th{grid-row:1/span 5;width:132px;height:99px;object-fit:cover;border-radius:8px;margin:2px 0 0;display:block;background:#f0f0f0}
+.pl .card .tag,.pl .item .tag{align-self:end}
+.pl .big{display:block;width:100%;max-width:560px;height:auto;border-radius:10px;margin:4px auto 10px}
+.pl .leia ul{list-style:none;margin:8px 0 0;padding:0}
+.pl .leia li{display:grid;grid-template-columns:72px 1fr;gap:10px;align-items:center;margin:0 0 12px;line-height:1.35}
+.pl .leia li img{width:72px;height:54px;object-fit:cover;border-radius:6px;display:block;background:#f0f0f0}
+.pl .side .card h3{font-size:17px;line-height:1.3;margin:2px 0 0}
+.pl .item h3{line-height:1.25}
+@media(max-width:560px){.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:104px 1fr}.pl .th{width:104px;height:78px}}
+
+.pl .side .card:has(.th){grid-template-columns:1fr}
+.pl .side .th{grid-row:auto;width:100%;height:160px;margin:0 0 8px}
+.pl .side .card h3{font-size:18px;line-height:1.3;word-break:normal;hyphens:none}
+.pl .leia li{grid-template-columns:64px 1fr;gap:9px;font-size:14px}
+.pl .leia li img{width:64px;height:48px}
+
+.pl .grid{grid-template-columns:1fr}
+.pl .side{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pl .side .card{margin-bottom:0}
+.pl .side .card:has(.th){grid-template-columns:132px 1fr}
+.pl .side .th{grid-row:1/span 5;width:132px;height:99px;margin:2px 0 0}
+.pl .side .card h3{font-size:18px;line-height:1.3}
+.pl .cols{grid-template-columns:1fr}
+.pl .leia ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 28px;margin:10px 0 0;padding:0;list-style:none}
+.pl .leia li{margin:0;font-size:15px;line-height:1.35;grid-template-columns:72px 1fr}
+.pl .leia li img{width:72px;height:54px}
+@media(max-width:700px){.pl .side{grid-template-columns:1fr}.pl .leia ul{grid-template-columns:1fr}}
+</style>
+<div class="pl">
+<div class="hd"><a class="bt" href="/">&#9776; Menu</a><a class="logo" href="/">Panorama<span>Brasil Hoje</span></a><a class="bt" href="/search">Buscar</a></div>
+<img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@c263ecb/2026-11-21-plantao-capa-manha.jpg" alt="Panorama Brasil Hoje: Plantão de notícias do dia" style="width:100%;height:auto;border-radius:10px;margin:0 0 14px;display:block">
+<p><strong>Plantão Panorama, sábado, 21 de novembro de 2026, edição da manhã.</strong> As notícias do dia, com resumo, fonte e o que ainda não está confirmado. Atualizado às 13h.</p>
+<div class="grid">
+<div class="card hero"><img class="big" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@c263ecb/2026-11-21-manha-rs-tempestade.jpg" alt="Tempestade no Rio Grande do Sul afeta 19,6 mil pessoas em 33 cidades" style="max-width:520px;width:100%;margin:0 auto 10px"><span class="tag">Brasil</span><h2><a href="#rs-tempestade">Tempestade no Rio Grande do Sul afeta 19,6 mil pessoas em 33 cidades</a></h2><p>A Defesa Civil gaúcha informou neste sábado (21) que as tempestades dos últimos dias afetaram ao menos 19.663 pessoas em 33 municípios, segundo a Agência Brasil. A cidade mais atingida é Tupanciretã, com mais de 15 mil afetados.</p><span class="meta">Agência Brasil, 21/11, 11h13</span></div>
+<div class="side">
+<div class="card"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@c263ecb/2026-11-21-manha-bolsonaro.jpg" alt="Bolsonaro é internado com dor abdominal; exame aponta obstrução parcial do intestino delgado"><span class="tag">Política</span><h3><a href="#bolsonaro">Bolsonaro é internado com dor abdominal; exame aponta obstrução parcial do intestino delgado</a></h3></div>
+<div class="card"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@c263ecb/2026-11-21-manha-trump-xi-putin.jpg" alt="Trump, Xi e Putin se reúnem em Shenzhen e reafirmam que guerra nuclear não pode ser vencida"><span class="tag">Mundo</span><h3><a href="#trump-xi-putin">Trump, Xi e Putin se reúnem em Shenzhen e reafirmam que guerra nuclear não pode ser vencida</a></h3></div>
+</div>
+</div>
+<div class="cols">
+<div>
+<h2>Últimas notícias</h2>
+<div class="item"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@c263ecb/2026-11-21-manha-ucrania.jpg" alt="Ataque russo deixa ao menos 8 mortos, 6 deles em Kiev, e reduz geração nuclear na Ucrânia"><span class="tag">Mundo</span><h3><a href="#ucrania">Ataque russo deixa ao menos 8 mortos, 6 deles em Kiev, e reduz geração nuclear na Ucrânia</a></h3><p>Ataques russos de sexta-feira (20) mataram ao menos oito pessoas na Ucrânia, seis delas em Kiev, e feriram ao menos 28, segundo a CNN Brasil, que cita a prefeitura de Kiev. O vice-ministro de Energia, Artem Nekrasov, disse que as usinas nucleares do país reduziram a geração.</p></div>
+<div class="item"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@c263ecb/2026-11-21-manha-rohingya.jpg" alt="Corte Internacional de Justiça conclui que Mianmar cometeu genocídio contra os rohingyas"><span class="tag">Mundo</span><h3><a href="#rohingya">Corte Internacional de Justiça conclui que Mianmar cometeu genocídio contra os rohingyas</a></h3><p>A Corte Internacional de Justiça, principal órgão judicial da ONU, decidiu na quinta-feira (19) que as matanças e a violência sexual de forças de Mianmar contra os rohingyas, em 2017, configuram genocídio promovido pelo Estado, segundo o Correio Braziliense.</p></div>
+<div class="item"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@c263ecb/2026-11-21-manha-kathlen.jpg" alt="Júri de PMs pela morte de Kathlen Romeu, grávida baleada em 2021, começa na quinta (26)"><span class="tag">Brasil</span><h3><a href="#kathlen">Júri de PMs pela morte de Kathlen Romeu, grávida baleada em 2021, começa na quinta (26)</a></h3><p>Os policiais militares Rodrigo Correia de Frias e Marcos Felipe da Silva Salviano serão julgados por júri no Rio de Janeiro pelo homicídio de Kathlen Romeu, de 24 anos e 13 semanas de gestação, baleada em 2021 no Lins. O julgamento começa na quinta-feira (26), às 10h, segundo a Agência Brasil.</p></div>
+</div>
+<div class="leia">
+<strong>Leia também</strong>
+<ul>
+<li><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@c263ecb/2026-11-21-manha-ucrania.jpg" alt="Ataque russo deixa ao menos 8 mortos, 6 deles em Kiev, e reduz geração nuclear na Ucrânia"><a href="#ucrania">Ataque russo deixa ao menos 8 mortos, 6 deles em Kiev, e reduz geração nuclear na Ucrânia</a></li>
+<li><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@c263ecb/2026-11-21-manha-rohingya.jpg" alt="Corte Internacional de Justiça conclui que Mianmar cometeu genocídio contra os rohingyas"><a href="#rohingya">Corte Internacional de Justiça conclui que Mianmar cometeu genocídio contra os rohingyas</a></li>
+<li><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@c263ecb/2026-11-21-manha-kathlen.jpg" alt="Júri de PMs pela morte de Kathlen Romeu, grávida baleada em 2021, começa na quinta (26)"><a href="#kathlen">Júri de PMs pela morte de Kathlen Romeu, grávida baleada em 2021, começa na quinta (26)</a></li>
+</ul>
+</div>
+</div>
+<div class="sec" id="rs-tempestade"><h2>Tempestade no Rio Grande do Sul afeta 19,6 mil pessoas em 33 cidades</h2>
+<p>Tupanciretã, que tem cerca de 20 mil habitantes, registrou três mortes, entre elas a do ex-vereador Ronaldo Machado Salles (PSDB), e cerca de 7 mil casas destelhadas. No estado, a reportagem fala em 60 feridos e 50 desabrigados. Representantes do governo federal seguem para a região para agilizar o reconhecimento da emergência.</p>
+<p>A Agência Brasil também registrou que o presidente Lula manifestou solidariedade à cidade atingida.</p>
+<p><strong>Em apuração:</strong> a reportagem não deixa claro se o número de 7 mil telhados danificados vale só para Tupanciretã ou para todo o estado; o Correio Braziliense, em texto de sexta (20), falava em um morto e cerca de 8 mil casas destelhadas, números que mudaram desde então.</p>
+<p><strong>Por que importa:</strong> O reconhecimento federal da situação de emergência libera mais rápido recursos e apoio para as famílias atingidas.</p>
+<p><strong>Fonte:</strong> <a href="https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/tempestade-no-rio-grande-do-sul-afeta-196-mil-pessoas-em-33-cidades" target="_blank" rel="noopener">Agência Brasil: Tempestade no Rio Grande do Sul afeta 19,6 mil pessoas em 33 cidades</a> (21/11/2026, 11h13).</p></div>
+<div class="sec" id="bolsonaro"><h2>Bolsonaro é internado com dor abdominal; exame aponta obstrução parcial do intestino delgado</h2>
+<p>De acordo com o médico, uma tomografia mostrou obstrução parcial, "quase total", do intestino delgado. Boletim médico citado pela reportagem fala em dor e distensão abdominal e em internação para novos exames e investigação diagnóstica.</p>
+<p>O médico afirmou que as primeiras 24 horas são as mais importantes e que há possibilidade de cirurgia, "sem nenhuma certeza".</p>
+<p><strong>Em apuração:</strong> não está confirmado se haverá cirurgia, nem a causa do quadro, nem o tempo de internação; o resultado da tomografia é relato do médico, não de laudo divulgado.</p>
+<p><strong>Por que importa:</strong> Qualquer atualização do quadro deve vir em novos boletins médicos do hospital.</p>
+<p><strong>Fonte:</strong> <a href="https://www.correiobraziliense.com.br/politica/2026/11/7541972-bolsonaro-estava-bem-e-teve-piora-na-saude-nesta-sexta-20-diz-medico.html" target="_blank" rel="noopener">Correio Braziliense: Bolsonaro estava bem e teve piora na saúde nesta sexta (20), diz médico</a> (20/11/2026).</p></div>
+<div class="sec" id="trump-xi-putin"><h2>Trump, Xi e Putin se reúnem em Shenzhen e reafirmam que guerra nuclear não pode ser vencida</h2>
+<p>O encontro durou pouco mais de uma hora, sem imprensa. Além da frase sobre guerra nuclear, o texto só prevê manter o diálogo sobre redução de riscos nucleares e não proliferação. A Ucrânia entrou na conversa, segundo enviados de Trump, que falaram em mensagem forte por paz.</p>
+<p>Especialistas ouvidos pela CNN têm avaliações mistas: um deles chamou a reafirmação de "melhor do que nada", mas disse que ela mostra poucos interesses em comum.</p>
+<p><strong>Em apuração:</strong> não houve acordo de controle de armas nem solução para a guerra na Ucrânia; não há data para novas conversas nucleares. Declarações atribuídas a autoridades americanas anônimas não foram confirmadas oficialmente.</p>
+<p><strong>Por que importa:</strong> Ucrânia e Irã não estavam à mesa, e os ataques russos que se seguiram mostram o tamanho da distância entre o discurso e a situação no terreno.</p>
+<p><strong>Fontes:</strong> <a href="https://www.cnnbrasil.com.br/internacional/trump-xi-e-putin-reafirmam-lema-historico-contra-guerra-nuclear/" target="_blank" rel="noopener">CNN Brasil: Trump, Xi e Putin reafirmam lema histórico contra guerra nuclear</a> (20/11/2026, 11h36); <a href="https://www.cnnbrasil.com.br/internacional/o-potencial-da-ia-e-outras-conclusoes-sobre-reuniao-entre-trump-xi-e-putin/" target="_blank" rel="noopener">CNN Brasil: O potencial da IA e outras conclusões sobre reunião entre Trump, Xi e Putin</a> (20/11/2026, 11h34).</p></div>
+<div class="sec" id="ucrania"><h2>Ataque russo deixa ao menos 8 mortos, 6 deles em Kiev, e reduz geração nuclear na Ucrânia</h2>
+<p>O prefeito de Kiev, Vitali Klitschko, informou que três pontes sobre o rio Dnipro foram danificadas, com interdições e restrições de trânsito. A Reuters relata apagões em Kiev e em outras dez regiões, e usinas e subestações foram atingidas.</p>
+<p>O Ministério da Defesa da Rússia afirma ter atingido embarcações usadas pelo Exército ucraniano e infraestrutura em Kiev e no porto da região de Odesa.</p>
+<p><strong>Em apuração:</strong> a reportagem não informa quais usinas nucleares reduziram a geração nem o tamanho da redução; os alvos citados pela Rússia não foram verificados de forma independente. O balanço de mortos é o mínimo divulgado até a publicação.</p>
+<p><strong>Por que importa:</strong> Os ataques vieram um dia depois de aliados europeus alertarem contra um acordo de paz feito sem a Ucrânia.</p>
+<p><strong>Fonte:</strong> <a href="https://www.cnnbrasil.com.br/internacional/ucrania-reduz-geracao-em-usinas-nucleares-apos-ataque-russo/" target="_blank" rel="noopener">CNN Brasil: Ucrânia reduz geração em usinas nucleares após ataque russo</a> (20/11/2026, 7h04).</p></div>
+<div class="sec" id="rohingya"><h2>Corte Internacional de Justiça conclui que Mianmar cometeu genocídio contra os rohingyas</h2>
+<p>A corte determinou que Mianmar pague reparações, com valores a definir, e permita o retorno seguro das famílias deslocadas. O caso foi aberto em 2019 pela Gâmbia. Mianmar nega intenção de genocídio e diz que fez operações antiterrorismo, tese rejeitada pelo tribunal.</p>
+<p>Segundo a reportagem, mais de 700 mil rohingyas fugiram para Bangladesh em 2017, e hoje cerca de 1,1 a 1,2 milhão vivem em campos perto de Cox's Bazar. É a primeira vez que a corte responsabiliza um Estado por genocídio, de acordo com o texto.</p>
+<p><strong>Em apuração:</strong> os valores das reparações ainda serão definidos; a avaliação de que o cumprimento da decisão é improvável é do jornal, não do tribunal.</p>
+<p><strong>Por que importa:</strong> A decisão tem força jurídica, mas a corte não dispõe de meios próprios para obrigar o cumprimento.</p>
+<p><strong>Fonte:</strong> <a href="https://www.correiobraziliense.com.br/mundo/2026/11/7541742-onu-declara-que-mianmar-cometeu-genocidio-contra-minoria-rohingya.html" target="_blank" rel="noopener">Correio Braziliense: ONU declara que Mianmar cometeu genocídio contra minoria rohingya</a> (20/11/2026, 10h35).</p></div>
+<div class="sec" id="kathlen"><h2>Júri de PMs pela morte de Kathlen Romeu, grávida baleada em 2021, começa na quinta (26)</h2>
+<p>Em março de 2026, os dois já foram condenados por fraude processual, por alterarem a cena do crime, a dois anos em regime aberto; a acusação de homicídio ainda será julgada. O advogado da família diz que os policiais "queriam vingança"; a acusação afirma que os tiros não tinham justificativa.</p>
+<p><strong>Em apuração:</strong> a posição da defesa dos policiais não foi obtida pela reportagem, cujos advogados não responderam.</p>
+<p><strong>Por que importa:</strong> O júri é o desfecho esperado de um caso que mobiliza o debate sobre violência policial no Rio desde 2021.</p>
+<p><strong>Fonte:</strong> <a href="https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/policiais-queriam-vinganca-diz-advogado-da-familia-de-kathlen-romeu" target="_blank" rel="noopener">Agência Brasil: "Policiais queriam vingança", diz advogado da família de Kathlen Romeu</a> (21/11/2026, 9h32).</p></div>
+<p><em>Plantão apurado em 21/11/2026, às 13h, com base nas fontes citadas. Veja a nossa política editorial e de correções.</em></p>
+<div class="ft"><div class="row"><div class="logo">Panorama<span>Brasil Hoje</span> <em>últimas notícias</em></div><div>Notícias do Brasil e do mundo</div></div><div class="row r2"><span>&copy; 2026 Panorama Brasil Hoje. Conteúdo com fontes citadas.</span><span><a href="/">início</a> | <a href="/search/label/Brasil">Brasil</a> | <a href="/search/label/Mundo">Mundo</a> | <a href="/search/label/Economia">Economia</a> | <a href="/search/label/Esporte">Esporte</a> | <a href="/search/label/Saúde">Saúde</a></span></div></div>
+</div>
+<div id="fk3d-assinatura" style="border-top:1px solid #d0d7de; margin-top:32px; padding-top:16px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.6; overflow:hidden;">
+  <a href="https://fk3dprints.com.br/?utm_source=bolanaredebrfutebol&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUko8oQFxjE_SOXU__7A4Bnw3Tu7d-cmwRVhf-SBCqn6SJXQV_aBLtngX6-OvgFcTPJ172l-vSANT99FK-l8VPQVdVi4nbN33rnbVC802Becx-4EIrLBncpzpPbTLpkHRBISFLYcdhx48axTcjcLWyahXYX9B8qyELlOymKwNmUEp8gio/s200/Captura_de_tela_2026-10-08_223740-removebg-preview.png" alt="Logo FK3D Prints" width="90" height="96" style="float:left; margin:0 16px 8px 0;"></a>
+  <p><strong>FK3D Prints: impressão 3D sob demanda</strong></p>
+  <p>
+    &rarr; <a href="https://fk3dprints.com.br/?utm_source=bolanaredebrfutebol&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener">Site oficial: fk3dprints.com.br</a><br>
+    &rarr; <a href="https://shopee.com.br/fkimpressoes3d" target="_blank" rel="noopener">Nossa loja na Shopee</a><br>
+    &rarr; <a href="https://www.instagram.com/fknegociosdigitais" target="_blank" rel="noopener">Siga no Instagram</a>
+  </p>
+</div>

@@ -7,7 +7,7 @@ FD='/usr/share/fonts/truetype/google-fonts/'
 def F(s,it=False): return ImageFont.truetype(FD+('Poppins-BoldItalic.ttf' if it else 'Poppins-Bold.ttf'),s)
 CY=(70,190,255); YE=(255,214,64); RD=(200,24,32); WH=(255,255,255)
 ACC={'futebol':(30,150,70),'dinheiro':(30,140,90),'clima':(40,110,200),'politica':(70,90,170),'mundo':(30,100,200),
- 'saude':(40,170,90),'educacao':(200,120,30),'tecnologia':(110,80,200),'energia':(220,150,20),'justica':(120,90,60),'luto':(80,80,90),'generico':(50,120,190)}
+ 'saude':(40,170,90),'educacao':(200,120,30),'tecnologia':(110,80,200),'energia':(220,150,20),'justica':(120,90,60),'luto':(80,80,90),'agua':(30,120,200),'aviao':(60,110,190),'generico':(50,120,190)}
 
 def glyph(d,motif,cx,cy,s,col=WH):
     """desenha um símbolo simples centrado em (cx,cy) com tamanho s"""
@@ -56,6 +56,12 @@ def glyph(d,motif,cx,cy,s,col=WH):
     elif motif=='educacao':
         d.polygon([(cx-r,cy-r*.1),(cx,cy-r*.6),(cx+r,cy-r*.1),(cx,cy+r*.4)],fill=col)
         d.rectangle([cx-r*.5,cy+r*.1,cx+r*.5,cy+r*.55],fill=col)
+    elif motif=='agua':
+        d.polygon([(cx,cy-r),(cx-r*.62,cy+r*.15),(cx+r*.62,cy+r*.15)],fill=col); d.ellipse([cx-r*.62,cy-r*.2,cx+r*.62,cy+r*.95],fill=col)
+    elif motif=='aviao':
+        d.ellipse([cx-r,cy-r*.12,cx+r,cy+r*.12],fill=col)
+        d.polygon([(cx-r*.1,cy),(cx-r*.5,cy-r*.75),(cx-r*.28,cy-r*.75),(cx+r*.3,cy)],fill=col); d.polygon([(cx-r*.1,cy),(cx-r*.5,cy+r*.75),(cx-r*.28,cy+r*.75),(cx+r*.3,cy)],fill=col)
+        d.polygon([(cx-r,cy),(cx-r*.85,cy-r*.35),(cx-r*.7,cy-r*.35),(cx-r*.6,cy)],fill=col)
     else:
         pts=[]
         for i in range(10):

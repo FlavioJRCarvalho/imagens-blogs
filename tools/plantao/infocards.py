@@ -21,7 +21,7 @@ def make_card(out,motif,kicker,title,rows,hero=False,bg=None,imgdir='.'):
         im=Image.open(os.path.join(imgdir,bg)).convert('RGBA'); k=max(w/im.width,h/im.height)
         im=im.resize((int(im.width*k)+1,int(im.height*k)+1),Image.LANCZOS); x=(im.width-w)//2; y=(im.height-h)//2; im=im.crop((x,y,x+w,y+h))
     else:
-        im=C.background(motif,big=False); k=max(w/im.width,h/im.height)
+        im=C.background(motif,big=hero); k=max(w/im.width,h/im.height)
         im=im.resize((int(im.width*k)+1,int(im.height*k)+1),Image.LANCZOS); x=(im.width-w)//2; y=(im.height-h)//2; im=im.crop((x,y,x+w,y+h))
     d=ImageDraw.Draw(im,'RGBA'); u=h/480 if not hero else h/600*1.0
     if bg:  # escurece a base para o placar
@@ -37,9 +37,9 @@ def make_card(out,motif,kicker,title,rows,hero=False,bg=None,imgdir='.'):
         # placar: título à esquerda, linhas à direita
         bar_y=int(h*0.68)
         d.rectangle([0,bar_y,w,h],fill=(4,12,30,190)); d.line([(0,bar_y),(w,bar_y)],fill=CY+(255,),width=int(5*S/2*1.5))
-        ft=F(int(44*u)); lines=_wrap(d,title,ft,w*0.46)[:2]; y=bar_y+int(34*u)
+        ft=F(int(42*u)); lines=_wrap(d,title,ft,w*0.43)[:2]; y=bar_y+int(34*u)
         for l in lines: d.text((40*u,y),l,font=ft,fill=WH); y+=int(52*u)
-        cx=int(w*0.52); cw=(w-cx-int(30*u))//max(1,len(rows))
+        cx=int(w*0.48); cw=(w-cx-int(30*u))//max(1,len(rows))
         for i,(a,b) in enumerate(rows):
             x=cx+i*cw; d.rectangle([x,bar_y+int(30*u),x+4,h-int(30*u)],fill=RD)
             d.text((x+int(16*u),bar_y+int(34*u)),a,font=F(int(24*u)),fill=CY)

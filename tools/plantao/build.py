@@ -16,7 +16,9 @@ def main():
     for i,x in enumerate(it):  # miniaturas que faltarem (assunto literal, sem logos)
         x.setdefault('img',f"{pre}{x['id']}.jpg")
         p=os.path.join(a.imgdir,x['img'])
-        if not os.path.exists(p): thumbs.make_thumb(x.get('motif','generico'),x.get('label',x['tag']),p,hero=(i==0))
+        if x.get('card') and not os.path.exists(p):
+            import infocards; c=x['card']; infocards.make_card(p,x.get('motif','generico'),c['kicker'],c['title'],c['rows'],hero=(i==0),bg=x.get('bg'),imgdir=a.imgdir)
+        elif not os.path.exists(p): thumbs.make_thumb(x.get('motif','generico'),x.get('label',x['tag']),p,hero=(i==0))
     covname=E.get('cover') or f"{E['prefix'][:10]}-plantao-capa-{E['slug']}.jpg"
     cp=os.path.join(a.imgdir,covname)
     if not os.path.exists(cp):

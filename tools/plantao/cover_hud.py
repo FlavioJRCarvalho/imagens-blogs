@@ -67,7 +67,7 @@ def glow(im,layer,rad=18,k=1.0):
     if k!=1.0: b=Image.eval(b,lambda v:v)
     im.alpha_composite(b); im.alpha_composite(layer)
 
-def background(motif,seed=7):
+def background(motif,seed=7,big=True):
     random.seed(seed); acc=ACC.get(motif,ACC['generico'])
     im=Image.new('RGBA',(W,H)); d=ImageDraw.Draw(im)
     for y in range(H):
@@ -92,7 +92,7 @@ def background(motif,seed=7):
     # símbolo grande com brilho
     lay=Image.new('RGBA',(W,H),(0,0,0,0)); glyph(ImageDraw.Draw(lay),motif,cx,cy-20,430,col=(235,246,255,235))
     ImageDraw.Draw(lay).ellipse([cx-300,cy-320,cx+300,cy+280],outline=CY+(150,),width=5)
-    glow(im,lay,22)
+    if big: glow(im,lay,22)
     return im
 
 def para(d,pts,fill,outline=None,w=3):

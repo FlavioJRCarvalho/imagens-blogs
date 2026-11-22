@@ -21,7 +21,12 @@ def main():
     cp=os.path.join(a.imgdir,covname)
     if not os.path.exists(cp):
         short=lambda x: x.get('short',x['title'])
-        cover.make(cp,E['label_cover'],(it[0]['img'],it[0]['tag'],short(it[0])),
+        if E.get('cover_style','hud')=='hud':
+            import cover_hud
+            dt=E['prefix'][:10].split('-'); dt='/'.join([dt[2],dt[1],dt[0]])
+            cover_hud.make(cp,dt,E['label_cover'].split('•')[0].strip(),E.get('cover_headline') or short(it[0]),
+                [(x['tag'],short(x),x.get('motif')) for x in it[1:3]],it[0].get('motif','generico'),it[0].get('bg'),a.imgdir)
+        else: cover.make(cp,E['label_cover'],(it[0]['img'],it[0]['tag'],short(it[0])),
             [(x['img'],f"{x['tag']}: {short(x)}") for x in it[1:3]],
             [(x['img'],x['tag'],short(x)) for x in it[3:6]],[short(x) for x in it[6:11]] or [short(x) for x in it[3:6]])
     im=lambda f: B+f

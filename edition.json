@@ -12,7 +12,7 @@
   {
    "id": "cop31",
    "tag": "Mundo",
-   "motif": "clima",
+   "motif": "energia",
    "label": "COP31 sem acordo",
    "short": "COP31 termina sem acordo em Antália",
    "title": "COP31 termina sem acordo final em Antália; combustíveis fósseis travam o texto",
@@ -48,7 +48,8 @@
      "label": "CNN Brasil (Reuters): \"Ampliar ambição\": Brasil e outros países criticam fim da COP31 sem acordo",
      "date": "22/11/2026, 21h17"
     }
-   ]
+   ],
+   "tag_motif": "energia"
   },
   {
    "id": "ajuste",
@@ -214,5 +215,6 @@
     }
    ]
   }
- ]
+ ],
+ "cover_headline": "COP31 termina sem| acordo em Antália"
 }

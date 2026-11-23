@@ -1,60 +1,218 @@
 {
- "date": "22/11/2026", "date_long": "22 de novembro de 2026", "weekday": "domingo",
- "edition": "da manhã", "time": "13h", "slug": "manha", "prefix": "2026-11-22-manha-",
- "label_cover": "EDIÇÃO DA MANHÃ • 22/11", "commit": "588c7da",
+ "date": "23/11/2026",
+ "date_long": "23 de novembro de 2026",
+ "weekday": "segunda-feira",
+ "edition": "da manhã",
+ "time": "7h",
+ "slug": "manha",
+ "prefix": "2026-11-23-manha-",
+ "label_cover": "EDIÇÃO DA MANHÃ • 23/11",
+ "commit": "7c3e69d",
  "items": [
-  {"id":"rs-tupancireta","tag":"Brasil","motif":"clima","label":"Temporal no RS","short":"Temporal no RS deixa 5 mortos; Tupanciretã tem calamidade",
-   "title":"Temporal no RS afeta mais de 25 mil pessoas em 42 cidades; Tupanciretã tem calamidade pública",
-   "summary":"A Defesa Civil gaúcha informou neste domingo (22) que as chuvas desde sexta (20) afetaram 25.123 pessoas em 42 municípios, com 5 mortes confirmadas e 265 feridos. Tupanciretã, a cidade mais atingida, teve calamidade pública reconhecida pelo governo federal.",
-   "meta":"Agência Brasil e Brasil 247, 22/11, manhã",
-   "body":["Segundo a Defesa Civil, são 19.854 desalojados e 40 desabrigados no estado, além de 7.971 casas destelhadas, 650 danificadas, 2 alagadas e 1 destruída. Tupanciretã concentra as cinco mortes e 19.780 desalojados; cerca de 8 mil das 8,6 mil residências da cidade foram atingidas. A calamidade foi reconhecida pela Portaria nº 4.066, publicada em edição extra do Diário Oficial da União no sábado (21), e o governador Eduardo Leite também decretou calamidade estadual, com R$ 2 milhões para auxílio emergencial.",
-    "O governo federal enviou 13 profissionais da Força Nacional do SUS à cidade, com duas equipes médicas móveis e uma equipe de avaliação sanitária. O Hospital de Caridade Brasilina Terra teve danos no telhado e pacientes foram transferidos para Santa Maria e Júlio de Castilhos."],
-   "pending":"a Defesa Civil suspeita de tornado ligado a uma supercélula, mas isso ainda não foi confirmado; a estimativa de prejuízos não foi divulgada, e os números de municípios afetados variam entre as fontes (42 na Agência Brasil, 38 em outra apuração).",
-   "why":"É o desastre climático mais grave do estado nos últimos dias, com mortes e milhares de desalojados concentrados em uma só cidade, e a resposta federal depende de números que ainda estão sendo fechados.",
-   "sources":[{"url":"https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/chuvas-no-rs-afetam-mais-de-25-mil-pessoas-em-42-cidades","label":"Agência Brasil: Chuvas no RS afetam mais de 25 mil pessoas em 42 cidades","date":"22/11/2026, 12h35"},
-    {"url":"https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/apos-temporal-governo-reconhece-calamidade-publica-em-tupancireta","label":"Agência Brasil: Após temporal, governo reconhece calamidade pública em Tupanciretã","date":"22/11/2026, 11h53"},
-    {"url":"https://www.brasil247.com/geral/governo-federal-envia-forca-nacional-do-sus-apos-temporal-no-rs/","label":"Brasil 247: Governo federal envia Força Nacional do SUS após temporal no RS","date":"22/11/2026, 12h35"}]},
-  {"id":"bolsonaro","tag":"Política","motif":"saude","label":"Bolsonaro internado","short":"Bolsonaro na UTI faz exames para avaliar nova cirurgia",
-   "title":"Bolsonaro segue na UTI e faz exames para avaliar nova cirurgia",
-   "summary":"Segundo o Brasil 247, que cita o Metrópoles, Jair Bolsonaro faria exames na manhã deste domingo (22) para avaliar a necessidade de uma nova cirurgia. A equipe médica o descreve como estável e sob observação na UTI, e não há previsão de alta.",
-   "meta":"Brasil 247 e Correio Braziliense, 22/11, manhã",
-   "body":["De acordo com a matéria, Michelle Bolsonaro disse que ele não teve febre e que uma sonda vai ajudar; a alimentação é feita por sonda. O Correio Braziliense informa que ele foi internado na sexta (20) com obstrução intestinal, sem tornozeleira e sob monitoramento 24 horas da Polícia Militar, e que o STF autorizou a visita dos filhos.",
-    "A internação coincide com o primeiro aniversário da conversão da prisão domiciliar em preventiva, em 22/11/2025. Bolsonaro foi condenado a 27 anos e 3 meses pela Primeira Turma do STF, e o trânsito em julgado foi declarado em 25/11/2025."],
-   "pending":"a decisão sobre a cirurgia está pendente; as fontes divergem sobre o dia da internação (sexta, 19 ou 20), e a motivação da tentativa de romper a tornozeleira segue em apuração, com versões diferentes de Bolsonaro e da defesa.",
-   "why":"O estado de saúde de um condenado em regime especial interfere diretamente na decisão do STF sobre onde e como ele cumpre a pena.",
-   "sources":[{"url":"https://www.brasil247.com/brasil/jair-bolsonaro-passa-por-exames-para-avaliar-necessidade-de-cirurgia/","label":"Brasil 247: Jair Bolsonaro passa por exames para avaliar necessidade de cirurgia","date":"22/11/2026, 12h42"},
-    {"url":"https://www.correiobraziliense.com.br/politica/2026/11/7542298-prisao-preventiva-de-bolsonaro-completa-um-ano-apos-reviravoltas.html","label":"Correio Braziliense: Prisão preventiva de Bolsonaro completa um ano após reviravoltas","date":"22/11/2026, 11h12"}]},
-  {"id":"sabesp","tag":"São Paulo","motif":"energia","label":"Cantareira","short":"Sabesp conclui reparo no Cantareira",
-   "title":"Sabesp conclui reparo no Cantareira, mas abastecimento segue instável",
-   "summary":"A Sabesp informou neste domingo (22) que concluiu a manutenção da Estação Elevatória Santa Inês, do Sistema Cantareira. O bombeamento foi restabelecido às 3h de sábado (21), após a troca de uma válvula de 3 metros e 16 toneladas.",
-   "meta":"Brasil 247, 22/11, 11h04",
-   "body":["A empresa espera estabilização total em até 72 horas após o fim dos trabalhos. O abastecimento segue em normalização em cinco pontos: Vila Alpina, Cambuci, Jardim Liliane, Jardim Arpoador (Francisco Morato) e Lavras (Guarulhos). A obra mobilizou 160 profissionais, e a estação responde por cerca de 40% do abastecimento da Região Metropolitana."],
-   "pending":"o prazo de estabilização é uma estimativa da empresa, e a normalização completa nos cinco pontos citados ainda não foi confirmada.",
-   "why":"A estação atende cerca de 40% da Região Metropolitana, então a demora na normalização atinge muitos bairros mesmo após o fim do reparo.",
-   "sources":[{"url":"https://www.brasil247.com/sudeste/sabesp-conclui-reparo-no-cantareira-mas-abastecimento-segue-instavel/","label":"Brasil 247: Sabesp conclui reparo no Cantareira, mas abastecimento segue instável","date":"22/11/2026, 10h44 (atualizada às 11h04)"}]},
-  {"id":"pf-blindados","tag":"Política","motif":"politica","label":"Blindados da Presidência","short":"PF abre licitação de 3 blindados para a Presidência",
-   "title":"PF abre licitação para comprar três carros blindados para a Presidência",
-   "summary":"A Polícia Federal abriu em 17/11 um edital internacional para comprar três veículos blindados para a Presidência, estimados em R$ 3,8 milhões cada, ou R$ 11,4 milhões no total, segundo o Brasil 247.",
-   "meta":"Brasil 247, 22/11, 6h33",
-   "body":["Os blindados fazem parte de uma concorrência de 225 viaturas, que pode chegar a R$ 207,5 milhões. A disputa de lances está marcada para 4 de dezembro e a entrega pode ir até 2028. O edital cita o Mercedes-Benz S 680 Guard como referência, com preço-base de 547 mil euros. A PF não divulgou detalhes de segurança."],
-   "pending":"o resultado da licitação só sai após a disputa de lances, prevista para 4 de dezembro.",
-   "why":"A compra mostra como a PF avalia o risco de ataques à Presidência e define o gasto público com a segurança do cargo até 2028.",
-   "sources":[{"url":"https://www.brasil247.com/poder/policia-federal-aponta-risco-de-ataques-e-planeja-compra-de-seda-blindado/","label":"Brasil 247: PF aponta risco de ataques e planeja compra de carro blindado para Presidência","date":"22/11/2026, 6h33"}]},
-  {"id":"macae","tag":"Brasil","motif":"generico","label":"Voos em Macaé","short":"Macaé terá voos regulares da Latam em 2027",
-   "title":"Macaé volta a ter voos comerciais regulares em fevereiro de 2027, após três anos",
-   "summary":"A Latam retomará voos regulares entre Macaé (RJ) e Guarulhos a partir de fevereiro de 2027, com três frequências semanais, encerrando três anos sem esse tipo de operação, segundo o Brasil 247.",
-   "meta":"Brasil 247, 22/11, 11h05",
-   "body":["A companhia usará jatos Embraer E195-E2, com capacidade de até 136 passageiros. Segundo a matéria, o aeroporto ganhou uma segunda pista de 1.410 metros em junho de 2025, o que permitiu receber aeronaves maiores."],
-   "pending":"dias e horários dos voos ainda não foram informados.",
-   "why":"A cidade é polo da indústria de petróleo e gás, e a ligação com Guarulhos facilita conexões nacionais e internacionais.",
-   "sources":[{"url":"https://www.brasil247.com/geral/macae-voltara-a-ter-voos-comerciais-regulares-em-2027-apos-tres-anos/","label":"Brasil 247: Macaé voltará a ter voos comerciais regulares em 2027, após três anos","date":"22/11/2026, 11h05"}]},
-  {"id":"megasena","tag":"Loterias","motif":"dinheiro","label":"Mega-Sena 3089","short":"Mega-Sena 3089 sorteia R$ 43 milhões",
-   "title":"Mega-Sena 3089: veja as dezenas sorteadas no prêmio de R$ 43 milhões",
-   "summary":"O concurso 3089 da Mega-Sena foi sorteado na manhã deste domingo (22), em São Paulo, com prêmio estimado de R$ 43,1 milhões. As dezenas foram 17, 18, 27, 36, 58 e 59.",
-   "meta":"Brasil 247, 22/11, 11h39",
-   "body":["A página consultada não informa se houve ganhador na faixa principal; a quantidade de vencedores e os valores por faixa dependem do rateio oficial da Caixa."],
-   "pending":"a existência de ganhador das seis dezenas e o rateio por faixa não constam na fonte consultada; confira no site da Caixa.",
-   "why":"Quem apostou pode conferir o bilhete já com as dezenas confirmadas, e o resultado define se o prêmio acumula para o próximo sorteio.",
-   "sources":[{"url":"https://www.brasil247.com/economia/mega-sena-3089-sorteia-premio-de-r-43-milhoes-confira-as-dezenas/","label":"Brasil 247: Mega-Sena 3089 sorteia prêmio de R$ 43 milhões; confira as dezenas","date":"22/11/2026, 11h39"}]}
+  {
+   "id": "cop31",
+   "tag": "Mundo",
+   "motif": "clima",
+   "label": "COP31 sem acordo",
+   "short": "COP31 termina sem acordo em Antália",
+   "title": "COP31 termina sem acordo final em Antália; combustíveis fósseis travam o texto",
+   "summary": "A COP31, em Antália (Turquia), terminou no domingo (22) sem consenso sobre um acordo final após mais de duas semanas de negociações. O ponto de ruptura foi a menção aos combustíveis fósseis, segundo a Reuters.",
+   "meta": "Reuters, via CNN Brasil, 22/11, 21h17",
+   "body": [
+    "O presidente da conferência, Murat Kurum, reconheceu que não havia apoio para aprovar o texto e disse que não haverá novo texto. O secretário-geral da ONU, António Guterres, disse estar \"profundamente decepcionado\". A União Europeia afirmou que não endossará decisão que sequer mencione combustíveis fósseis, e o Reino Unido chamou o texto de retrocesso em relação à ciência.",
+    "Chris Bowen, presidente das negociações, classificou o resultado como muito decepcionante e citou a adesão de mais de 90 países a um compromisso de eletrificação. A negociadora brasileira Liliam Chagas defendeu espaço para ampliar a ambição, inclusive com o triplo de financiamento para adaptação."
+   ],
+   "pending": "o conteúdo exato das minutas e os valores de financiamento discutidos não foram detalhados pela fonte, e a posição final do Brasil sobre o texto não está clara.",
+   "why": "Sem acordo final, ficam em aberto os temas de combustíveis fósseis e financiamento climático que países em desenvolvimento esperavam ver tratados na conferência.",
+   "card": {
+    "kicker": "MUNDO • DOM 22/11",
+    "title": "COP31 sem acordo",
+    "rows": [
+     [
+      "LOCAL",
+      "Antália, Turquia"
+     ],
+     [
+      "IMPASSE",
+      "combustíveis fósseis"
+     ],
+     [
+      "ADESÃO",
+      "90+ países (eletrificação)"
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.cnnbrasil.com.br/internacional/ampliar-ambicao-brasil-e-outros-paises-criticam-fim-da-cop31-sem-acordo/",
+     "label": "CNN Brasil (Reuters): \"Ampliar ambição\": Brasil e outros países criticam fim da COP31 sem acordo",
+     "date": "22/11/2026, 21h17"
+    }
+   ]
+  },
+  {
+   "id": "ajuste",
+   "tag": "Política",
+   "motif": "dinheiro",
+   "label": "Ajuste fiscal",
+   "short": "Câmara analisa hoje o ajuste fiscal",
+   "title": "Câmara começa a analisar hoje o projeto de ajuste fiscal aprovado no Senado",
+   "summary": "A Câmara inicia nesta segunda-feira (23) a análise do projeto de lei complementar do governo sobre ajuste fiscal, aprovado no Senado na quarta (18) por 45 votos a 31. A sessão está prevista para as 18h, segundo a CNN Brasil.",
+   "meta": "CNN Brasil, 23/11, 3h30",
+   "body": [
+    "O texto reduz de 2,5% para 2% o limite de crescimento real das despesas primárias a partir de 2027 e prevê um corte adicional de 10 pontos em benefícios fiscais. O governo estima melhora de R$ 45,1 bilhões a R$ 50,1 bilhões no resultado primário de 2027.",
+    "O relator na Câmara, Mauro Benevides Filho (União-CE), apresentou parecer em 19/11 sem mudanças de mérito. Para ir direto ao plenário, é preciso aprovar regime de urgência, com quórum de 257 deputados. O mercado considerou o ajuste insuficiente, e o senador Rogério Marinho (PL-RN) comparou uma das medidas a uma \"pedalada fiscal\"."
+   ],
+   "pending": "não há garantia de que a votação de mérito ocorra hoje, pois quórum e urgência dependem de confirmação, e o resultado ainda não é conhecido.",
+   "why": "A aprovação na Câmara definiria se as novas regras de gastos valem a partir de 2027, e o Planalto já planeja um novo pacote fiscal, segundo a CNN Brasil.",
+   "card": {
+    "kicker": "CÂMARA • SEG 23/11",
+    "title": "Ajuste fiscal",
+    "rows": [
+     [
+      "SESSÃO",
+      "18h"
+     ],
+     [
+      "QUÓRUM",
+      "257 deputados"
+     ],
+     [
+      "SENADO",
+      "45 x 31"
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.cnnbrasil.com.br/politica/camara-inicia-hoje-analise-do-ajuste-fiscal-apos-resistencias-no-senado/",
+     "label": "CNN Brasil: Câmara inicia hoje análise do ajuste fiscal após resistências no Senado",
+     "date": "23/11/2026, 3h30"
+    }
+   ]
+  },
+  {
+   "id": "drones",
+   "tag": "Mundo",
+   "motif": "mundo",
+   "label": "Rússia e Ucrânia",
+   "short": "Rússia e Ucrânia relatam 2 mil drones; ataque na Líbia",
+   "title": "Rússia e Ucrânia relatam destruição de mais de 2 mil drones em 24 horas; navio russo é atingido na Líbia",
+   "summary": "A Rússia disse ter interceptado 792 drones ucranianos em 24 horas e a Ucrânia declarou ter destruído 1.392 drones russos no mesmo período, segundo a Reuters. Os números são das próprias partes e não foram verificados de forma independente.",
+   "meta": "Reuters, via CNN Brasil, 23/11, 1h13",
+   "body": [
+    "Na Líbia, um possível ataque com drones causou explosão a bordo de um navio russo atracado na base naval de Benghazi, informou o governo do leste líbio. Dez pessoas tiveram ferimentos leves. A empresa de imagens Vantor identificou o navio como a corveta Merkury.",
+    "Depois, um navio comercial de bandeira maltesa foi atingido por um barco não tripulado perto de Benghazi, e a tripulação foi resgatada, segundo fontes militares líbias. O governo do leste da Líbia pediu investigação internacional da ONU e explicações de Kiev."
+   ],
+   "pending": "ninguém reivindicou o ataque em Benghazi, e a suspeita de envolvimento ucraniano vem do governo líbio, sem confirmação. As autoridades russas não haviam se manifestado.",
+   "why": "O episódio leva a guerra para o Mediterrâneo e coloca a Líbia no centro de uma disputa diplomática.",
+   "card": {
+    "kicker": "MUNDO • DOM 22/11",
+    "title": "Guerra de drones",
+    "rows": [
+     [
+      "RÚSSIA",
+      "792 interceptados"
+     ],
+     [
+      "UCRÂNIA",
+      "1.392 destruídos"
+     ],
+     [
+      "LÍBIA",
+      "10 feridos leves"
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.cnnbrasil.com.br/internacional/russia-e-ucrania-relatam-destruicao-de-mais-de-2-mil-drones-em-24-horas/",
+     "label": "CNN Brasil (Reuters): Rússia e Ucrânia relatam destruição de mais de 2 mil drones em 24 horas",
+     "date": "23/11/2026, 1h13"
+    }
+   ]
+  },
+  {
+   "id": "iowa",
+   "tag": "Mundo",
+   "motif": "justica",
+   "label": "Explosivos em Iowa",
+   "short": "Exército dos EUA vai detonar explosivos em Iowa",
+   "title": "Exército dos EUA diz que vai detonar explosivos em Iowa mesmo com decisão judicial",
+   "summary": "O Exército dos EUA informou que vai detonar 68 barris de azoteto de chumbo degradado perto de Middletown, em Iowa, na quarta-feira (25), segundo a Reuters. Um tribunal federal de apelações havia suspendido a licença ambiental da operação.",
+   "meta": "Reuters, via CNN Brasil, 23/11, 1h43",
+   "body": [
+    "O governo Trump respondeu, em documento entregue no sábado (21), que o Exército seguirá sem a licença, invocando uma exceção de emergência das leis ambientais federais. Autoridades dizem que a queda de temperatura pode desestabilizar o material e causar explosão descontrolada.",
+    "Grupos ambientalistas, como o Conselho Ambiental de Iowa e a seção estadual do Sierra Club, entraram na Justiça e estimam que a nuvem de poeira de chumbo possa chegar a 160 km, dependendo do clima. O Exército orientou moradores a evitar a área e ficar em ambientes fechados."
+   ],
+   "pending": "o horário da detonação não foi informado, e a fonte não diz se o tribunal já reagiu à alegação de emergência. O alcance de 160 km é estimativa dos grupos ambientalistas, sem confirmação oficial.",
+   "why": "O caso opõe a justificativa de segurança do governo ao risco de contaminação por chumbo apontado por moradores e ambientalistas.",
+   "card": {
+    "kicker": "EUA • QUA 25/11",
+    "title": "Detonação em Iowa",
+    "rows": [
+     [
+      "MATERIAL",
+      "68 barris"
+     ],
+     [
+      "LOCAL",
+      "perto de Middletown"
+     ],
+     [
+      "DATA",
+      "quarta (25)"
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.cnnbrasil.com.br/internacional/exercito-dos-eua-deve-detonar-explosivos-em-iowa-apesar-de-ordem-judicial/",
+     "label": "CNN Brasil (Reuters): Exército dos EUA deve detonar explosivos em Iowa apesar de ordem judicial",
+     "date": "23/11/2026, 1h43"
+    }
+   ]
+  },
+  {
+   "id": "tse",
+   "tag": "Política",
+   "motif": "justica",
+   "label": "TSE e contas",
+   "short": "TSE quer julgar contas de Lula e Alckmin até 3/12",
+   "title": "TSE pretende julgar contas de campanha de Lula e Alckmin até 3 de dezembro",
+   "summary": "O Tribunal Superior Eleitoral pretende julgar as contas de campanha da chapa Lula (PT) e Alckmin (PSB) até 3 de dezembro, segundo a coluna de Teo Cury, da CNN Brasil. O relator é o ministro Dias Toffoli.",
+   "meta": "CNN Brasil (blog Teo Cury), 23/11, 4h10",
+   "body": [
+    "Pela regra, as contas precisam estar julgadas e publicadas três dias antes da diplomação. A resolução do TSE fixa 18 de dezembro como prazo máximo para diplomar, e os diplomas serão assinados pelo presidente do tribunal, Nunes Marques.",
+    "A posse presidencial está marcada para 5 de janeiro, primeira vez que foge de 1º de janeiro desde 1988. Segundo a coluna, a data deve virar feriado no Distrito Federal."
+   ],
+   "pending": "o julgamento até 3 de dezembro é uma intenção, não uma pauta marcada, e a data exata da diplomação não foi informada. A transformação de 5 de janeiro em feriado também não está confirmada.",
+   "why": "O julgamento das contas é etapa necessária para a diplomação dos eleitos.",
+   "card": {
+    "kicker": "TSE • SEG 23/11",
+    "title": "Contas da chapa",
+    "rows": [
+     [
+      "META",
+      "julgar até 3/12"
+     ],
+     [
+      "RELATOR",
+      "Dias Toffoli"
+     ],
+     [
+      "DIPLOMAÇÃO",
+      "até 18/12"
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.cnnbrasil.com.br/blogs/teo-cury/politica/tse-pretende-julgar-contas-de-lula-e-alckmin-ate-3-de-dezembro/",
+     "label": "CNN Brasil (Teo Cury): TSE pretende julgar contas de Lula e Alckmin até 3 de dezembro",
+     "date": "23/11/2026, 4h10"
+    }
+   ]
+  }
  ]
 }

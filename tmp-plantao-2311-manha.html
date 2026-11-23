@@ -1,0 +1,114 @@
+<style>
+.pl{font-family:Arial,Helvetica,sans-serif;color:#1c1c1c;line-height:1.55}
+.pl a{color:#b71c1c;text-decoration:none}.pl a:hover{text-decoration:underline}
+.pl .tag{font-size:12px;font-weight:bold;text-transform:uppercase;letter-spacing:.04em;color:#555}
+.pl .grid{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin:16px 0}
+.pl .card{background:#fff;border:1px solid #e3e3e3;border-radius:10px;padding:16px}
+.pl .hero h2{font-size:30px;line-height:1.15;margin:6px 0 8px;color:#b71c1c}
+.pl .side .card{margin-bottom:16px}.pl .side h3{font-size:18px;margin:4px 0}
+.pl .cols{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.pl .item{padding:14px 0;border-bottom:1px solid #e3e3e3}.pl .item h3{font-size:20px;margin:4px 0;color:#b71c1c}
+.pl .item p{margin:4px 0;font-size:15px}.pl .meta{font-size:12px;color:#777}
+.pl .leia{background:#fafafa;border:1px solid #e3e3e3;border-radius:10px;padding:14px}
+.pl .leia li{margin:0 0 10px;font-size:15px}
+.pl .sec{margin-top:28px}
+@media(max-width:700px){.pl .grid,.pl .cols{grid-template-columns:1fr}.pl .hero h2{font-size:24px}}
+.pl .hd{display:flex;align-items:center;justify-content:space-between;background:#b71c1c;color:#fff;padding:12px 16px;border-radius:10px 10px 0 0;margin:0 0 12px}.pl .hd a,.pl .ft a{color:#fff}.pl .hd .logo{font-size:22px;font-weight:bold;letter-spacing:-.02em}.pl .hd .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:14px}.pl .hd .bt{font-size:13px;font-weight:bold;text-transform:uppercase}.pl .ft{background:#b71c1c;color:#fff;padding:18px 16px;border-radius:0 0 10px 10px;margin-top:32px;font-size:13px}.pl .ft .logo{font-size:20px;font-weight:bold;margin-bottom:10px}.pl .ft .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+header.centered-top-container{display:none !important}.hd{padding:16px 18px}.hd .logo{font-size:26px;text-align:center}.ft{padding:20px 22px}.ft .logo{margin:0}.ft .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:13px}.ft .logo em{font-size:13px;font-weight:normal;font-style:normal;margin-left:10px}.ft .r2{margin-top:14px;font-size:12px}.post-title,.post-header,.post-share-buttons{display:none !important}
+.pl .item,.pl .card{display:grid;grid-template-columns:1fr;gap:2px 14px;align-content:start}
+.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:132px 1fr}
+.pl .th{grid-row:1/span 5;width:132px;height:99px;object-fit:cover;border-radius:8px;margin:2px 0 0;display:block;background:#f0f0f0}
+.pl .card .tag,.pl .item .tag{align-self:end}
+.pl .big{display:block;width:100%;max-width:560px;height:auto;border-radius:10px;margin:4px auto 10px}
+.pl .leia ul{list-style:none;margin:8px 0 0;padding:0}
+.pl .leia li{display:grid;grid-template-columns:72px 1fr;gap:10px;align-items:center;margin:0 0 12px;line-height:1.35}
+.pl .leia li img{width:72px;height:54px;object-fit:cover;border-radius:6px;display:block;background:#f0f0f0}
+.pl .side .card h3{font-size:17px;line-height:1.3;margin:2px 0 0}
+.pl .item h3{line-height:1.25}
+@media(max-width:560px){.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:104px 1fr}.pl .th{width:104px;height:78px}}
+
+.pl .side .card:has(.th){grid-template-columns:1fr}
+.pl .side .th{grid-row:auto;width:100%;height:160px;margin:0 0 8px}
+.pl .side .card h3{font-size:18px;line-height:1.3;word-break:normal;hyphens:none}
+.pl .leia li{grid-template-columns:64px 1fr;gap:9px;font-size:14px}
+.pl .leia li img{width:64px;height:48px}
+
+.pl .grid{grid-template-columns:1fr}
+.pl .side{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pl .side .card{margin-bottom:0}
+.pl .side .card:has(.th){grid-template-columns:132px 1fr}
+.pl .side .th{grid-row:1/span 5;width:132px;height:99px;margin:2px 0 0}
+.pl .side .card h3{font-size:18px;line-height:1.3}
+.pl .cols{grid-template-columns:1fr}
+.pl .leia ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 28px;margin:10px 0 0;padding:0;list-style:none}
+.pl .leia li{margin:0;font-size:15px;line-height:1.35;grid-template-columns:72px 1fr}
+.pl .leia li img{width:72px;height:54px}
+@media(max-width:700px){.pl .side{grid-template-columns:1fr}.pl .leia ul{grid-template-columns:1fr}}
+</style>
+<div class="pl">
+<div class="hd"><a class="bt" href="/">&#9776; Menu</a><a class="logo" href="/">Panorama<span>Brasil Hoje</span></a><a class="bt" href="/search">Buscar</a></div>
+<img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@7c3e69d/2026-11-23-plantao-capa-manha.jpg" alt="Panorama Brasil Hoje: Plantão de notícias do dia" style="width:100%;height:auto;border-radius:10px;margin:0 0 14px;display:block">
+<p><strong>Plantão Panorama, segunda-feira, 23 de novembro de 2026, edição da manhã.</strong> As notícias do dia, com resumo, fonte e o que ainda não está confirmado. Atualizado às 7h.</p>
+<div class="grid">
+<div class="card hero"><img class="big" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@7c3e69d/2026-11-23-manha-cop31.jpg" alt="COP31 termina sem acordo final em Antália; combustíveis fósseis travam o texto" style="max-width:520px;width:100%;margin:0 auto 10px"><span class="tag">Mundo</span><h2><a href="#cop31">COP31 termina sem acordo final em Antália; combustíveis fósseis travam o texto</a></h2><p>A COP31, em Antália (Turquia), terminou no domingo (22) sem consenso sobre um acordo final após mais de duas semanas de negociações. O ponto de ruptura foi a menção aos combustíveis fósseis, segundo a Reuters.</p><span class="meta">Reuters, via CNN Brasil, 22/11, 21h17</span></div>
+<div class="side">
+<div class="card"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@7c3e69d/2026-11-23-manha-ajuste.jpg" alt="Câmara começa a analisar hoje o projeto de ajuste fiscal aprovado no Senado"><span class="tag">Política</span><h3><a href="#ajuste">Câmara começa a analisar hoje o projeto de ajuste fiscal aprovado no Senado</a></h3></div>
+<div class="card"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@7c3e69d/2026-11-23-manha-drones.jpg" alt="Rússia e Ucrânia relatam destruição de mais de 2 mil drones em 24 horas; navio russo é atingido na Líbia"><span class="tag">Mundo</span><h3><a href="#drones">Rússia e Ucrânia relatam destruição de mais de 2 mil drones em 24 horas; navio russo é atingido na Líbia</a></h3></div>
+</div>
+</div>
+<div class="cols">
+<div>
+<h2>Últimas notícias</h2>
+<div class="item"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@7c3e69d/2026-11-23-manha-iowa.jpg" alt="Exército dos EUA diz que vai detonar explosivos em Iowa mesmo com decisão judicial"><span class="tag">Mundo</span><h3><a href="#iowa">Exército dos EUA diz que vai detonar explosivos em Iowa mesmo com decisão judicial</a></h3><p>O Exército dos EUA informou que vai detonar 68 barris de azoteto de chumbo degradado perto de Middletown, em Iowa, na quarta-feira (25), segundo a Reuters. Um tribunal federal de apelações havia suspendido a licença ambiental da operação.</p></div>
+<div class="item"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@7c3e69d/2026-11-23-manha-tse.jpg" alt="TSE pretende julgar contas de campanha de Lula e Alckmin até 3 de dezembro"><span class="tag">Política</span><h3><a href="#tse">TSE pretende julgar contas de campanha de Lula e Alckmin até 3 de dezembro</a></h3><p>O Tribunal Superior Eleitoral pretende julgar as contas de campanha da chapa Lula (PT) e Alckmin (PSB) até 3 de dezembro, segundo a coluna de Teo Cury, da CNN Brasil. O relator é o ministro Dias Toffoli.</p></div>
+</div>
+<div class="leia">
+<strong>Leia também</strong>
+<ul>
+<li><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@7c3e69d/2026-11-23-manha-iowa.jpg" alt="Exército dos EUA diz que vai detonar explosivos em Iowa mesmo com decisão judicial"><a href="#iowa">Exército dos EUA diz que vai detonar explosivos em Iowa mesmo com decisão judicial</a></li>
+<li><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@7c3e69d/2026-11-23-manha-tse.jpg" alt="TSE pretende julgar contas de campanha de Lula e Alckmin até 3 de dezembro"><a href="#tse">TSE pretende julgar contas de campanha de Lula e Alckmin até 3 de dezembro</a></li>
+</ul>
+</div>
+</div>
+<div class="sec" id="cop31"><h2>COP31 termina sem acordo final em Antália; combustíveis fósseis travam o texto</h2>
+<p>O presidente da conferência, Murat Kurum, reconheceu que não havia apoio para aprovar o texto e disse que não haverá novo texto. O secretário-geral da ONU, António Guterres, disse estar "profundamente decepcionado". A União Europeia afirmou que não endossará decisão que sequer mencione combustíveis fósseis, e o Reino Unido chamou o texto de retrocesso em relação à ciência.</p>
+<p>Chris Bowen, presidente das negociações, classificou o resultado como muito decepcionante e citou a adesão de mais de 90 países a um compromisso de eletrificação. A negociadora brasileira Liliam Chagas defendeu espaço para ampliar a ambição, inclusive com o triplo de financiamento para adaptação.</p>
+<p><strong>Em apuração:</strong> o conteúdo exato das minutas e os valores de financiamento discutidos não foram detalhados pela fonte, e a posição final do Brasil sobre o texto não está clara.</p>
+<p><strong>Por que importa:</strong> Sem acordo final, ficam em aberto os temas de combustíveis fósseis e financiamento climático que países em desenvolvimento esperavam ver tratados na conferência.</p>
+<p><strong>Fonte:</strong> <a href="https://www.cnnbrasil.com.br/internacional/ampliar-ambicao-brasil-e-outros-paises-criticam-fim-da-cop31-sem-acordo/" target="_blank" rel="noopener">CNN Brasil (Reuters): "Ampliar ambição": Brasil e outros países criticam fim da COP31 sem acordo</a> (22/11/2026, 21h17).</p></div>
+<div class="sec" id="ajuste"><h2>Câmara começa a analisar hoje o projeto de ajuste fiscal aprovado no Senado</h2>
+<p>O texto reduz de 2,5% para 2% o limite de crescimento real das despesas primárias a partir de 2027 e prevê um corte adicional de 10 pontos em benefícios fiscais. O governo estima melhora de R$ 45,1 bilhões a R$ 50,1 bilhões no resultado primário de 2027.</p>
+<p>O relator na Câmara, Mauro Benevides Filho (União-CE), apresentou parecer em 19/11 sem mudanças de mérito. Para ir direto ao plenário, é preciso aprovar regime de urgência, com quórum de 257 deputados. O mercado considerou o ajuste insuficiente, e o senador Rogério Marinho (PL-RN) comparou uma das medidas a uma "pedalada fiscal".</p>
+<p><strong>Em apuração:</strong> não há garantia de que a votação de mérito ocorra hoje, pois quórum e urgência dependem de confirmação, e o resultado ainda não é conhecido.</p>
+<p><strong>Por que importa:</strong> A aprovação na Câmara definiria se as novas regras de gastos valem a partir de 2027, e o Planalto já planeja um novo pacote fiscal, segundo a CNN Brasil.</p>
+<p><strong>Fonte:</strong> <a href="https://www.cnnbrasil.com.br/politica/camara-inicia-hoje-analise-do-ajuste-fiscal-apos-resistencias-no-senado/" target="_blank" rel="noopener">CNN Brasil: Câmara inicia hoje análise do ajuste fiscal após resistências no Senado</a> (23/11/2026, 3h30).</p></div>
+<div class="sec" id="drones"><h2>Rússia e Ucrânia relatam destruição de mais de 2 mil drones em 24 horas; navio russo é atingido na Líbia</h2>
+<p>Na Líbia, um possível ataque com drones causou explosão a bordo de um navio russo atracado na base naval de Benghazi, informou o governo do leste líbio. Dez pessoas tiveram ferimentos leves. A empresa de imagens Vantor identificou o navio como a corveta Merkury.</p>
+<p>Depois, um navio comercial de bandeira maltesa foi atingido por um barco não tripulado perto de Benghazi, e a tripulação foi resgatada, segundo fontes militares líbias. O governo do leste da Líbia pediu investigação internacional da ONU e explicações de Kiev.</p>
+<p><strong>Em apuração:</strong> ninguém reivindicou o ataque em Benghazi, e a suspeita de envolvimento ucraniano vem do governo líbio, sem confirmação. As autoridades russas não haviam se manifestado.</p>
+<p><strong>Por que importa:</strong> O episódio leva a guerra para o Mediterrâneo e coloca a Líbia no centro de uma disputa diplomática.</p>
+<p><strong>Fonte:</strong> <a href="https://www.cnnbrasil.com.br/internacional/russia-e-ucrania-relatam-destruicao-de-mais-de-2-mil-drones-em-24-horas/" target="_blank" rel="noopener">CNN Brasil (Reuters): Rússia e Ucrânia relatam destruição de mais de 2 mil drones em 24 horas</a> (23/11/2026, 1h13).</p></div>
+<div class="sec" id="iowa"><h2>Exército dos EUA diz que vai detonar explosivos em Iowa mesmo com decisão judicial</h2>
+<p>O governo Trump respondeu, em documento entregue no sábado (21), que o Exército seguirá sem a licença, invocando uma exceção de emergência das leis ambientais federais. Autoridades dizem que a queda de temperatura pode desestabilizar o material e causar explosão descontrolada.</p>
+<p>Grupos ambientalistas, como o Conselho Ambiental de Iowa e a seção estadual do Sierra Club, entraram na Justiça e estimam que a nuvem de poeira de chumbo possa chegar a 160 km, dependendo do clima. O Exército orientou moradores a evitar a área e ficar em ambientes fechados.</p>
+<p><strong>Em apuração:</strong> o horário da detonação não foi informado, e a fonte não diz se o tribunal já reagiu à alegação de emergência. O alcance de 160 km é estimativa dos grupos ambientalistas, sem confirmação oficial.</p>
+<p><strong>Por que importa:</strong> O caso opõe a justificativa de segurança do governo ao risco de contaminação por chumbo apontado por moradores e ambientalistas.</p>
+<p><strong>Fonte:</strong> <a href="https://www.cnnbrasil.com.br/internacional/exercito-dos-eua-deve-detonar-explosivos-em-iowa-apesar-de-ordem-judicial/" target="_blank" rel="noopener">CNN Brasil (Reuters): Exército dos EUA deve detonar explosivos em Iowa apesar de ordem judicial</a> (23/11/2026, 1h43).</p></div>
+<div class="sec" id="tse"><h2>TSE pretende julgar contas de campanha de Lula e Alckmin até 3 de dezembro</h2>
+<p>Pela regra, as contas precisam estar julgadas e publicadas três dias antes da diplomação. A resolução do TSE fixa 18 de dezembro como prazo máximo para diplomar, e os diplomas serão assinados pelo presidente do tribunal, Nunes Marques.</p>
+<p>A posse presidencial está marcada para 5 de janeiro, primeira vez que foge de 1º de janeiro desde 1988. Segundo a coluna, a data deve virar feriado no Distrito Federal.</p>
+<p><strong>Em apuração:</strong> o julgamento até 3 de dezembro é uma intenção, não uma pauta marcada, e a data exata da diplomação não foi informada. A transformação de 5 de janeiro em feriado também não está confirmada.</p>
+<p><strong>Por que importa:</strong> O julgamento das contas é etapa necessária para a diplomação dos eleitos.</p>
+<p><strong>Fonte:</strong> <a href="https://www.cnnbrasil.com.br/blogs/teo-cury/politica/tse-pretende-julgar-contas-de-lula-e-alckmin-ate-3-de-dezembro/" target="_blank" rel="noopener">CNN Brasil (Teo Cury): TSE pretende julgar contas de Lula e Alckmin até 3 de dezembro</a> (23/11/2026, 4h10).</p></div>
+<p><em>Plantão apurado em 23/11/2026, às 7h, com base nas fontes citadas. Veja a nossa política editorial e de correções.</em></p>
+<div class="ft"><div class="row"><div class="logo">Panorama<span>Brasil Hoje</span> <em>últimas notícias</em></div><div>Notícias do Brasil e do mundo</div></div><div class="row r2"><span>&copy; 2026 Panorama Brasil Hoje. Conteúdo com fontes citadas.</span><span><a href="/">início</a> | <a href="/search/label/Brasil">Brasil</a> | <a href="/search/label/Mundo">Mundo</a> | <a href="/search/label/Economia">Economia</a> | <a href="/search/label/Esporte">Esporte</a> | <a href="/search/label/Saúde">Saúde</a></span></div></div>
+</div>
+<div id="fk3d-assinatura" style="border-top:1px solid #d0d7de; margin-top:32px; padding-top:16px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.6; overflow:hidden;">
+  <a href="https://fk3dprints.com.br/?utm_source=bolanaredebrfutebol&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUko8oQFxjE_SOXU__7A4Bnw3Tu7d-cmwRVhf-SBCqn6SJXQV_aBLtngX6-OvgFcTPJ172l-vSANT99FK-l8VPQVdVi4nbN33rnbVC802Becx-4EIrLBncpzpPbTLpkHRBISFLYcdhx48axTcjcLWyahXYX9B8qyELlOymKwNmUEp8gio/s200/Captura_de_tela_2026-10-08_223740-removebg-preview.png" alt="Logo FK3D Prints" width="90" height="96" style="float:left; margin:0 16px 8px 0;"></a>
+  <p><strong>FK3D Prints: impressão 3D sob demanda</strong></p>
+  <p>
+    &rarr; <a href="https://fk3dprints.com.br/?utm_source=bolanaredebrfutebol&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener">Site oficial: fk3dprints.com.br</a><br>
+    &rarr; <a href="https://shopee.com.br/fkimpressoes3d" target="_blank" rel="noopener">Nossa loja na Shopee</a><br>
+    &rarr; <a href="https://www.instagram.com/fknegociosdigitais" target="_blank" rel="noopener">Siga no Instagram</a>
+  </p>
+</div>

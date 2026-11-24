@@ -1,0 +1,100 @@
+<style>
+.pl{font-family:Arial,Helvetica,sans-serif;color:#1c1c1c;line-height:1.55}
+.pl a{color:#b71c1c;text-decoration:none}.pl a:hover{text-decoration:underline}
+.pl .tag{font-size:12px;font-weight:bold;text-transform:uppercase;letter-spacing:.04em;color:#555}
+.pl .grid{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin:16px 0}
+.pl .card{background:#fff;border:1px solid #e3e3e3;border-radius:10px;padding:16px}
+.pl .hero h2{font-size:30px;line-height:1.15;margin:6px 0 8px;color:#b71c1c}
+.pl .side .card{margin-bottom:16px}.pl .side h3{font-size:18px;margin:4px 0}
+.pl .cols{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.pl .item{padding:14px 0;border-bottom:1px solid #e3e3e3}.pl .item h3{font-size:20px;margin:4px 0;color:#b71c1c}
+.pl .item p{margin:4px 0;font-size:15px}.pl .meta{font-size:12px;color:#777}
+.pl .leia{background:#fafafa;border:1px solid #e3e3e3;border-radius:10px;padding:14px}
+.pl .leia li{margin:0 0 10px;font-size:15px}
+.pl .sec{margin-top:28px}
+@media(max-width:700px){.pl .grid,.pl .cols{grid-template-columns:1fr}.pl .hero h2{font-size:24px}}
+.pl .hd{display:flex;align-items:center;justify-content:space-between;background:#b71c1c;color:#fff;padding:12px 16px;border-radius:10px 10px 0 0;margin:0 0 12px}.pl .hd a,.pl .ft a{color:#fff}.pl .hd .logo{font-size:22px;font-weight:bold;letter-spacing:-.02em}.pl .hd .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:14px}.pl .hd .bt{font-size:13px;font-weight:bold;text-transform:uppercase}.pl .ft{background:#b71c1c;color:#fff;padding:18px 16px;border-radius:0 0 10px 10px;margin-top:32px;font-size:13px}.pl .ft .logo{font-size:20px;font-weight:bold;margin-bottom:10px}.pl .ft .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+header.centered-top-container{display:none !important}.hd{padding:16px 18px}.hd .logo{font-size:26px;text-align:center}.ft{padding:20px 22px}.ft .logo{margin:0}.ft .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:13px}.ft .logo em{font-size:13px;font-weight:normal;font-style:normal;margin-left:10px}.ft .r2{margin-top:14px;font-size:12px}.post-title,.post-header,.post-share-buttons{display:none !important}
+.pl .item,.pl .card{display:grid;grid-template-columns:1fr;gap:2px 14px;align-content:start}
+.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:132px 1fr}
+.pl .th{grid-row:1/span 5;width:132px;height:99px;object-fit:cover;border-radius:8px;margin:2px 0 0;display:block;background:#f0f0f0}
+.pl .card .tag,.pl .item .tag{align-self:end}
+.pl .big{display:block;width:100%;max-width:560px;height:auto;border-radius:10px;margin:4px auto 10px}
+.pl .leia ul{list-style:none;margin:8px 0 0;padding:0}
+.pl .leia li{display:grid;grid-template-columns:72px 1fr;gap:10px;align-items:center;margin:0 0 12px;line-height:1.35}
+.pl .leia li img{width:72px;height:54px;object-fit:cover;border-radius:6px;display:block;background:#f0f0f0}
+.pl .side .card h3{font-size:17px;line-height:1.3;margin:2px 0 0}
+.pl .item h3{line-height:1.25}
+@media(max-width:560px){.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:104px 1fr}.pl .th{width:104px;height:78px}}
+
+.pl .side .card:has(.th){grid-template-columns:1fr}
+.pl .side .th{grid-row:auto;width:100%;height:160px;margin:0 0 8px}
+.pl .side .card h3{font-size:18px;line-height:1.3;word-break:normal;hyphens:none}
+.pl .leia li{grid-template-columns:64px 1fr;gap:9px;font-size:14px}
+.pl .leia li img{width:64px;height:48px}
+
+.pl .grid{grid-template-columns:1fr}
+.pl .side{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pl .side .card{margin-bottom:0}
+.pl .side .card:has(.th){grid-template-columns:132px 1fr}
+.pl .side .th{grid-row:1/span 5;width:132px;height:99px;margin:2px 0 0}
+.pl .side .card h3{font-size:18px;line-height:1.3}
+.pl .cols{grid-template-columns:1fr}
+.pl .leia ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 28px;margin:10px 0 0;padding:0;list-style:none}
+.pl .leia li{margin:0;font-size:15px;line-height:1.35;grid-template-columns:72px 1fr}
+.pl .leia li img{width:72px;height:54px}
+@media(max-width:700px){.pl .side{grid-template-columns:1fr}.pl .leia ul{grid-template-columns:1fr}}
+</style>
+<div class="pl">
+<div class="hd"><a class="bt" href="/">&#9776; Menu</a><a class="logo" href="/">Panorama<span>Brasil Hoje</span></a><a class="bt" href="/search">Buscar</a></div>
+<img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@f80981f/2026-11-24-plantao-capa-noite.jpg" alt="Panorama Brasil Hoje: Plantão de notícias do dia" style="width:100%;height:auto;border-radius:10px;margin:0 0 14px;display:block">
+<p><strong>Plantão Panorama, terça-feira, 24 de novembro de 2026, edição da noite.</strong> As notícias do dia, com resumo, fonte e o que ainda não está confirmado. Atualizado às 19h.</p>
+<div class="grid">
+<div class="card hero"><img class="big" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@f80981f/2026-11-24-noite-ajuste.jpg" alt="Câmara aprova o ajuste fiscal por 353 votos a 128; texto vai à sanção" style="max-width:520px;width:100%;margin:0 auto 10px"><span class="tag">Política</span><h2><a href="#ajuste">Câmara aprova o ajuste fiscal por 353 votos a 128; texto vai à sanção</a></h2><p>A Câmara aprovou na noite de segunda-feira (23) o PLP 299/2026, do ajuste fiscal, por 353 votos a favor, 128 contra e 5 abstenções. O texto ficou como saiu do Senado, e os destaques apresentados pelos partidos foram rejeitados.</p><span class="meta">Mix Vale e Jovem Pan, 24/11</span></div>
+<div class="side">
+<div class="card"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@f80981f/2026-11-24-noite-mercado.jpg" alt="Dólar toca R$ 6 durante o pregão e Ibovespa fecha no menor nível desde janeiro"><span class="tag">Economia</span><h3><a href="#mercado">Dólar toca R$ 6 durante o pregão e Ibovespa fecha no menor nível desde janeiro</a></h3></div>
+<div class="card"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@f80981f/2026-11-24-noite-brasileirao.jpg" alt="Vitória goleia o Inter por 5 a 2 no Beira-Rio, e Grêmio vence o Santos por 2 a 0"><span class="tag">Esporte</span><h3><a href="#brasileirao">Vitória goleia o Inter por 5 a 2 no Beira-Rio, e Grêmio vence o Santos por 2 a 0</a></h3></div>
+</div>
+</div>
+<div class="cols">
+<div>
+<h2>Últimas notícias</h2>
+</div>
+<div class="leia">
+<strong>Leia também</strong>
+<ul>
+<li><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@f80981f/2026-11-24-noite-mercado.jpg" alt="Dólar toca R$ 6 durante o pregão e Ibovespa fecha no menor nível desde janeiro"><a href="#mercado">Dólar toca R$ 6 durante o pregão e Ibovespa fecha no menor nível desde janeiro</a></li>
+<li><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@f80981f/2026-11-24-noite-brasileirao.jpg" alt="Vitória goleia o Inter por 5 a 2 no Beira-Rio, e Grêmio vence o Santos por 2 a 0"><a href="#brasileirao">Vitória goleia o Inter por 5 a 2 no Beira-Rio, e Grêmio vence o Santos por 2 a 0</a></li>
+</ul>
+</div>
+</div>
+<div class="sec" id="ajuste"><h2>Câmara aprova o ajuste fiscal por 353 votos a 128; texto vai à sanção</h2>
+<p>O projeto reduz de 2,5% para 2% o limite de crescimento real da despesa em períodos de contenção, amplia de 10% para 20% o corte de incentivos e deduções tributárias e limita a compensação de créditos tributários das empresas. A meta de 2027 é de R$ 18,7 bilhões, após deduções de R$ 64,7 bilhões. Segundo o relator, Bolsa Família, BPC e seguro-desemprego ficam fora do aperto.</p>
+<p>Pelo levantamento da Jovem Pan, o PT deu 64 votos a favor, e o PL votou majoritariamente contra (86 votos), com 7 dissidentes a favor. As mudanças valem a partir de 1º de janeiro de 2027. O Portal AZ informa que Lula sancionou o pacote nesta terça (24), sem vetos, como Lei Complementar nº 239/2026, em edição extra do Diário Oficial da União.</p>
+<p><strong>Em apuração:</strong> a sanção aparece em um único portal consultado, e a publicação no Diário Oficial não foi conferida na fonte oficial. A Mix Vale, de manhã, ainda dizia que o texto seguia para sanção.</p>
+<p><strong>Por que importa:</strong> As novas regras de gastos e de receitas valem a partir de 2027, e o Portal AZ cita impacto estimado de cerca de R$ 50 bilhões no ano, podendo chegar a R$ 56 bilhões.</p>
+<p><strong>Fontes:</strong> <a href="https://www.mixvale.com.br/2026/11/24/camara-aprova-ajuste-fiscal-com-353-votos-e-limite-de-gastos-de-2/" target="_blank" rel="noopener">Mix Vale: Câmara aprova ajuste fiscal com 353 votos e limite de gastos de 2%</a> (24/11/2026, 6h37); <a href="https://jovempan.com.br/politica/como-votou-cada-partido-em-votacao-que-aprovou-texto-base-do-ajuste-fiscal-na-camara/" target="_blank" rel="noopener">Jovem Pan: como votou cada partido na votação do ajuste fiscal</a> (24/11/2026, 0h50); <a href="https://ww1.portalaz.com.br/noticia/politica/100077/lula-sanciona-pacote-de-ajuste-fiscal-um-dia-apos-aprovacao-na-camara/" target="_blank" rel="noopener">Portal AZ: Lula sanciona pacote de ajuste fiscal um dia após aprovação na Câmara</a> (24/11/2026, 17h27).</p></div>
+<div class="sec" id="mercado"><h2>Dólar toca R$ 6 durante o pregão e Ibovespa fecha no menor nível desde janeiro</h2>
+<p>Pela manhã, as preocupações com a situação fiscal pressionaram a moeda. O Money Times também cita a saída de capital estrangeiro e a queda do petróleo: o Brent para janeiro recuou 3,76%, a US$ 89,09 o barril, e as ações da Petrobras (PETR4) caíram 3,21%, a R$ 41,30.</p>
+<p>O boletim Focus elevou a projeção do IPCA para 5,15% em 2026 e 5,12% em 2027, e a estimativa da Selic para o fim de 2027 foi a 13,00%, segundo o Money Times.</p>
+<p><strong>Em apuração:</strong> o fechamento do dólar difere entre as fontes (R$ 5,929 na CNN Brasil e R$ 5,9262 no Money Times), e o conteúdo do plano estratégico da Petrobras para 2027-2031, previsto para a noite de segunda, não consta nas fontes consultadas.</p>
+<p><strong>Por que importa:</strong> O câmbio e a bolsa refletem o risco fiscal e o peso da Petrobras, uma das maiores empresas listadas.</p>
+<p><strong>Fontes:</strong> <a href="https://www.cnnbrasil.com.br/economia/money/mercado/mercado-financeiro-ibovespa-dolar-23-novembro-2026/" target="_blank" rel="noopener">CNN Brasil: dólar fecha a R$ 5,92 após bater R$ 6; Bolsa cai</a> (23/11/2026, atualizado às 19h54); <a href="https://www.moneytimes.com.br/ibovespa-23-11-2026-davs/" target="_blank" rel="noopener">Money Times: Ibovespa perde os 165 mil pontos e fecha no vermelho</a> (23/11/2026, 18h29).</p></div>
+<div class="sec" id="brasileirao"><h2>Vitória goleia o Inter por 5 a 2 no Beira-Rio, e Grêmio vence o Santos por 2 a 0</h2>
+<p>Pelo Vitória, marcaram Renê, aos 12 segundos, Tarzia, aos 18 minutos, Ramon, Baralhas e Renato Kayzer, aos 48 do segundo tempo. Vitinho (aos 40 do primeiro tempo) e Alerrandro (aos 24 do segundo) descontaram para o Inter. O Vitória subiu para 13º, com 44 pontos.</p>
+<p>No outro jogo, Amuzu abriu o placar aos 13 do primeiro tempo, e Braithwaite ampliou aos 31 do segundo, de pênalti. O Santos segue em 9º, com 50 pontos. O Mirassol, com 41, é o primeiro time fora do Z4, formado por Corinthians (17º), Inter (18º), Remo (19º) e Chapecoense (20º). O último jogo da rodada é Atlético-MG x Corinthians, na quarta (25).</p>
+<p><strong>Em apuração:</strong> o resultado de Botafogo x São Paulo, também da rodada, não foi localizado nas fontes consultadas, e os minutos dos gols de Ramon e Baralhas não foram informados.</p>
+<p><strong>Por que importa:</strong> Restam duas rodadas, e a briga contra o rebaixamento segue aberta.</p>
+<p><strong>Fontes:</strong> <a href="https://maringapost.com.br/2026/11/23/vitoria-goleia-o-inter-e-aumenta-drama-na-luta-contra-o-z4-do-brasileirao/" target="_blank" rel="noopener">Maringá Post: Vitória goleia o Inter e aumenta drama na luta contra o Z4</a> (23/11/2026, 23h12); <a href="https://www.notisul.com.br/gremio-vence-santos-inter-perde-vitoria-brasileirao/" target="_blank" rel="noopener">Notisul: Grêmio bate o Santos, e Inter leva cinco do Vitória no Beira-Rio</a> (23/11/2026).</p></div>
+<p><em>Plantão apurado em 24/11/2026, às 19h, com base nas fontes citadas. Veja a nossa política editorial e de correções.</em></p>
+<div class="ft"><div class="row"><div class="logo">Panorama<span>Brasil Hoje</span> <em>últimas notícias</em></div><div>Notícias do Brasil e do mundo</div></div><div class="row r2"><span>&copy; 2026 Panorama Brasil Hoje. Conteúdo com fontes citadas.</span><span><a href="/">início</a> | <a href="/search/label/Brasil">Brasil</a> | <a href="/search/label/Mundo">Mundo</a> | <a href="/search/label/Economia">Economia</a> | <a href="/search/label/Esporte">Esporte</a> | <a href="/search/label/Saúde">Saúde</a></span></div></div>
+</div>
+<div id="fk3d-assinatura" style="border-top:1px solid #d0d7de; margin-top:32px; padding-top:16px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.6; overflow:hidden;">
+  <a href="https://fk3dprints.com.br/?utm_source=bolanaredebrfutebol&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUko8oQFxjE_SOXU__7A4Bnw3Tu7d-cmwRVhf-SBCqn6SJXQV_aBLtngX6-OvgFcTPJ172l-vSANT99FK-l8VPQVdVi4nbN33rnbVC802Becx-4EIrLBncpzpPbTLpkHRBISFLYcdhx48axTcjcLWyahXYX9B8qyELlOymKwNmUEp8gio/s200/Captura_de_tela_2026-10-08_223740-removebg-preview.png" alt="Logo FK3D Prints" width="90" height="96" style="float:left; margin:0 16px 8px 0;"></a>
+  <p><strong>FK3D Prints: impressão 3D sob demanda</strong></p>
+  <p>
+    &rarr; <a href="https://fk3dprints.com.br/?utm_source=bolanaredebrfutebol&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener">Site oficial: fk3dprints.com.br</a><br>
+    &rarr; <a href="https://shopee.com.br/fkimpressoes3d" target="_blank" rel="noopener">Nossa loja na Shopee</a><br>
+    &rarr; <a href="https://www.instagram.com/fknegociosdigitais" target="_blank" rel="noopener">Siga no Instagram</a>
+  </p>
+</div>

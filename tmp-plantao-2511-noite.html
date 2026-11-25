@@ -1,0 +1,114 @@
+<style>
+.pl{font-family:Arial,Helvetica,sans-serif;color:#1c1c1c;line-height:1.55}
+.pl a{color:#b71c1c;text-decoration:none}.pl a:hover{text-decoration:underline}
+.pl .tag{font-size:12px;font-weight:bold;text-transform:uppercase;letter-spacing:.04em;color:#555}
+.pl .grid{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin:16px 0}
+.pl .card{background:#fff;border:1px solid #e3e3e3;border-radius:10px;padding:16px}
+.pl .hero h2{font-size:30px;line-height:1.15;margin:6px 0 8px;color:#b71c1c}
+.pl .side .card{margin-bottom:16px}.pl .side h3{font-size:18px;margin:4px 0}
+.pl .cols{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.pl .item{padding:14px 0;border-bottom:1px solid #e3e3e3}.pl .item h3{font-size:20px;margin:4px 0;color:#b71c1c}
+.pl .item p{margin:4px 0;font-size:15px}.pl .meta{font-size:12px;color:#777}
+.pl .leia{background:#fafafa;border:1px solid #e3e3e3;border-radius:10px;padding:14px}
+.pl .leia li{margin:0 0 10px;font-size:15px}
+.pl .sec{margin-top:28px}
+@media(max-width:700px){.pl .grid,.pl .cols{grid-template-columns:1fr}.pl .hero h2{font-size:24px}}
+.pl .hd{display:flex;align-items:center;justify-content:space-between;background:#b71c1c;color:#fff;padding:12px 16px;border-radius:10px 10px 0 0;margin:0 0 12px}.pl .hd a,.pl .ft a{color:#fff}.pl .hd .logo{font-size:22px;font-weight:bold;letter-spacing:-.02em}.pl .hd .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:14px}.pl .hd .bt{font-size:13px;font-weight:bold;text-transform:uppercase}.pl .ft{background:#b71c1c;color:#fff;padding:18px 16px;border-radius:0 0 10px 10px;margin-top:32px;font-size:13px}.pl .ft .logo{font-size:20px;font-weight:bold;margin-bottom:10px}.pl .ft .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+header.centered-top-container{display:none !important}.hd{padding:16px 18px}.hd .logo{font-size:26px;text-align:center}.ft{padding:20px 22px}.ft .logo{margin:0}.ft .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:13px}.ft .logo em{font-size:13px;font-weight:normal;font-style:normal;margin-left:10px}.ft .r2{margin-top:14px;font-size:12px}.post-title,.post-header,.post-share-buttons{display:none !important}
+.pl .item,.pl .card{display:grid;grid-template-columns:1fr;gap:2px 14px;align-content:start}
+.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:132px 1fr}
+.pl .th{grid-row:1/span 5;width:132px;height:99px;object-fit:cover;border-radius:8px;margin:2px 0 0;display:block;background:#f0f0f0}
+.pl .card .tag,.pl .item .tag{align-self:end}
+.pl .big{display:block;width:100%;max-width:560px;height:auto;border-radius:10px;margin:4px auto 10px}
+.pl .leia ul{list-style:none;margin:8px 0 0;padding:0}
+.pl .leia li{display:grid;grid-template-columns:72px 1fr;gap:10px;align-items:center;margin:0 0 12px;line-height:1.35}
+.pl .leia li img{width:72px;height:54px;object-fit:cover;border-radius:6px;display:block;background:#f0f0f0}
+.pl .side .card h3{font-size:17px;line-height:1.3;margin:2px 0 0}
+.pl .item h3{line-height:1.25}
+@media(max-width:560px){.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:104px 1fr}.pl .th{width:104px;height:78px}}
+
+.pl .side .card:has(.th){grid-template-columns:1fr}
+.pl .side .th{grid-row:auto;width:100%;height:160px;margin:0 0 8px}
+.pl .side .card h3{font-size:18px;line-height:1.3;word-break:normal;hyphens:none}
+.pl .leia li{grid-template-columns:64px 1fr;gap:9px;font-size:14px}
+.pl .leia li img{width:64px;height:48px}
+
+.pl .grid{grid-template-columns:1fr}
+.pl .side{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pl .side .card{margin-bottom:0}
+.pl .side .card:has(.th){grid-template-columns:132px 1fr}
+.pl .side .th{grid-row:1/span 5;width:132px;height:99px;margin:2px 0 0}
+.pl .side .card h3{font-size:18px;line-height:1.3}
+.pl .cols{grid-template-columns:1fr}
+.pl .leia ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 28px;margin:10px 0 0;padding:0;list-style:none}
+.pl .leia li{margin:0;font-size:15px;line-height:1.35;grid-template-columns:72px 1fr}
+.pl .leia li img{width:72px;height:54px}
+@media(max-width:700px){.pl .side{grid-template-columns:1fr}.pl .leia ul{grid-template-columns:1fr}}
+</style>
+<div class="pl">
+<div class="hd"><a class="bt" href="/">&#9776; Menu</a><a class="logo" href="/">Panorama<span>Brasil Hoje</span></a><a class="bt" href="/search">Buscar</a></div>
+<img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@9dfd0e3/2026-11-25-plantao-capa-noite.jpg" alt="Panorama Brasil Hoje: Plantão de notícias do dia" style="width:100%;height:auto;border-radius:10px;margin:0 0 14px;display:block">
+<p><strong>Plantão Panorama, quarta-feira, 25 de novembro de 2026, edição da noite.</strong> As notícias do dia, com resumo, fonte e o que ainda não está confirmado. Atualizado às 19h.</p>
+<div class="grid">
+<div class="card hero"><img class="big" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@9dfd0e3/2026-11-25-noite-stf.jpg" alt="Alcolumbre diz que só ouviu Lula sobre a vaga no STF e chama a conversa de secreta" style="max-width:520px;width:100%;margin:0 auto 10px"><span class="tag">Política</span><h2><a href="#stf">Alcolumbre diz que só ouviu Lula sobre a vaga no STF e chama a conversa de secreta</a></h2><p>O presidente do Senado, Davi Alcolumbre (União-AP), evitou detalhar a conversa que teve com o presidente Lula sobre a vaga aberta no Supremo Tribunal Federal. Disse que apenas ouviu o presidente e que o conteúdo é secreto.</p><span class="meta">Diário do Grande ABC, 25/11</span></div>
+<div class="side">
+<div class="card"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@9dfd0e3/2026-11-25-noite-escala.jpg" alt="CNI aciona o STF contra decreto e portaria que regulamentam o fim da escala 6x1"><span class="tag">Trabalho</span><h3><a href="#escala">CNI aciona o STF contra decreto e portaria que regulamentam o fim da escala 6x1</a></h3></div>
+<div class="card"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@9dfd0e3/2026-11-25-noite-diesel.jpg" alt="Governo deve renovar por mais 30 dias o subsídio de R$ 2,12 por litro do diesel"><span class="tag">Economia</span><h3><a href="#diesel">Governo deve renovar por mais 30 dias o subsídio de R$ 2,12 por litro do diesel</a></h3></div>
+</div>
+</div>
+<div class="cols">
+<div>
+<h2>Últimas notícias</h2>
+<div class="item"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@9dfd0e3/2026-11-25-noite-mundo.jpg" alt="Guarda Revolucionária diz que dois petroleiros atingiram minas em Ormuz; houthis atacam Riad"><span class="tag">Mundo</span><h3><a href="#mundo">Guarda Revolucionária diz que dois petroleiros atingiram minas em Ormuz; houthis atacam Riad</a></h3><p>A Guarda Revolucionária do Irã afirmou que dois petroleiros atingiram minas navais e pegaram fogo no Estreito de Ormuz, ao tentar usar uma rota não autorizada.</p></div>
+<div class="item"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@9dfd0e3/2026-11-25-noite-ucrania.jpg" alt="Zelensky confirma ataque de drone a navio cargueiro russo no Golfo da Finlândia"><span class="tag">Mundo</span><h3><a href="#ucrania">Zelensky confirma ataque de drone a navio cargueiro russo no Golfo da Finlândia</a></h3><p>O presidente da Ucrânia, Volodymyr Zelensky, confirmou que o país atacou com drone um navio de carga russo no Golfo da Finlândia. A Noruega pediu cautela, e o navio foi rebocado de volta a águas russas.</p></div>
+</div>
+<div class="leia">
+<strong>Leia também</strong>
+<ul>
+<li><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@9dfd0e3/2026-11-25-noite-mundo.jpg" alt="Guarda Revolucionária diz que dois petroleiros atingiram minas em Ormuz; houthis atacam Riad"><a href="#mundo">Guarda Revolucionária diz que dois petroleiros atingiram minas em Ormuz; houthis atacam Riad</a></li>
+<li><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@9dfd0e3/2026-11-25-noite-ucrania.jpg" alt="Zelensky confirma ataque de drone a navio cargueiro russo no Golfo da Finlândia"><a href="#ucrania">Zelensky confirma ataque de drone a navio cargueiro russo no Golfo da Finlândia</a></li>
+</ul>
+</div>
+</div>
+<div class="sec" id="stf"><h2>Alcolumbre diz que só ouviu Lula sobre a vaga no STF e chama a conversa de secreta</h2>
+<p>Segundo a reportagem, Lula levantou a possibilidade de reenviar o nome de Jorge Messias, cuja indicação foi rejeitada pelo Senado em abril. Alcolumbre, por sua vez, é apontado como apoiador do ex-senador Rodrigo Pacheco (PSD-MG).</p>
+<p>Sobre a PEC do ajuste fiscal que o governo prepara, Alcolumbre afirmou não ter recebido atualização nem o texto. Ele disse que uma sessão pode ser convocada antes do fim de 2026 para votar vetos e dois PLNs, e que pretende conversar com o líder do governo, Randolfe Rodrigues (PT-AP).</p>
+<p><strong>Em apuração:</strong> o governo ainda não anunciou nome para a vaga; as informações sobre a conversa entre Lula e Alcolumbre vêm das declarações do próprio presidente do Senado.</p>
+<p><strong>Por que importa:</strong> A indicação ao Supremo precisa de sabatina e aprovação no Senado, e o desfecho depende do entendimento entre Planalto e Congresso.</p>
+<p><strong>Fonte:</strong> <a href="https://dgabc.com.br/Noticia/4370746/alcolumbre-diz-que-somente-ouviu-lula-sobre-vaga-no-stf" target="_blank" rel="noopener">Diário do Grande ABC: Alcolumbre diz que somente ouviu Lula sobre vaga no STF</a> (25/11/2026, 17h20).</p></div>
+<div class="sec" id="escala"><h2>CNI aciona o STF contra decreto e portaria que regulamentam o fim da escala 6x1</h2>
+<p>A entidade argumenta que o tema deveria ter passado pelo Congresso e que o Executivo extrapolou seus poderes ao tratar de pontos como banco de horas, horas extras e acordos coletivos. A emenda constitucional que acabou com a escala 6x1 entrou em vigor em outubro, e o decreto foi editado em 19 de novembro.</p>
+<p>É a segunda ação da CNI sobre o tema. Na primeira, apresentada em 4 de novembro, o ministro Flávio Dino concedeu liminar com regras provisórias a partir de 16 de dezembro: as 42 horas semanais podem ser divididas em cinco dias de até 8h24, sem hora extra, quando não houver acordo coletivo.</p>
+<p><strong>Em apuração:</strong> a nova ação ainda não teve decisão, e não está definido se será analisada junto da primeira.</p>
+<p><strong>Por que importa:</strong> As regras de transição definem como empresas e trabalhadores vão se adaptar à nova jornada.</p>
+<p><strong>Fonte:</strong> <a href="https://bahia.ba/politica/industria-vai-ao-stf-contra-decreto-do-fim-da-escala-6x1/" target="_blank" rel="noopener">bahia.ba: Indústria vai ao STF contra decreto do fim da escala 6x1</a> (25/11/2026).</p></div>
+<div class="sec" id="diesel"><h2>Governo deve renovar por mais 30 dias o subsídio de R$ 2,12 por litro do diesel</h2>
+<p>O anúncio foi feito pelo ministro do Planejamento, Bruno Moretti, que disse que o governo pretende reduzir os incentivos gradualmente conforme o petróleo recuar. O impacto das medidas em 2026 é de cerca de R$ 75 bilhões até agora, e pode chegar a aproximadamente R$ 85 bilhões com a prorrogação.</p>
+<p>Lula sancionou na terça (24) a autorização para excluir até R$ 10,5 bilhões em subsídios ao diesel da meta fiscal de 2026. Segundo o secretário-executivo da Fazenda, Rogério Ceron, sem os incentivos a inflação ao consumidor seria ao menos 1 ponto percentual maior.</p>
+<p><strong>Em apuração:</strong> a portaria que formaliza a renovação ainda precisa ser validada.</p>
+<p><strong>Por que importa:</strong> A retirada gradual dos incentivos pode pressionar preços nos postos e a inflação em 2027.</p>
+<p><strong>Fonte:</strong> <a href="https://bmcnews.com.br/economia/governo-deve-renovar-subsidio-ao-diesel-por-mais-30-dias/" target="_blank" rel="noopener">BM&C News: Governo deve renovar subsídio ao diesel por mais 30 dias</a> (25/11/2026).</p></div>
+<div class="sec" id="mundo"><h2>Guarda Revolucionária diz que dois petroleiros atingiram minas em Ormuz; houthis atacam Riad</h2>
+<p>Na Arábia Saudita, a Defesa Civil informou que um ataque houthi a um arranha-céu em Riad feriu 11 pessoas. Os houthis dizem ter atacado também a refinaria de Ras Tanura; a coalizão liderada pelos sauditas disse ter destruído quatro drones, sem confirmar se a refinaria foi atingida.</p>
+<p>Em Gaza, Israel afirma ter matado um coronel do Hamas que chefia o serviço de segurança interna, segundo o Ministério do Interior do Hamas e socorristas. As forças israelenses disseram ter mirado vários operativos militares.</p>
+<p><strong>Em apuração:</strong> a versão sobre as minas é da Guarda Revolucionária, e não há confirmação independente nas fontes consultadas; o ataque a Ras Tanura é alegação dos houthis.</p>
+<p><strong>Por que importa:</strong> Ormuz é rota importante do petróleo mundial, e incidentes na região costumam afetar os preços da energia.</p>
+<p><strong>Fontes:</strong> <a href="https://www.justsecurity.org/165910/early-edition-november-25-2026/" target="_blank" rel="noopener">Just Security: Early Edition, 25 de novembro de 2026</a> (25/11/2026); <a href="https://www.devdiscourse.com/article/international/4011704-reuters-world-news-summary" target="_blank" rel="noopener">Reuters World News Summary (via Devdiscourse)</a> (25/11/2026).</p></div>
+<div class="sec" id="ucrania"><h2>Zelensky confirma ataque de drone a navio cargueiro russo no Golfo da Finlândia</h2>
+<p>Putin disse que a Ucrânia continua atingindo refinarias russas apesar dos pedidos de Trump e que as retaliações russas são inevitáveis. Na Líbia, o Exército Nacional Líbio prometeu retaliar a Ucrânia após um ataque com drone a um navio de guerra russo em um porto do leste do país, que matou dois oficiais navais líbios; a Itália criticou o ataque em águas líbias.</p>
+<p>Na Ucrânia, um ataque russo na região de Odesa matou duas pessoas e feriu três, incluindo uma criança, e um ataque em Kiev provocou incêndio em prédio residencial, com dois feridos.</p>
+<p><strong>Em apuração:</strong> não há balanço independente dos danos aos navios; as versões vêm de governos e de agências internacionais.</p>
+<p><strong>Por que importa:</strong> Os ataques a navios ampliam a guerra para o mar e para países que não participam diretamente do conflito.</p>
+<p><strong>Fontes:</strong> <a href="https://www.devdiscourse.com/article/international/4011704-reuters-world-news-summary" target="_blank" rel="noopener">Reuters World News Summary (via Devdiscourse)</a> (25/11/2026, 5h24 (IST)); <a href="https://www.justsecurity.org/165910/early-edition-november-25-2026/" target="_blank" rel="noopener">Just Security: Early Edition, 25 de novembro de 2026</a> (25/11/2026).</p></div>
+<p><em>Plantão apurado em 25/11/2026, às 19h, com base nas fontes citadas. Veja a nossa política editorial e de correções.</em></p>
+<div class="ft"><div class="row"><div class="logo">Panorama<span>Brasil Hoje</span> <em>últimas notícias</em></div><div>Notícias do Brasil e do mundo</div></div><div class="row r2"><span>&copy; 2026 Panorama Brasil Hoje. Conteúdo com fontes citadas.</span><span><a href="/">início</a> | <a href="/search/label/Brasil">Brasil</a> | <a href="/search/label/Mundo">Mundo</a> | <a href="/search/label/Economia">Economia</a> | <a href="/search/label/Esporte">Esporte</a> | <a href="/search/label/Saúde">Saúde</a></span></div></div>
+</div>
+<div id="fk3d-assinatura" style="border-top:1px solid #d0d7de; margin-top:32px; padding-top:16px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.6; overflow:hidden;">
+  <a href="https://fk3dprints.com.br/?utm_source=bolanaredebrfutebol&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUko8oQFxjE_SOXU__7A4Bnw3Tu7d-cmwRVhf-SBCqn6SJXQV_aBLtngX6-OvgFcTPJ172l-vSANT99FK-l8VPQVdVi4nbN33rnbVC802Becx-4EIrLBncpzpPbTLpkHRBISFLYcdhx48axTcjcLWyahXYX9B8qyELlOymKwNmUEp8gio/s200/Captura_de_tela_2026-10-08_223740-removebg-preview.png" alt="Logo FK3D Prints" width="90" height="96" style="float:left; margin:0 16px 8px 0;"></a>
+  <p><strong>FK3D Prints: impressão 3D sob demanda</strong></p>
+  <p>
+    &rarr; <a href="https://fk3dprints.com.br/?utm_source=bolanaredebrfutebol&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener">Site oficial: fk3dprints.com.br</a><br>
+    &rarr; <a href="https://shopee.com.br/fkimpressoes3d" target="_blank" rel="noopener">Nossa loja na Shopee</a><br>
+    &rarr; <a href="https://www.instagram.com/fknegociosdigitais" target="_blank" rel="noopener">Siga no Instagram</a>
+  </p>
+</div>

@@ -1,0 +1,92 @@
+<p><strong>Blobs e zits são pequenas bolinhas, pontos e “espinhas” de plástico que aparecem na superfície de uma peça impressa em 3D, quase sempre onde a camada começa e termina (a costura). Na maioria dos casos a causa está no controle do fluxo de plástico: retração mal ajustada, pressão no bico, temperatura alta ou filamento úmido.</strong> Neste guia você aprende a diferenciar os dois defeitos, a investigar a causa e a corrigir na ordem certa.</p>
+
+<div style="text-align:center;margin:18px 0;"><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@c927160/2026-11-27-universo3d-blobs-zits.jpg" alt="Resumo visual sobre blobs e zits na impressão 3D: retração, costura e temperatura" style="max-width:100%;height:auto;border-radius:8px;"></div>
+
+<h2>O que são blobs e zits</h2>
+<p>Segundo o Tom's Hardware, <strong>blobs</strong> são acúmulos de filamento fundido depositados em pontos específicos da peça, enquanto <strong>zits</strong> são marcas menores, parecidas com pequenas cicatrizes ou espinhas. Na prática, os dois defeitos têm causas parecidas e costumam ser tratados juntos.</p>
+<p>Eles aparecem com mais frequência na <strong>costura</strong>, o ponto em que a impressora começa e termina cada volta da parede. Se as bolinhas formam uma linha vertical na peça, o problema está ligado à costura. Se aparecem espalhadas, pense em extrusão irregular, temperatura ou umidade do filamento.</p>
+<p>Para não confundir com outros defeitos: fios finos entre partes separadas são <em>stringing</em>; ondas depois de cantos são <a href="https://universo3dprints.blogspot.com/2026/11/velocidade-de-impressao-3d-como.html">efeito da velocidade e da vibração</a>; deslocamento da peça em camadas é <a href="https://universo3dprints.blogspot.com/2026/10/layer-shift-impressao-3d.html">layer shift</a>.</p>
+
+<h2>Por que acontecem</h2>
+<p>Sempre que o bico para de extrusar para se mover, o plástico dentro dele continua sob pressão e pode escorrer ou sair em excesso quando a extrusão recomeça. Conforme o All3DP, as causas mais citadas são:</p>
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;color:#ffffff;">
+<thead><tr style="background:#0e7490;color:#ffffff;"><th style="padding:10px;text-align:left;">Causa</th><th style="padding:10px;text-align:left;">O que ocorre</th><th style="padding:10px;text-align:left;">Como suspeitar</th></tr></thead>
+<tbody>
+<tr style="background:#13263d;"><td style="padding:10px;">Retração mal ajustada</td><td style="padding:10px;">Distância, velocidade ou frequência de retração fora do ponto: sobra pressão no bico ou entra ar.</td><td style="padding:10px;">Bolinhas na costura e em pontos onde o bico “para e volta”.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Fluxo irregular ou excesso</td><td style="padding:10px;">Calibração ruim da extrusão ou bico parcialmente entupido.</td><td style="padding:10px;">Superfície com excesso de plástico em vários trechos.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Temperatura alta</td><td style="padding:10px;">O filamento fica fluido demais e vaza mesmo sem o extrusor empurrar.</td><td style="padding:10px;">Escorrimento e bolinhas que melhoram ao baixar a temperatura.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Velocidade alta ou variável</td><td style="padding:10px;">Mudanças constantes de velocidade alteram a pressão no bico.</td><td style="padding:10px;">Defeito piora em peças com muitos cantos e detalhes.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Resfriamento insuficiente</td><td style="padding:10px;">A camada não esfria o bastante e se deforma ao receber a seguinte.</td><td style="padding:10px;">Marcas em detalhes pequenos e trechos de camadas curtas.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Filamento úmido ou fora de medida</td><td style="padding:10px;">Umidade gera bolhas e estouros; diâmetro irregular muda a quantidade de plástico.</td><td style="padding:10px;">Estalos no bico, bolhas na superfície, acabamento áspero.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Costura mal posicionada</td><td style="padding:10px;">Início e fim de cada volta ficam sempre no mesmo lugar e acumulam plástico.</td><td style="padding:10px;">Linha vertical de bolinhas na peça.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Como diagnosticar antes de mexer em tudo</h2>
+<p>Mude uma coisa por vez e compare com a mesma peça de teste. Um roteiro simples:</p>
+<ol>
+<li><strong>Olhe onde estão as bolinhas.</strong> Em linha vertical: costura. Espalhadas: fluxo, temperatura, umidade.</li>
+<li><strong>Escute o bico.</strong> Estalos e pequenas “explosões” indicam filamento úmido.</li>
+<li><strong>Calibre o básico</strong> (fluxo e estado do bico) antes de ajustar retração. O All3DP lembra que é preciso calibrar a impressora para não confundir outro defeito com zits e blobs.</li>
+<li><strong>Imprima um teste de retração</strong> e compare os resultados.</li>
+<li><strong>Anote cada alteração.</strong> Assim você sabe o que realmente funcionou.</li>
+</ol>
+
+<h2>Como corrigir, na ordem certa</h2>
+<h3>1. Seque o filamento e confira o diâmetro</h3>
+<p>Filamento úmido é uma das causas listadas pelo All3DP. Se há estalos e bolhas, seque o rolo antes de mexer nos ajustes. O tempo e a temperatura de secagem dependem do material e das instruções do fabricante; veja as particularidades de cada um em <a href="https://universo3dprints.blogspot.com/2026/10/pla-petg-ou-abs-qual-filamento-usar-na.html">PLA, PETG, ABS, ASA ou TPU</a>. Filamentos com tolerância mais apertada de diâmetro ajudam a manter o fluxo estável.</p>
+<h3>2. Ajuste a retração</h3>
+<p>O Tom's Hardware cita, como faixa típica, distância de 2 a 7 mm e velocidade de 30 a 60 mm/s. A sugestão é começar em 2 mm e subir de 0,5 em 0,5 mm, e começar a velocidade em 30 mm/s, aumentando aos poucos, sempre com um modelo de teste de retração. O All3DP acrescenta que retração longa demais deixa entrar ar no bico e cria bolhas, e que aumentar a velocidade em cerca de 25% (até uns 65 mm/s) pode ajudar. Os valores ideais variam com o tipo de extrusor e com o filamento, então ajuste aos poucos.</p>
+<h3>3. Reduza a temperatura em passos pequenos</h3>
+<p>Parta da temperatura recomendada pelo fabricante do filamento e baixe de 5 em 5 °C, sem ir tão baixo a ponto de enfraquecer a ligação entre camadas, segundo o All3DP. Temperatura alta deixa o plástico fluido e favorece o vazamento; baixa demais gera fusão incompleta e extrusão irregular, conforme o Tom's Hardware.</p>
+<h3>4. Reduza a velocidade</h3>
+<p>O All3DP sugere diminuir de 5 a 10 mm/s. Velocidade alta e mudanças constantes de velocidade pioram o defeito. Para entender o impacto no prazo, veja <a href="https://universo3dprints.blogspot.com/2026/11/velocidade-de-impressao-3d-como.html">como imprimir mais rápido sem perder qualidade</a>.</p>
+<h3>5. Trabalhe a costura (seam)</h3>
+<p>A 3DXTech recomenda usar as opções de alinhar ou randomizar a costura para mantê-la consistente. Alinhar costuras em uma face menos visível esconde o defeito; randomizar espalha as marcas em vez de formar uma linha. No Cura, o All3DP cita ainda a opção de imprimir a parede externa primeiro (Outside To Inside) e o ajuste de distância de limpeza da parede externa (wipe) para disfarçar a costura.</p>
+<h3>6. Teste coasting e wipe</h3>
+<p>Coasting faz o bico parar de extrusar um pouco antes do fim de cada parede, usando a pressão restante. O All3DP cita de 0,2 a 0,5 mm antes do fim do movimento. O Tom's Hardware cita, para bico de 0,4 mm e camada de 0,2 mm, volume padrão de cerca de 0,064 mm³ e velocidade em torno de 90% da velocidade de impressão, e avisa que valor alto demais causa falta de plástico e baixo demais deixa pressão no bico. Como a eficácia depende da peça e do filamento, teste aos poucos.</p>
+<h3>7. Use controle de pressão, se disponível</h3>
+<p>A 3DXTech indica pressure advance ou linear advance para controlar melhor o fluxo, e o All3DP cita o Linear Advance no Marlin. Esses recursos dependem do firmware e do modelo; consulte o manual ou a documentação da sua impressora.</p>
+<h3>8. Melhore o resfriamento e desative a recuperação de energia</h3>
+<p>Aumente a ventoinha de 10 em 10% (All3DP) e mantenha o resfriamento uniforme. O Tom's Hardware ainda lembra que, se a função de recuperação de falta de energia estiver ativa, ela pode gravar pontos de controle durante a impressão e gerar blobs; se for o caso, desative-a.</p>
+
+<div style="margin:18px 0;padding:16px 18px;border-radius:10px;background:#13263d;border-left:4px solid #1fb6ff;color:#ffffff;"><strong>Resumo da ordem de correção</strong><ul><li>Secar o filamento e conferir o diâmetro.</li><li>Ajustar a retração, aos poucos e com um teste.</li><li>Baixar a temperatura de 5 em 5 °C.</li><li>Reduzir a velocidade de 5 a 10 mm/s.</li><li>Alinhar ou randomizar a costura.</li><li>Testar coasting e wipe.</li><li>Usar pressure ou linear advance, se houver.</li><li>Melhorar o resfriamento.</li></ul></div>
+
+<h2>Erros comuns ao tentar resolver</h2>
+<ul>
+<li><strong>Aumentar a retração sem limite.</strong> Retração longa demais deixa entrar ar e cria bolhas.</li>
+<li><strong>Mudar vários ajustes de uma vez.</strong> Fica impossível saber o que funcionou.</li>
+<li><strong>Baixar demais a temperatura.</strong> Pode causar subextrusão e camadas mal coladas.</li>
+<li><strong>Ignorar o filamento.</strong> Se ele está úmido, nenhum ajuste de fatiador resolve por completo.</li>
+<li><strong>Usar coasting alto demais.</strong> Gera falhas e falta de plástico no fim das paredes.</li>
+</ul>
+
+<h2>Quando vale ignorar</h2>
+<p>Em peças funcionais ou escondidas, pequenas bolinhas na costura não afetam o uso. Já em peças visíveis, de encaixe justo ou que serão pintadas, vale ajustar. O All3DP lembra que peças já impressas podem ser lixadas para remover o excesso. Se a peça precisa de acabamento excelente, pedir uma impressão sob medida com os parâmetros certos pode poupar tentativa e erro.</p>
+
+<h2>Perguntas frequentes</h2>
+<h3>Blobs e zits são a mesma coisa?</h3>
+<p>São parecidos. Segundo o Tom's Hardware, blobs são acúmulos de plástico e zits costumam ser menores, e as causas se sobrepõem.</p>
+<h3>Preciso de uma impressora cara para evitar?</h3>
+<p>Não necessariamente. Ajustes de retração, temperatura, velocidade e costura, além de filamento seco, costumam melhorar bastante em máquinas simples.</p>
+<h3>Por que as bolinhas aparecem sempre no mesmo lugar?</h3>
+<p>Porque cada volta da parede começa e termina na costura. Se ela fica sempre alinhada, o plástico se acumula ali. Alinhe em uma face pouco visível ou randomize.</p>
+<h3>Filamento úmido causa blobs?</h3>
+<p>O All3DP lista a umidade como causa. Se há estalos e bolhas, seque o filamento antes de ajustar o resto.</p>
+<h3>Coasting resolve tudo?</h3>
+<p>Não. É um recurso complementar e experimental, que exige teste, conforme as fontes. Primeiro resolva umidade, retração e temperatura.</p>
+<h3>Posso corrigir uma peça que já foi impressa?</h3>
+<p>Sim, em muitos casos, lixando o excesso. Para pintura, lixar e aplicar primer costuma disfarçar bolinhas pequenas.</p>
+
+<p>Fontes: <a href="https://all3dp.com/2/3d-print-zits-tips-tricks-to-avoid-blobs/" target="_blank" rel="noopener">All3DP: 3D Print Zits, Tips &amp; Tricks to Avoid Blobs</a> (atualizado em 27/10/2025) · <a href="https://www.tomshardware.com/3d-printing/how-to-avoid-blobs-and-zits-in-3d-prints" target="_blank" rel="noopener">Tom's Hardware: How to Avoid Blobs and Zits in 3D Prints</a> (05/01/2024) · <a href="https://www.3dxtech.com/blogs/trouble-shooting/3d-printing-troubleshooting-blobs-zits-and-other-surface-defects" target="_blank" rel="noopener">3DXTech: Troubleshooting, Blobs/Zits and Other Surface Defects</a>.</p>
+
+<div style="margin:32px 0;padding:22px 20px;border-radius:14px;background:#0f1b2d;color:#ffffff;font-family:Arial,Helvetica,sans-serif;text-align:center;border:2px solid #1fb6ff;"><div style="font-size:20px;font-weight:bold;margin-bottom:8px;">Não tem impressora 3D ou precisa de uma peça sob medida?</div><div style="font-size:15px;line-height:1.5;color:#cfe3f5;margin-bottom:18px;">A <strong style="color:#ffffff;">FK3D Prints</strong> imprime peças personalizadas para você: reposição de peças quebradas, suportes, organizadores, presentes e projetos sob encomenda.</div><a href="https://fk3dprints.com.br/?utm_source=universo3dprints&utm_medium=blog&utm_campaign=orcamento-blobs-zits" target="_blank" rel="noopener" style="display:inline-block;padding:13px 26px;border-radius:30px;background:#1fb6ff;color:#0f1b2d;font-weight:bold;font-size:16px;text-decoration:none;">Peça seu orçamento →</a></div>
+
+<p><em>Conteúdo informativo. Siga sempre o manual do fabricante e as normas de segurança da sua impressora e dos materiais.</em></p>
+
+<div id="fk3d-assinatura" style="border-top:1px solid #d0d7de; margin-top:32px; padding-top:16px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.6; overflow:hidden;">
+  <a href="https://fk3dprints.com.br/?utm_source=universo3dprints&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUko8oQFxjE_SOXU__7A4Bnw3Tu7d-cmwRVhf-SBCqn6SJXQV_aBLtngX6-OvgFcTPJ172l-vSANT99FK-l8VPQVdVi4nbN33rnbVC802Becx-4EIrLBncpzpPbTLpkHRBISFLYcdhx48axTcjcLWyahXYX9B8qyELlOymKwNmUEp8gio/s200/Captura_de_tela_2026-10-08_223740-removebg-preview.png" alt="Logo FK3D Prints" width="90" height="96" style="float:left; margin:0 16px 8px 0;"></a>
+  <p><strong>FK3D Prints: impressão 3D sob demanda</strong></p>
+  <p>
+    &rarr; <a href="https://fk3dprints.com.br/?utm_source=universo3dprints&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener">Site oficial: fk3dprints.com.br</a><br>
+    &rarr; <a href="https://shopee.com.br/fkimpressoes3d" target="_blank" rel="noopener">Nossa loja na Shopee</a><br>
+    &rarr; <a href="https://www.instagram.com/fknegociosdigitais" target="_blank" rel="noopener">Siga no Instagram</a>
+  </p>
+</div>
+<div class="blogger-post-footer">“Obrigado por acompanhar o Universo 3D Prints!”.</div>

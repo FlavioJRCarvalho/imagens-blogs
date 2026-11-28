@@ -17,3 +17,11 @@ Atenção: a URL jsDelivr do HTML deve usar o hash do commit que contém o HTML 
 - AdSense: conta em onboarding, sites "Preparando"; ads.txt correto nos 4 blogs.
 - Imagem do Bola na Rede 25/11 (Gemini) tem erros: rodada final repetida, "SÃOPACOENSE", fontes. Trocar quando vier nova.
 - Imagens: o Flávio gera no Gemini (tecnológicas); eu confiro fatos e aviso erros.
+
+## Atualização 26–28/11/2026
+- 26/11: Plantão noite, Bola na Rede (Atlético-MG x Corinthians), Lucro Zen (reserva de emergência).
+- 27/11: Plantão noite (Trabuco/STF/Black Friday), Bola na Rede (São Paulo 3x1 Remo), Lucro Zen (rotativo do cartão), Universo 3D (blobs e zits).
+- 28/11: Plantão tarde (Lula defende Trabuco; STF), Bola na Rede (Cruzeiro 1x0 Fluminense), Lucro Zen (juros compostos), Universo 3D (pillowing).
+- Arquivos: tmp-*-2711/2811.html; imagens 2026-11-27-* e 2026-11-28-*.
+- Publicação: editor HTML (CodeMirror) via jsDelivr no hash do commit; "Confirmar" por JS (regex /confirmar/i); marcadores pela lista de postagens (ícone de etiqueta ao passar o mouse).
+- Pendente: 2 rascunhos "Pauta:" no Panorama (Descartar é permanente); tarefas automáticas Bola na Rede e Lucro Zen; Search Console e AdSense.

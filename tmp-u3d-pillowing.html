@@ -1,0 +1,88 @@
+<p><strong>Pillowing é o defeito em que o topo de uma peça impressa em 3D sai irregular, áspero e com buracos, como pequenas almofadas, e só aparece quando a impressão está terminando.</strong> A causa mais comum é a camada superior que esfria devagar e afunda sobre o preenchimento, sem material suficiente para fechar a superfície. Neste guia você vê como reconhecer o problema e quais ajustes costumam resolver, na ordem certa.</p>
+
+<div style="text-align:center;margin:18px 0;"><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@9313a8e/2026-11-28-universo3d-pillowing-topo.jpg" alt="Resumo visual sobre topo com buracos (pillowing): camadas de topo, ventoinha e preenchimento" style="max-width:100%;height:auto;border-radius:8px;"></div>
+
+<h2>O que é pillowing e como reconhecer</h2>
+<p>Segundo o All3DP e o Tom's Hardware, o pillowing aparece nas camadas superiores: a superfície fica rugosa, com buracos ou protuberâncias, porque as camadas do topo não esfriam e solidificam a tempo e há pouco material sobre o preenchimento. Como só se vê no fim, ele pode desperdiçar horas de impressão e filamento.</p>
+<ul>
+<li>Os buracos aparecem <strong>no teto</strong> da peça, sobre áreas de preenchimento, e não nas paredes laterais.</li>
+<li>É possível ver o desenho do preenchimento “marcando” a superfície, como se o topo tivesse afundado entre as linhas.</li>
+<li>Costuma ser pior em tetos largos e planos.</li>
+</ul>
+<p>Se o problema está na base da peça, veja <a href="https://universo3dprints.blogspot.com/2026/11/primeira-camada-na-impressao-3d-como.html">primeira camada na impressão 3D</a>. Se há falta de plástico em toda a peça, o caso é de subextrusão, e não só de topo.</p>
+
+<h2>Por que acontece</h2>
+<p>O topo é impresso “em ponte” sobre o preenchimento. Se o preenchimento é pouco denso, se há poucas camadas sólidas ou se o plástico demora a endurecer, as primeiras linhas afundam entre os vãos. Conforme as fontes consultadas:</p>
+<div style="overflow-x:auto;">
+<table style="width:100%;border-collapse:collapse;color:#ffffff;">
+<thead><tr style="background:#0e7490;color:#ffffff;"><th style="padding:10px;text-align:left;">Causa</th><th style="padding:10px;text-align:left;">O que ocorre</th><th style="padding:10px;text-align:left;">Como suspeitar</th></tr></thead>
+<tbody>
+<tr style="background:#13263d;"><td style="padding:10px;">Poucas camadas de topo</td><td style="padding:10px;">As primeiras linhas de ponte não ficam totalmente cobertas. O All3DP cita uma única camada como a pior situação.</td><td style="padding:10px;">Buracos que deixam ver o preenchimento.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Preenchimento pouco denso</td><td style="padding:10px;">O plástico cede entre as linhas do preenchimento, segundo a Polymaker.</td><td style="padding:10px;">Marcas do desenho do preenchimento no teto.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Resfriamento insuficiente</td><td style="padding:10px;">A camada não solidifica a tempo e se deforma.</td><td style="padding:10px;">Defeito pior em PLA sem ventoinha forte ou com ventoinha desligada.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Temperatura alta</td><td style="padding:10px;">O plástico fica mole por mais tempo (Tom's Hardware).</td><td style="padding:10px;">Topo áspero que melhora ao baixar a temperatura.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Subextrusão</td><td style="padding:10px;">Bico entupido ou mal calibrado deixa as linhas fracas (All3DP).</td><td style="padding:10px;">Falhas também em outras partes da peça.</td></tr><tr style="background:#13263d;"><td style="padding:10px;">Material flexível</td><td style="padding:10px;">TPU e outros filamentos macios são mais suscetíveis (All3DP e Tom's Hardware).</td><td style="padding:10px;">Mais comum em filamentos flexíveis.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Como diagnosticar antes de mexer em tudo</h2>
+<ol>
+<li><strong>Confirme que não é subextrusão.</strong> O All3DP recomenda verificar entupimento e calibração do bico antes de mexer nos parâmetros.</li>
+<li><strong>Imprima uma placa plana de teste</strong> com suas configurações habituais, como sugere a Polymaker, e guarde-a como referência.</li>
+<li><strong>Mude um parâmetro por vez</strong>, em pequenos passos, e compare com a placa de referência.</li>
+<li><strong>Anote cada alteração.</strong> Assim você sabe qual funcionou.</li>
+</ol>
+
+<h2>Como corrigir, na ordem certa</h2>
+<h3>1. Aumente as camadas de topo</h3>
+<p>É a correção mais citada. O Tom's Hardware indica espessura de topo padrão de cerca de 1,2 mm, podendo chegar a cerca de 1,6 mm, algo como 5 a 6 vezes a altura da camada. A Polymaker fala em pelo menos 4 a 6 vezes a altura da camada: com camadas de 0,2 mm, use 5 ou 6 camadas superiores. O All3DP cita até 6 camadas e cerca de 1,5 mm de espessura total. Em resumo: com camada de 0,2 mm, 5 ou 6 camadas de topo é um bom ponto de partida. No Cura, o ajuste fica em Top/Bottom.</p>
+<h3>2. Aumente o preenchimento ou troque o padrão</h3>
+<p>A Polymaker cita cerca de 15 a 30% para peças normais, mais para tetos largos e planos. O Tom's Hardware menciona 15 a 50% para impressões comuns. O All3DP sugere aumentar a densidade em 10 a 20 pontos. Padrões como giroide e colmeia (honeycomb) distribuem melhor o apoio que o padrão em grade. Para entender o efeito de paredes e preenchimento na resistência e no tempo, veja <a href="https://universo3dprints.blogspot.com/2026/11/paredes-preenchimento-e-altura-de.html">paredes, preenchimento e altura de camada</a>.</p>
+<h3>3. Confira o resfriamento</h3>
+<p>Ative o resfriamento da peça e confirme que a ventoinha de camada trabalha forte nas camadas de topo; o All3DP cita 100% nessas camadas. O Tom's Hardware lembra que a ventoinha forte pode causar outros problemas, como warping, então vale testar. Em ABS, ASA e alguns náilons a ventoinha costuma ser reduzida, o que dificulta a ponte (Polymaker). Veja as diferenças em <a href="https://universo3dprints.blogspot.com/2026/10/pla-petg-ou-abs-qual-filamento-usar-na.html">PLA, PETG, ABS, ASA ou TPU</a> e <a href="https://universo3dprints.blogspot.com/2026/10/warping-na-impressao-3d-como-evitar.html">como evitar o warping</a>.</p>
+<h3>4. Reduza a temperatura em passos pequenos</h3>
+<p>Temperatura alta mantém o plástico mole por mais tempo; baixa demais prejudica a adesão entre camadas (Tom's Hardware). Fique dentro da faixa do fabricante e, se quiser achar o ponto, use uma torre de temperatura. A Polymaker sugere uma temperatura um pouco menor nas camadas superiores.</p>
+<h3>5. Reduza a velocidade do topo</h3>
+<p>Diminuir a velocidade das camadas superiores dá mais tempo para o plástico esfriar. As fontes não dão um valor fixo, e o Tom's Hardware avisa para não exagerar, porque velocidade baixa demais pode causar subextrusão. Para o efeito no prazo, veja <a href="https://universo3dprints.blogspot.com/2026/11/velocidade-de-impressao-3d-como.html">como imprimir mais rápido sem perder qualidade</a>.</p>
+<h3>6. Use ironing para o acabamento</h3>
+<p>Depois de resolver a causa, o All3DP cita o ironing e a impressão em ordem monotônica para alisar a superfície. O ironing é um recurso do fatiador que passa o bico de novo sobre o topo; ele melhora o acabamento, mas não substitui as camadas e o preenchimento corretos.</p>
+
+<div style="margin:18px 0;padding:16px 18px;border-radius:10px;background:#13263d;border-left:4px solid #1fb6ff;color:#ffffff;"><strong>Resumo da ordem de correção</strong><ul><li>Descartar subextrusão e entupimento.</li><li>Subir para 5 a 6 camadas de topo (com camada de 0,2 mm).</li><li>Aumentar o preenchimento e usar giroide ou colmeia.</li><li>Conferir a ventoinha nas camadas de topo.</li><li>Baixar a temperatura em passos pequenos.</li><li>Reduzir a velocidade do topo, sem exagero.</li><li>Usar ironing no acabamento.</li></ul></div>
+
+<h2>Erros comuns ao tentar resolver</h2>
+<ul>
+<li><strong>Mexer em tudo de uma vez.</strong> Fica impossível saber o que resolveu.</li>
+<li><strong>Usar uma camada de topo só.</strong> É a situação mais propícia ao defeito.</li>
+<li><strong>Reduzir a velocidade demais.</strong> Pode causar subextrusão.</li>
+<li><strong>Baixar demais a temperatura.</strong> Prejudica a adesão entre camadas.</li>
+<li><strong>Esperar que o ironing conserte tudo.</strong> Ele alisa, mas não corrige falta de apoio.</li>
+</ul>
+
+<h2>Quando vale ignorar</h2>
+<p>Em peças funcionais ou cujo topo ficará escondido, pequenos buracos costumam ser aceitáveis. Já em tampas, peças de encaixe ou peças visíveis, vale ajustar. Se o acabamento do topo é essencial para o seu projeto, pedir uma impressão sob medida com os parâmetros certos pode poupar tentativa e erro.</p>
+
+<h2>Perguntas frequentes</h2>
+<h3>Pillowing enfraquece a peça?</h3>
+<p>É um defeito principalmente de acabamento, mas um topo fino e com buracos pode ser frágil e deixar o interior à mostra. Para peças que precisam de resistência, aumente camadas e preenchimento.</p>
+<h3>Por que só aparece no final da impressão?</h3>
+<p>Porque é o topo que é impresso sobre o vazio do preenchimento. Segundo o Tom's Hardware, o defeito só surge quando a peça termina, o que pode gerar desperdício de tempo e material.</p>
+<h3>Preciso de uma impressora cara para evitar?</h3>
+<p>Não. Camadas de topo, preenchimento e resfriamento são ajustes do fatiador, disponíveis em máquinas simples.</p>
+<h3>Aumentar o preenchimento resolve sozinho?</h3>
+<p>Ajuda, mas costuma funcionar melhor junto com mais camadas de topo e resfriamento adequado.</p>
+<h3>Isso acontece com todo filamento?</h3>
+<p>Pode acontecer com qualquer um, mas materiais flexíveis, como TPU, são mais suscetíveis, e materiais que pedem pouca ventoinha, como ABS e ASA, dificultam a ponte.</p>
+
+<p>Fontes: <a href="https://all3dp.com/2/3d-printing-top-layer-problems-easy-fixes-for-pillowing/" target="_blank" rel="noopener">All3DP: 3D Printing Top Layer Problems, Easy Fixes for Pillowing</a> (atualizado em 17/04/2024) · <a href="https://www.tomshardware.com/3d-printing/how-to-fix-pillowing-problems-in-your-3d-prints" target="_blank" rel="noopener">Tom's Hardware: How to Fix Pillowing Problems in Your 3D Prints</a> (24/12/2023) · <a href="https://wiki.polymaker.com/printing-tips/common-printing-issues/pillowed-pitted-top-of-print" target="_blank" rel="noopener">Polymaker Wiki: Pillowed/Pitted Top of Print</a>.</p>
+
+<div style="margin:32px 0;padding:22px 20px;border-radius:14px;background:#0f1b2d;color:#ffffff;font-family:Arial,Helvetica,sans-serif;text-align:center;border:2px solid #1fb6ff;"><div style="font-size:20px;font-weight:bold;margin-bottom:8px;">Não tem impressora 3D ou precisa de uma peça sob medida?</div><div style="font-size:15px;line-height:1.5;color:#cfe3f5;margin-bottom:18px;">A <strong style="color:#ffffff;">FK3D Prints</strong> imprime peças personalizadas para você: reposição de peças quebradas, suportes, organizadores, presentes e projetos sob encomenda.</div><a href="https://fk3dprints.com.br/?utm_source=universo3dprints&utm_medium=blog&utm_campaign=orcamento-pillowing" target="_blank" rel="noopener" style="display:inline-block;padding:13px 26px;border-radius:30px;background:#1fb6ff;color:#0f1b2d;font-weight:bold;font-size:16px;text-decoration:none;">Peça seu orçamento →</a></div>
+
+<p><em>Conteúdo informativo. Siga sempre o manual do fabricante e as normas de segurança da sua impressora e dos materiais.</em></p>
+
+<div id="fk3d-assinatura" style="border-top:1px solid #d0d7de; margin-top:32px; padding-top:16px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.6; overflow:hidden;">
+  <a href="https://fk3dprints.com.br/?utm_source=universo3dprints&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUko8oQFxjE_SOXU__7A4Bnw3Tu7d-cmwRVhf-SBCqn6SJXQV_aBLtngX6-OvgFcTPJ172l-vSANT99FK-l8VPQVdVi4nbN33rnbVC802Becx-4EIrLBncpzpPbTLpkHRBISFLYcdhx48axTcjcLWyahXYX9B8qyELlOymKwNmUEp8gio/s200/Captura_de_tela_2026-10-08_223740-removebg-preview.png" alt="Logo FK3D Prints" width="90" height="96" style="float:left; margin:0 16px 8px 0;"></a>
+  <p><strong>FK3D Prints: impressão 3D sob demanda</strong></p>
+  <p>
+    &rarr; <a href="https://fk3dprints.com.br/?utm_source=universo3dprints&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener">Site oficial: fk3dprints.com.br</a><br>
+    &rarr; <a href="https://shopee.com.br/fkimpressoes3d" target="_blank" rel="noopener">Nossa loja na Shopee</a><br>
+    &rarr; <a href="https://www.instagram.com/fknegociosdigitais" target="_blank" rel="noopener">Siga no Instagram</a>
+  </p>
+</div>
+<div class="blogger-post-footer">“Obrigado por acompanhar o Universo 3D Prints!”.</div>

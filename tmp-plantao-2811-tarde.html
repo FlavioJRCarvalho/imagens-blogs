@@ -1,0 +1,92 @@
+<style>
+.pl{font-family:Arial,Helvetica,sans-serif;color:#1c1c1c;line-height:1.55}
+.pl a{color:#b71c1c;text-decoration:none}.pl a:hover{text-decoration:underline}
+.pl .tag{font-size:12px;font-weight:bold;text-transform:uppercase;letter-spacing:.04em;color:#555}
+.pl .grid{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin:16px 0}
+.pl .card{background:#fff;border:1px solid #e3e3e3;border-radius:10px;padding:16px}
+.pl .hero h2{font-size:30px;line-height:1.15;margin:6px 0 8px;color:#b71c1c}
+.pl .side .card{margin-bottom:16px}.pl .side h3{font-size:18px;margin:4px 0}
+.pl .cols{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.pl .item{padding:14px 0;border-bottom:1px solid #e3e3e3}.pl .item h3{font-size:20px;margin:4px 0;color:#b71c1c}
+.pl .item p{margin:4px 0;font-size:15px}.pl .meta{font-size:12px;color:#777}
+.pl .leia{background:#fafafa;border:1px solid #e3e3e3;border-radius:10px;padding:14px}
+.pl .leia li{margin:0 0 10px;font-size:15px}
+.pl .sec{margin-top:28px}
+@media(max-width:700px){.pl .grid,.pl .cols{grid-template-columns:1fr}.pl .hero h2{font-size:24px}}
+.pl .hd{display:flex;align-items:center;justify-content:space-between;background:#b71c1c;color:#fff;padding:12px 16px;border-radius:10px 10px 0 0;margin:0 0 12px}.pl .hd a,.pl .ft a{color:#fff}.pl .hd .logo{font-size:22px;font-weight:bold;letter-spacing:-.02em}.pl .hd .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:14px}.pl .hd .bt{font-size:13px;font-weight:bold;text-transform:uppercase}.pl .ft{background:#b71c1c;color:#fff;padding:18px 16px;border-radius:0 0 10px 10px;margin-top:32px;font-size:13px}.pl .ft .logo{font-size:20px;font-weight:bold;margin-bottom:10px}.pl .ft .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+header.centered-top-container{display:none !important}.hd{padding:16px 18px}.hd .logo{font-size:26px;text-align:center}.ft{padding:20px 22px}.ft .logo{margin:0}.ft .logo span{background:#fff;color:#b71c1c;border-radius:4px;padding:1px 6px;margin-left:6px;font-size:13px}.ft .logo em{font-size:13px;font-weight:normal;font-style:normal;margin-left:10px}.ft .r2{margin-top:14px;font-size:12px}.post-title,.post-header,.post-share-buttons{display:none !important}
+.pl .item,.pl .card{display:grid;grid-template-columns:1fr;gap:2px 14px;align-content:start}
+.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:132px 1fr}
+.pl .th{grid-row:1/span 5;width:132px;height:99px;object-fit:cover;border-radius:8px;margin:2px 0 0;display:block;background:#f0f0f0}
+.pl .card .tag,.pl .item .tag{align-self:end}
+.pl .big{display:block;width:100%;max-width:560px;height:auto;border-radius:10px;margin:4px auto 10px}
+.pl .leia ul{list-style:none;margin:8px 0 0;padding:0}
+.pl .leia li{display:grid;grid-template-columns:72px 1fr;gap:10px;align-items:center;margin:0 0 12px;line-height:1.35}
+.pl .leia li img{width:72px;height:54px;object-fit:cover;border-radius:6px;display:block;background:#f0f0f0}
+.pl .side .card h3{font-size:17px;line-height:1.3;margin:2px 0 0}
+.pl .item h3{line-height:1.25}
+@media(max-width:560px){.pl .item:has(.th),.pl .card:has(.th){grid-template-columns:104px 1fr}.pl .th{width:104px;height:78px}}
+
+.pl .side .card:has(.th){grid-template-columns:1fr}
+.pl .side .th{grid-row:auto;width:100%;height:160px;margin:0 0 8px}
+.pl .side .card h3{font-size:18px;line-height:1.3;word-break:normal;hyphens:none}
+.pl .leia li{grid-template-columns:64px 1fr;gap:9px;font-size:14px}
+.pl .leia li img{width:64px;height:48px}
+
+.pl .grid{grid-template-columns:1fr}
+.pl .side{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pl .side .card{margin-bottom:0}
+.pl .side .card:has(.th){grid-template-columns:132px 1fr}
+.pl .side .th{grid-row:1/span 5;width:132px;height:99px;margin:2px 0 0}
+.pl .side .card h3{font-size:18px;line-height:1.3}
+.pl .cols{grid-template-columns:1fr}
+.pl .leia ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 28px;margin:10px 0 0;padding:0;list-style:none}
+.pl .leia li{margin:0;font-size:15px;line-height:1.35;grid-template-columns:72px 1fr}
+.pl .leia li img{width:72px;height:54px}
+@media(max-width:700px){.pl .side{grid-template-columns:1fr}.pl .leia ul{grid-template-columns:1fr}}
+</style>
+<div class="pl">
+<div class="hd"><a class="bt" href="/">&#9776; Menu</a><a class="logo" href="/">Panorama<span>Brasil Hoje</span></a><a class="bt" href="/search">Buscar</a></div>
+<img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@7ff9220/2026-11-28-plantao-capa-tarde.jpg" alt="Panorama Brasil Hoje: Plantão de notícias do dia" style="width:100%;height:auto;border-radius:10px;margin:0 0 14px;display:block">
+<p><strong>Plantão Panorama, sábado, 28 de novembro de 2026, edição da tarde.</strong> As notícias do dia, com resumo, fonte e o que ainda não está confirmado. Atualizado às 13h.</p>
+<div class="grid">
+<div class="card hero"><img class="big" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@7ff9220/2026-11-28-tarde-trabuco.jpg" alt="Lula defende Trabuco na Fazenda em transmissão ao vivo; Gilmar Mendes elogia a escolha" style="max-width:520px;width:100%;margin:0 auto 10px"><span class="tag">Política</span><h2><a href="#trabuco">Lula defende Trabuco na Fazenda em transmissão ao vivo; Gilmar Mendes elogia a escolha</a></h2><p>Em transmissão ao vivo neste sábado (28), Lula defendeu a escolha de Luiz Carlos Trabuco para a Fazenda no governo de 2027 e disse que "jamais traria alguém para trabalhar contra o povo pobre", segundo Metrópoles e Agora Litoral.</p><span class="meta">Metrópoles, Agora Litoral, CNN Brasil e ND Mais, 26 e 28/11</span></div>
+<div class="side">
+<div class="card"><img class="th" src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@7ff9220/2026-11-28-tarde-stf.jpg" alt="Lula e Alcolumbre se reúnem neste sábado para tentar definir indicação ao STF, segundo ICL Notícias"><span class="tag">Política</span><h3><a href="#stf">Lula e Alcolumbre se reúnem neste sábado para tentar definir indicação ao STF, segundo ICL Notícias</a></h3></div>
+</div>
+</div>
+<div class="cols">
+<div>
+<h2>Últimas notícias</h2>
+</div>
+<div class="leia">
+<strong>Leia também</strong>
+<ul>
+<li><img src="https://cdn.jsdelivr.net/gh/FlavioJRCarvalho/imagens-blogs@7ff9220/2026-11-28-tarde-stf.jpg" alt="Lula e Alcolumbre se reúnem neste sábado para tentar definir indicação ao STF, segundo ICL Notícias"><a href="#stf">Lula e Alcolumbre se reúnem neste sábado para tentar definir indicação ao STF, segundo ICL Notícias</a></li>
+</ul>
+</div>
+</div>
+<div class="sec" id="trabuco"><h2>Lula defende Trabuco na Fazenda em transmissão ao vivo; Gilmar Mendes elogia a escolha</h2>
+<p>Segundo o Agora Litoral, Lula falou durante uma live com o deputado André Janones e respondeu a críticas de setores da esquerda. O Metrópoles registra que ele descreveu Trabuco como "agente de confiança e de muito caráter" e disse manter uma relação de respeito com ele desde os anos 1990. Lula afirmou ainda ter buscado um nome que ajude na reindustrialização do país.</p>
+<p>O ministro do STF Gilmar Mendes elogiou a escolha na rede social X e disse que Trabuco "tem revelado verdadeira preocupação com a responsabilidade social", segundo a CNN Brasil. A escolha foi oficializada na quinta-feira (26), quando, segundo CNN Brasil e ND Mais, o Ibovespa subiu 6,07%. O dólar caiu para cerca de R$ 5,75, conforme o ND Mais.</p>
+<p><strong>Em apuração:</strong> as diretrizes econômicas de Trabuco e o restante da equipe econômica ainda não foram detalhados; as críticas da esquerda foram citadas por Lula, mas as reportagens consultadas não especificam quais são.</p>
+<p><strong>Por que importa:</strong> A escolha do ministro da Fazenda influencia a confiança do mercado e o rumo da política econômica a partir de 2027.</p>
+<p><strong>Fontes:</strong> <a href="https://www.metropoles.com/brasil/lula-sobre-trabuco-jamais-traria-alguem-para-trabalhar-contra-o-pobre" target="_blank" rel="noopener">Metrópoles: Lula sobre Trabuco: "Jamais traria alguém para trabalhar contra o pobre"</a> (28/11/2026, 12h42); <a href="https://agoralitoral.com.br/2026/11/28/lula-defende-escolha-de-trabuco-para-a-fazenda-em-transmissao-ao-vivo/" target="_blank" rel="noopener">Agora Litoral: Lula defende escolha de Trabuco para a Fazenda em transmissão ao vivo</a> (28/11/2026, 12h32); <a href="https://www.cnnbrasil.com.br/politica/gilmar-cita-responsabilidade-social-ao-elogiar-trabuco-para-fazenda/" target="_blank" rel="noopener">CNN Brasil: Gilmar cita responsabilidade social ao elogiar Trabuco para Fazenda</a> (28/11/2026, 11h09); <a href="https://ndmais.com.br/politica/alcolumbre-comemora-trabuco-fazenda-lula/" target="_blank" rel="noopener">ND Mais: Alcolumbre comemora Trabuco na Fazenda em 4º mandato de Lula</a> (26/11/2026, 20h56).</p></div>
+<div class="sec" id="stf"><h2>Lula e Alcolumbre se reúnem neste sábado para tentar definir indicação ao STF, segundo ICL Notícias</h2>
+<p>Segundo a reportagem, que cita interlocutores sem identificá-los, as duas candidatas mais cotadas são Edilene Lôbo, advogada mineira e a primeira mulher negra no TSE, e Estela Aranha, ministra do TSE, nome levado a Lula pelo ministro Flávio Dino. A reportagem diz que Jorge Messias e Rodrigo Pacheco perderam força. O Senado rejeitou Messias em abril, por 42 votos a 34.</p>
+<p>A vaga está aberta há mais de um ano. O objetivo do encontro, segundo o texto, é permitir uma sabatina antes da posse do novo Congresso, em 2027. Se uma mulher for indicada, seria a quarta na história do STF.</p>
+<p><strong>Em apuração:</strong> o resultado da reunião não foi divulgado na reportagem; não há nome oficial, e a informação sobre as duas candidatas vem de fontes anônimas e de um único veículo.</p>
+<p><strong>Por que importa:</strong> A vaga de Barroso está aberta há mais de um ano, e a data da indicação define se a sabatina ocorre antes de 2027.</p>
+<p><strong>Fonte:</strong> <a href="https://iclnoticias.com.br/davi-alcolumbre-e-lula-se-encontram-neste-sabado-para-definir-indicacao-ao-stf/" target="_blank" rel="noopener">ICL Notícias: Davi Alcolumbre e Lula se encontram neste sábado para definir indicação ao STF</a> (28/11/2026, 12h19).</p></div>
+<p><em>Plantão apurado em 28/11/2026, às 13h, com base nas fontes citadas. Veja a nossa política editorial e de correções.</em></p>
+<div class="ft"><div class="row"><div class="logo">Panorama<span>Brasil Hoje</span> <em>últimas notícias</em></div><div>Notícias do Brasil e do mundo</div></div><div class="row r2"><span>&copy; 2026 Panorama Brasil Hoje. Conteúdo com fontes citadas.</span><span><a href="/">início</a> | <a href="/search/label/Brasil">Brasil</a> | <a href="/search/label/Mundo">Mundo</a> | <a href="/search/label/Economia">Economia</a> | <a href="/search/label/Esporte">Esporte</a> | <a href="/search/label/Saúde">Saúde</a></span></div></div>
+</div>
+<div id="fk3d-assinatura" style="border-top:1px solid #d0d7de; margin-top:32px; padding-top:16px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:1.6; overflow:hidden;">
+  <a href="https://fk3dprints.com.br/?utm_source=bolanaredebrfutebol&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUko8oQFxjE_SOXU__7A4Bnw3Tu7d-cmwRVhf-SBCqn6SJXQV_aBLtngX6-OvgFcTPJ172l-vSANT99FK-l8VPQVdVi4nbN33rnbVC802Becx-4EIrLBncpzpPbTLpkHRBISFLYcdhx48axTcjcLWyahXYX9B8qyELlOymKwNmUEp8gio/s200/Captura_de_tela_2026-10-08_223740-removebg-preview.png" alt="Logo FK3D Prints" width="90" height="96" style="float:left; margin:0 16px 8px 0;"></a>
+  <p><strong>FK3D Prints: impressão 3D sob demanda</strong></p>
+  <p>
+    &rarr; <a href="https://fk3dprints.com.br/?utm_source=bolanaredebrfutebol&utm_medium=blog&utm_campaign=assinatura" target="_blank" rel="noopener">Site oficial: fk3dprints.com.br</a><br>
+    &rarr; <a href="https://shopee.com.br/fkimpressoes3d" target="_blank" rel="noopener">Nossa loja na Shopee</a><br>
+    &rarr; <a href="https://www.instagram.com/fknegociosdigitais" target="_blank" rel="noopener">Siga no Instagram</a>
+  </p>
+</div>
